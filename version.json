@@ -1,5 +1,5 @@
 {
-  "version": "2.9.5",
+  "version": "2.9.6",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Drag-to-insert photo ordering, portrait album layout, integrated image-inclusive backup"
+  "notes": "Shorter five-photo thumbnails, taller framed main image with inset photo margins; existing drag and integrated backup preserved"
 }
