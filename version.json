@@ -1,1 +1,5 @@
-{"version": "2.9.4", "name": "World Travel Encyclopedia MASTER", "notes": "Five-photo album and photo position swap"}
+{
+  "version": "2.9.5",
+  "name": "World Travel Encyclopedia MASTER",
+  "notes": "Drag-to-insert photo ordering, portrait album layout, integrated image-inclusive backup"
+}
