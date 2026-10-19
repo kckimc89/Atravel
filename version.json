@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0",
+  "version": "3.5.7",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "15 original landmark countries, Korean catalog retained, five-photo gallery, drag order and integrated backup"
+  "notes": "Repair V3.5.6 regression by restoring complete V3.5.5 application; preserve V3.5.6 enriched catalog search metadata. Country selection not yet included."
 }
