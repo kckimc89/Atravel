@@ -1,5 +1,5 @@
 {
-  "version": "3.6.1",
+  "version": "3.6.2",
   "name": "World Travel Encyclopedia MASTER",
   "notes": "English aliases added for 156 landmarks; English search labels now require Latin text. Existing V3.6.0 country selection, failure reporting and photo storage preserved."
 }
