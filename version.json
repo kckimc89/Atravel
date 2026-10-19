@@ -1,5 +1,5 @@
 {
-  "version": "3.2.0",
+  "version": "3.3.0",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "15 countries 376 landmarks; gallery green outline for 5 stored photos or manual user completion, persisted and backed up"
+  "notes": "Separate country exploration and global landmark search; compact four-column landmark cards; stabilized offline image URLs"
 }
