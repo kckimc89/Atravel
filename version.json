@@ -1,5 +1,5 @@
 {
-  "version": "3.5.1",
+  "version": "3.5.2",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Three-state country and landmark gallery backgrounds: dark green complete, light green partial, white empty. Existing photo storage preserved."
+  "notes": "IndexedDB memory snapshots, legacy data preservation, and recovery on startup; photo vault unchanged."
 }
