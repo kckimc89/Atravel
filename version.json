@@ -1,5 +1,5 @@
 {
-  "version": "3.6.6",
+  "version": "3.7.0",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Expanded Commons category-file discovery for incomplete albums; preserves stored photos and adds search diagnostics."
+  "notes": "41 countries, 896 curated attractions, continent filter and stronger landscape candidate ranking. Existing 376 IDs preserved."
 }
