@@ -1,5 +1,5 @@
 {
-  "version": "3.5.9",
+  "version": "3.6.0",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Search diagnostics and targeted Commons aliases; preserves all existing stored photos and memory; country selection not yet implemented."
+  "notes": "Country-selective resumable photo selection, failure results, preserves V3.5.9 search engine and photo storage."
 }
