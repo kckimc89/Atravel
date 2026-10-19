@@ -1,5 +1,5 @@
 {
-  "version": "3.5.7",
+  "version": "3.5.8",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Repair V3.5.6 regression by restoring complete V3.5.5 application; preserve V3.5.6 enriched catalog search metadata. Country selection not yet included."
+  "notes": "Search diagnostics and targeted Commons aliases; preserves all existing stored photos and memory; country selection not yet implemented."
 }
