@@ -1,5 +1,5 @@
 {
-  "version": "3.5.3",
+  "version": "3.5.5",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "IndexedDB memory snapshots, legacy data preservation, and recovery on startup; photo vault unchanged."
+  "notes": "Permanent five-slot photo gallery; automatic and manual selections saved to IndexedDB before assigning; no temporary photos."
 }
