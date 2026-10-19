@@ -1,5 +1,5 @@
 {
-  "version": "3.6.4",
+  "version": "3.6.5",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Expanded Commons category discovery for landmarks with few candidates; existing stored photos and keys preserved."
+  "notes": "Expanded Commons category-file discovery for incomplete albums; preserves stored photos and adds search diagnostics."
 }
