@@ -1,5 +1,5 @@
 {
-  "version": "3.5.5",
+  "version": "3.0.0",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Permanent five-slot photo gallery; automatic and manual selections saved to IndexedDB before assigning; no temporary photos."
+  "notes": "15 original landmark countries, Korean catalog retained, five-photo gallery, drag order and integrated backup"
 }

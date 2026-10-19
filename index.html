@@ -1,4 +1,4 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#164b60"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="여행대백과"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest"><title>세계 여행대백과 MASTER V3.5.5</title><style>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#164b60"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="여행대백과"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest"><title>세계 여행대백과 MASTER V2.9.5</title><style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,sans-serif;color:#193d50;background:#f3f7f8}*{box-sizing:border-box}body{margin:0}header{position:sticky;top:0;background:#164b60;color:white;padding:13px 14px;z-index:5}header .wrap{max-width:1080px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:8px}header small{display:block;color:#c8e6e9}main{max-width:1080px;margin:auto;padding:15px 12px 85px}h1{font-size:26px;margin:6px 0}h2{font-size:21px;margin:8px 0 12px}.box{background:white;border:1px solid #d8e7eb;border-radius:16px;margin:12px 0;padding:16px}.hero{background:linear-gradient(120deg,#164b60,#168b86);color:white;border-radius:17px;padding:25px}.hero p{color:#e3f2ef}.muted{font-size:13px;color:#697f8a;line-height:1.6}button,input,textarea{font:inherit}button{border:0;border-radius:11px;background:#146c80;color:white;padding:11px 13px;min-height:43px;font-weight:700;cursor:pointer}button:disabled{opacity:.55}.secondary{background:#e9f2f4;color:#235364}.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:8px}.place{background:#e5f4e9;border:1px solid #badbc5;color:#185a3c;text-align:left}.place b{display:block;font-size:17px}.place small{display:block;color:#527964;margin-top:5px}.tabs{display:flex;gap:7px;overflow:auto;margin:12px 0}.tabs button{white-space:nowrap;background:#e7f0f3;color:#2c5b69}.tabs button.on{background:#176d82;color:white}.hidden{display:none!important}.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(125px,1fr));gap:9px}.photo{background:#eef3f5;border-radius:11px;overflow:hidden;border:1px solid #dae5e8;position:relative}.photo img{width:100%;height:112px;object-fit:cover;display:block;background:#e7edf0}.photo small{display:block;padding:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11px}.photo button{width:100%;border-radius:0;padding:6px;min-height:32px;font-size:12px}.photo.bad{opacity:.6}.viewer{background:#edf3f5;border-radius:12px;padding:9px;text-align:center}.viewer img{width:100%;max-height:430px;object-fit:contain;min-height:130px}.viewer .caption{font-size:12px;overflow-wrap:anywhere}.status{background:#edf7f4;border-left:4px solid #389e87;padding:10px;border-radius:6px;font-size:13px;line-height:1.6;margin:9px 0}.warning{background:#fff4e2;border-left-color:#d89937}.lead{line-height:1.8;white-space:pre-line}.stat{display:inline-block;padding:5px 10px;background:#eaf1f3;border-radius:20px;font-size:13px}.progress{height:10px;background:#dce8eb;border-radius:10px;overflow:hidden}.progress>div{background:#269b86;height:100%;width:0%;transition:width .2s}textarea{width:100%;min-height:85px;padding:10px;border:1px solid #bdced5;border-radius:8px}input[type=search]{padding:12px;width:min(380px,100%);border:1px solid #c3d2da;border-radius:10px}a{color:#006c98}button:focus-visible,a:focus-visible{outline:3px solid #f49b31;outline-offset:2px} @media(max-width:420px){header b{font-size:15px}.photos{grid-template-columns:repeat(2,1fr)}}
 
 /* V2.2 reading and gallery layout */
@@ -186,44 +186,7 @@ main{max-width:1280px;padding-bottom:20px}.hero{background:linear-gradient(115de
 @media(min-width:700px) and (orientation:portrait){#album #albumPhotos{height:clamp(64px,8.2dvh,88px)}#album #viewer{padding:14px}}
 
 .countryList{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:20px 0 8px}.countryChoice{background:rgba(255,255,255,.92);color:#1d4365;border:1px solid #dce5eb;padding:12px 5px;font-size:clamp(12px,1.6vw,16px);border-radius:14px;box-shadow:0 3px 10px #16345310}.countryChoice.active{background:linear-gradient(115deg,#2056a2,#19a4b8);color:white;border-color:#2075ab;box-shadow:0 5px 15px #184c9b33}@media(max-width:550px){.countryList{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.countryChoice{padding:10px 3px;font-size:12px}}
-/* V3.1 · cinematographic landscape gallery, compact iPad portrait */
-#viewer{position:relative;background:radial-gradient(circle at 50% 20%,#496b8d,#081a2c 73%);border:3px solid #fff7ec;box-shadow:0 18px 50px #111a3b48,0 0 0 1px #d9a95d66}
-#largePhoto{object-fit:contain!important;object-position:center center;background:transparent;filter:contrast(1.035) saturate(1.09)}
-#albumPhotos .photo{box-shadow:0 5px 16px #1a264c35;transition:transform .18s ease,box-shadow .18s ease;border-color:#faf7f0}
-#albumPhotos .photo.active{border-color:#ffc46b;transform:translateY(-2px);box-shadow:0 6px 22px #b7804a80}
-#albumPhotos .photo img{filter:saturate(1.08)}
-#album{background:linear-gradient(165deg,#fffdf7,#edf6fb 65%,#f8eef5);border-radius:19px;padding:10px}
-.storyBackdrop{background-size:cover;background-position:center;box-shadow:inset 0 -30px 90px #061d3a5c}
-.storyBackdropInner{background:linear-gradient(90deg,#071c3a9c,#10294124);text-shadow:0 2px 10px #08182bcc}
-#bulkBtn{background:linear-gradient(110deg,#b47645,#c88a60 37%,#244a7c);box-shadow:0 6px 20px #152f6044}
-@media(max-width:750px){#album{padding:6px}#viewer{box-shadow:0 7px 24px #152b4b40}}
-
-/* V3.2 · five stored images / manual gallery completion */
-.place.galleryComplete{border:3px solid #169657;background:linear-gradient(130deg,#f0fff3,#dcf7e5);box-shadow:0 0 0 2px #a4e8b7,0 5px 15px #16864b1b}
-.place.galleryComplete b{color:#116b39}.place .galleryBadge{color:#177642;font-weight:800}
-#completeAlbumBtn{background:#17804e;color:#fff}#completeAlbumBtn.isComplete{background:#edf8f0;color:#146b40;border:2px solid #21975d}
-
-/* MASTER V3.4 · compact landmark exploration */
-#countryList{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:15px 0}#countryList .countryChoice{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:17px;text-align:left;border-radius:16px}#countryList .countryChoice strong{font-size:19px}#countryList .countryChoice small{font-size:12px;opacity:.85}
-#landmarkPanel{padding:12px}#places{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.compactPlace{min-width:0;min-height:57px;padding:6px 7px;border-radius:9px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}.compactPlace b{font-size:clamp(12px,1.65vw,16px);line-height:1.2;word-break:keep-all;overflow-wrap:anywhere}.compactPlace small{font-size:11px;margin:0;line-height:1.1}.compactPlace.galleryComplete{border:2px solid #2caa69}#placeFilters{margin:8px 0}#placeFilters button{min-height:35px;padding:5px 10px;font-size:13px;background:#e8eef6;color:#30465b}#placeFilters button.selectedFilter{background:#246d86;color:#fff}#countrySearch{width:min(400px,100%)}
-@media(max-width:650px){#countryList{grid-template-columns:repeat(2,minmax(0,1fr))}#places{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}.compactPlace{padding:5px 3px;min-height:53px}.compactPlace b{font-size:11px}.compactPlace small{font-size:10px}}
-
-/* V3.4 compact exploration navigation */
-header .wrap{gap:12px}.mainNav{display:flex;gap:7px;flex-wrap:wrap}.mainNav button{padding:9px 12px;font-size:clamp(12px,1.5vw,16px);white-space:nowrap}.mainNav .navActive{background:#155c79;color:#fff;border-color:#155c79}
-#countryList{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin:9px 0!important}#countryList .countryChoice{padding:7px 5px;min-height:57px;border-radius:10px;gap:2px;align-items:center;text-align:center;justify-content:center}#countryList .countryChoice strong{font-size:clamp(11px,1.4vw,15px);line-height:1.2}#countryList .countryChoice small{font-size:12px}#countryList .doneCount{color:#138447;font-weight:900}#countryList .countryChoice.active .doneCount{color:#d7ffdf}
-#home .hero{padding:14px 18px}#home .hero h1{font-size:clamp(20px,2.8vw,30px);margin:0 0 5px}#home .hero p{margin:4px 0 8px}#home .hero .row{margin-top:8px}#home .hero #bulkBtn{display:none!important}
-#management{margin-top:10px}#management:not(.hidden){display:block}#management:not(.hidden)>summary{display:none}
-@media(max-width:650px){#countryList{grid-template-columns:repeat(4,minmax(0,1fr))}#countryList .countryChoice{min-height:54px;padding:6px 3px}header .wrap{flex-wrap:wrap}.mainNav{width:100%;justify-content:space-between}.mainNav button{flex:1;padding:9px 4px}}
-
-/* MASTER V3.5.5 · three-state gallery signals; visual only, no storage migration */
-#countryList .countryChoice.signalFull,#places .place.signalFull{background:#167443!important;color:#fff!important;border:2px solid #0b5930!important}
-#countryList .countryChoice.signalFull strong,#countryList .countryChoice.signalFull small,#countryList .countryChoice.signalFull .doneCount,#places .place.signalFull b,#places .place.signalFull small{color:#fff!important}
-#countryList .countryChoice.signalPartial,#places .place.signalPartial{background:#d9f3e1!important;color:#19452e!important;border:2px solid #a5d7b5!important}
-#countryList .countryChoice.signalPartial strong,#countryList .countryChoice.signalPartial small,#countryList .countryChoice.signalPartial .doneCount,#places .place.signalPartial b,#places .place.signalPartial small{color:#19452e!important}
-#countryList .countryChoice.signalEmpty,#places .place.signalEmpty{background:#fff!important;color:#293d51!important;border:2px solid #d7e0e8!important}
-#countryList .countryChoice.signalEmpty strong,#countryList .countryChoice.signalEmpty small,#countryList .countryChoice.signalEmpty .doneCount,#places .place.signalEmpty b,#places .place.signalEmpty small{color:#293d51!important}
-#countryList .countryChoice:focus-visible,#places .place:focus-visible{outline:3px solid #e4a347;outline-offset:2px}
-</style></head><body><header><div class="wrap"><div><b>🌏 세계 여행대백과</b><small>MASTER V3.5.5 · 15개국 · 감동 사진첩</small></div><nav class="mainNav"><button id="homeBtn" class="secondary">🌏 나라탐험</button><button id="worldTab" class="secondary" type="button">🔎 명소탐험</button><button id="manageTab" class="secondary" type="button">⚙️ 백업·관리</button></nav></div></header><main><section id="home"><div class="hero"><h1 id="countryHeading">🌏 세계 여행대백과 · 15개국</h1><p id="countrySummary">나라를 선택해 여행을 시작하세요.</p><div id="countryList" class="countryList" aria-label="여행할 나라 선택"></div><div class="row"><input id="countrySearch" type="search" placeholder="🔎 나라 검색" aria-label="나라 이름 검색"><button id="worldSearchBtn" class="secondary hidden" type="button">🔎 세계 명소탐험</button></div><button id="bulkBtn">🌄 전체 376개 명소 · 사진 5장과 배경 자동 선정</button></div><div class="box" id="landmarkPanel"><div class="row"><button id="countriesBack" class="secondary" type="button">← 나라탐험</button><input id="filter" type="search" placeholder="가고 싶은 명소를 찾아보세요" aria-label="명소 검색"><span id="homeStats" class="stat"></span></div><div class="row" id="placeFilters"><button type="button" data-view="all">전체 명소</button><button type="button" data-view="complete">🟢 완성</button><button type="button" data-view="incomplete">미완성</button></div><div id="bulkStatus" class="status hidden" aria-live="polite"></div><div id="bulkProgress" class="progress hidden"><div></div></div><div class="grid" id="places"></div></div><details class="box" id="management"><summary>⚙️ 관리 · 검색기억 · 백업</summary><p class="muted">기존 명소대백과 원본은 변경하지 않습니다. 이 앱은 별도 저장공간을 사용하며 검색결과의 사진 주소·출처를 저장합니다.</p><div class="row"><button id="exportBtn">💾 전체 백업 · 사진 자동 보관</button><span id="offlineStatus" class="muted" aria-live="polite">기본사진은 이 기기의 저장소에 따로 보관합니다.</span><label class="secondary" style="border-radius:11px;padding:12px;cursor:pointer">백업 복원 <input id="importFile" type="file" accept="application/json,.json" style="display:none"></label><button id="checkBtn" class="secondary">서버 버전 확인</button></div><div id="manageStatus" class="muted"></div></details></section><section id="detail" class="hidden"><div class="detailHead"><button id="backBtn" class="secondary" aria-label="명소 목록으로">←</button><div class="placeIdentity"><h1 id="placeTitle"></h1><p id="placeRegion" class="muted"></p></div><div class="tabs" id="tabs"><button data-tab="description" class="on">명소 이야기</button><button data-tab="album">기본 사진첩</button><button data-tab="memory">사진 여행</button><button id="fillBtn" class="fillInline" type="button">＋ 사진 보강</button><span id="placeState" class="photoProgress" aria-live="polite"></span></div></div><div class="box view" id="description"><div class="storyBackdrop" id="storyBackdrop"><div class="storyBackdropInner"><div class="storyLabel">✦ TRAVEL STORIES</div><h2>명소 이야기</h2><p id="storyBackdropHint">사진으로 만나는 오늘의 여행</p></div></div><div class="storyContent"><p class="lead" id="placeDesc"></p><div class="tripSummary" id="tripSummary"></div><div class="descriptionAction"><button id="toAlbumBtn">🖼️ 기본 사진첩 보기로 이동 →</button></div></div></div><div id="album" class="view hidden"><div class="row" style="justify-content:flex-end"><span id="albumOffline" class="stat">📦 기기 보관 확인 중</span><button class="secondary" id="savePlaceBtn">📥 이 명소 사진 5장 보관</button><button id="completeAlbumBtn" type="button">✓ 사진첩 완성 표시</button></div><div id="viewer" class="viewer hidden"><img id="largePhoto" alt="명소 대표 사진"></div><div class="albumTools"><button id="reorderBtn" class="secondary" type="button">↔ 사진 끌어 옮기기</button><span id="reorderHint" class="muted">사진을 골라 크게 감상하세요. 순서를 바꾸려면 옮기기 버튼을 누르세요.</span></div><div id="albumPhotos" class="photos" aria-label="작은 사진을 선택하면 큰 사진이 바뀝니다"></div><div id="emptyGallery" class="galleryEmpty hidden">🖼️ 사진을 준비하고 있습니다. 사진 여행에서 사진을 찾아보세요.</div></div><div id="memory" class="box view hidden"><div class="memoryHead"><h2>사진 여행 · 슬라이드 감상</h2><div class="row"><button id="repairBtn">📸 사진 상태 확인·대체</button><button id="moreBtn" class="secondary">🔎 다음 후보 더 찾기</button></div></div><div id="repairWorkspace"><h3>기본사진 · 5장 <span class="muted">자동·직접 선정 사진은 모두 정식 저장됩니다. 빈자리를 채우거나 교체할 자리를 선택하세요</span></h3><div id="baseSelection" class="photos"></div><div class="row baseStoryRow"><button id="baseStoryBtn" class="secondary" type="button">✦ 선택한 기본사진을 명소 이야기 배경으로</button><span id="baseStoryNote" class="muted">위 기본사진을 선택한 다음 배경으로 지정하세요.</span></div><p id="swapHint" class="swapHint">아래 후보를 골라 사진첩에 추가할 수 있습니다.</p><h3>후보사진 <span class="muted">사진을 누르면 크게 볼 수 있습니다</span></h3><div id="candidatePreview" class="candidatePreview hidden"><img id="candidateLarge" alt="선택한 후보사진 크게보기"><div class="candidateControls"><button id="candidatePrev" class="secondary">❮ 이전 후보</button><button id="candidatePlay" class="candidatePlay" type="button" aria-pressed="false">▶ 슬라이드 재생</button><span id="candidateIndex"></span><button id="candidateNext" class="secondary">다음 후보 ❯</button></div><div class="candidateHelp" id="slideHint">마음에 드는 후보를 선택하면 기본사진으로 바로 저장합니다.</div><button id="candidateAdd">＋ 이 사진을 사진첩에 추가</button><a id="candidateSource" class="sourceLink" target="_blank" rel="noopener noreferrer" href="#">사진 출처 확인 ↗</a><div id="candidateCaption" class="muted"></div></div></div><button id="searchBtn" class="hidden">새 사진 검색</button><div id="searchStatus" class="status" aria-live="polite">처음 검색할 때는 기존 기억의 사진 제목을 먼저 확인하고 부족하면 공개 사진을 검색합니다.</div><div id="candidateStats" class="muted"></div><div id="candidates" class="photos"></div></div></section></main><script>
+</style></head><body><header><div class="wrap"><div><b>🌏 세계 여행대백과</b><small>MASTER V3.0.0 · 15개국 첫 확장 · 사진 여행</small></div><button id="homeBtn" class="secondary">🏠 나라 탐험</button></div></header><main><section id="home"><div class="hero"><h1 id="countryHeading">🌏 세계 여행대백과 · 15개국</h1><p id="countrySummary">나라를 선택해 여행을 시작하세요.</p><div id="countryList" class="countryList" aria-label="여행할 나라 선택"></div><button id="bulkBtn">🔎 사진 자동보강</button></div><div class="box"><div class="row"><input id="filter" type="search" placeholder="가고 싶은 명소를 찾아보세요" aria-label="명소 검색"><span id="homeStats" class="stat"></span></div><div id="bulkStatus" class="status hidden" aria-live="polite"></div><div id="bulkProgress" class="progress hidden"><div></div></div><div class="grid" id="places"></div></div><details class="box" id="management"><summary>⚙️ 관리 · 검색기억 · 백업</summary><p class="muted">기존 명소대백과 원본은 변경하지 않습니다. 이 앱은 별도 저장공간을 사용하며 검색결과의 사진 주소·출처를 저장합니다.</p><div class="row"><button id="exportBtn">💾 전체 백업 · 사진 자동 보관</button><span id="offlineStatus" class="muted" aria-live="polite">기본사진은 이 기기의 저장소에 따로 보관합니다.</span><label class="secondary" style="border-radius:11px;padding:12px;cursor:pointer">백업 복원 <input id="importFile" type="file" accept="application/json,.json" style="display:none"></label><button id="checkBtn" class="secondary">서버 버전 확인</button></div><div id="manageStatus" class="muted"></div></details></section><section id="detail" class="hidden"><div class="detailHead"><button id="backBtn" class="secondary" aria-label="명소 목록으로">←</button><div class="placeIdentity"><h1 id="placeTitle"></h1><p id="placeRegion" class="muted"></p></div><div class="tabs" id="tabs"><button data-tab="description" class="on">명소 이야기</button><button data-tab="album">기본 사진첩</button><button data-tab="memory">사진 여행</button><button id="fillBtn" class="fillInline" type="button">＋ 사진 보강</button><span id="placeState" class="photoProgress" aria-live="polite"></span></div></div><div class="box view" id="description"><div class="storyBackdrop" id="storyBackdrop"><div class="storyBackdropInner"><div class="storyLabel">✦ TRAVEL STORIES</div><h2>명소 이야기</h2><p id="storyBackdropHint">사진으로 만나는 오늘의 여행</p></div></div><div class="storyContent"><p class="lead" id="placeDesc"></p><div class="tripSummary" id="tripSummary"></div><div class="descriptionAction"><button id="toAlbumBtn">🖼️ 기본 사진첩 보기로 이동 →</button></div></div></div><div id="album" class="view hidden"><div class="row" style="justify-content:flex-end"><span id="albumOffline" class="stat">📦 기기 보관 확인 중</span><button class="secondary" id="savePlaceBtn">📥 이 명소 사진 5장 보관</button></div><div id="viewer" class="viewer hidden"><img id="largePhoto" alt="명소 대표 사진"></div><div class="albumTools"><button id="reorderBtn" class="secondary" type="button">↔ 사진 끌어 옮기기</button><span id="reorderHint" class="muted">사진을 골라 크게 감상하세요. 순서를 바꾸려면 옮기기 버튼을 누르세요.</span></div><div id="albumPhotos" class="photos" aria-label="작은 사진을 선택하면 큰 사진이 바뀝니다"></div><div id="emptyGallery" class="galleryEmpty hidden">🖼️ 사진을 준비하고 있습니다. 사진 여행에서 사진을 찾아보세요.</div></div><div id="memory" class="box view hidden"><div class="memoryHead"><h2>사진 여행 · 슬라이드 감상</h2><div class="row"><button id="repairBtn">📸 사진 상태 확인·대체</button><button id="moreBtn" class="secondary">🔎 다음 후보 더 찾기</button></div></div><div id="repairWorkspace"><h3>기본사진 · 5장 <span class="muted">사용자가 지정한 대표사진은 고정됩니다. 비어 있거나 교체할 자리를 먼저 선택하세요</span></h3><div id="baseSelection" class="photos"></div><div class="row baseStoryRow"><button id="baseStoryBtn" class="secondary" type="button">✦ 선택한 기본사진을 명소 이야기 배경으로</button><span id="baseStoryNote" class="muted">위 기본사진을 선택한 다음 배경으로 지정하세요.</span></div><p id="swapHint" class="swapHint">아래 후보를 골라 사진첩에 추가할 수 있습니다.</p><h3>후보사진 <span class="muted">사진을 누르면 크게 볼 수 있습니다</span></h3><div id="candidatePreview" class="candidatePreview hidden"><img id="candidateLarge" alt="선택한 후보사진 크게보기"><div class="candidateControls"><button id="candidatePrev" class="secondary">❮ 이전 후보</button><button id="candidatePlay" class="candidatePlay" type="button" aria-pressed="false">▶ 슬라이드 재생</button><span id="candidateIndex"></span><button id="candidateNext" class="secondary">다음 후보 ❯</button></div><div class="candidateHelp" id="slideHint">후보를 자동으로 감상하다가 일시정지하고 마음에 드는 사진을 기본사진과 교체하세요.</div><button id="candidateAdd">＋ 이 사진을 사진첩에 추가</button><a id="candidateSource" class="sourceLink" target="_blank" rel="noopener noreferrer" href="#">사진 출처 확인 ↗</a><div id="candidateCaption" class="muted"></div></div></div><button id="searchBtn" class="hidden">새 사진 검색</button><div id="searchStatus" class="status" aria-live="polite">처음 검색할 때는 기존 기억의 사진 제목을 먼저 확인하고 부족하면 공개 사진을 검색합니다.</div><div id="candidateStats" class="muted"></div><div id="candidates" class="photos"></div></div></section></main><script>
 'use strict';
 const $=id=>document.getElementById(id), API='https://commons.wikimedia.org/w/api.php', KEY='travelMaster2_1_memory', PICKS_KEY='travelMaster2_8_2_picks';
 let countries=[],selectedCountry='KR',catalog=[],current=null,tab='description',position=0,working=false,bulkStop=false,candidatePosition=0,excludeIndex=-1,searchBusy=false,candidateTimer=null; 
@@ -233,15 +196,15 @@ try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved&&saved.pl
 let savedPicks={};try{savedPicks=JSON.parse(localStorage.getItem(PICKS_KEY)||'{}')}catch(e){};
 
 // V2.9: compressed offline photo vault. Never store image bytes in localStorage.
-const PHOTO_DB='worldTravelRepresentativePhotosV29', PHOTO_STORE='images', PHOTO_PICKS='selections', MEMORY_STORE='memorySnapshots';
+const PHOTO_DB='worldTravelRepresentativePhotosV29', PHOTO_STORE='images', PHOTO_PICKS='selections';
 let photoDbPromise=null,photoCache=new Map(),savingKeys=new Set();
 const previewWarm=new Map();function warmImage(u){if(!u||previewWarm.has(u))return;const i=new Image();previewWarm.set(u,i);i.onload=i.onerror=()=>{if(previewWarm.size>40)previewWarm.delete(previewWarm.keys().next().value)};i.src=u;}
 function imageKey(id,title){return String(id)+'::'+String(title)}
 function openPhotoDb(){
  if(!('indexedDB' in window))return Promise.reject(Error('이 브라우저에서 기기 사진 저장을 지원하지 않습니다.'));
  if(!photoDbPromise)photoDbPromise=new Promise((resolve,reject)=>{
-  const req=indexedDB.open(PHOTO_DB,3);
-  req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains(PHOTO_STORE))req.result.createObjectStore(PHOTO_STORE,{keyPath:'key'});if(!req.result.objectStoreNames.contains(PHOTO_PICKS))req.result.createObjectStore(PHOTO_PICKS,{keyPath:'id'});if(!req.result.objectStoreNames.contains(MEMORY_STORE))req.result.createObjectStore(MEMORY_STORE,{keyPath:'id'})};
+  const req=indexedDB.open(PHOTO_DB,2);
+  req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains(PHOTO_STORE))req.result.createObjectStore(PHOTO_STORE,{keyPath:'key'});if(!req.result.objectStoreNames.contains(PHOTO_PICKS))req.result.createObjectStore(PHOTO_PICKS,{keyPath:'id'})};
   req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error||Error('사진 저장소 열기 실패'));
  });return photoDbPromise;
 }
@@ -283,20 +246,17 @@ async function storePlacePhotos(p,announce=true,lockAfterSave=false){
   if(announce)offlineStatus(`${p.name} 기본사진 보관 중 ${i+1}/5 · 성공 ${ok} · 실패 ${failed}`);
  }
  if(lockAfterSave&&promoted){r.manualAlbum=true;persistPicks(p.id);persist();}
- await checkGalleryStored(p);
  if(announce)offlineStatus(`${p.name}: ${ok}장 기기에 보관됨 · 대표사진 ${promoted}장 새로 고정${failed?' · '+failed+'장 실패(인터넷 연결 시 재시도)':''}`);
  if(current?.id===p.id){renderAlbum();renderCandidates();paintStory();refreshOfflinePhotoNodes()}
  return {ok,failed,promoted};
 }
-const stableOfflineUrls=new Map();
-async function stableOfflineURL(id,title){const key=imageKey(id,title);if(stableOfflineUrls.has(key))return stableOfflineUrls.get(key);const u=await offlineURL(id,title);if(u){const existing=stableOfflineUrls.get(key);if(existing){if(u!==existing&&u.startsWith("blob:"))URL.revokeObjectURL(u);return existing}stableOfflineUrls.set(key,u)}return u}
 async function refreshOfflinePhotoNodes(){
  const p=current;if(!p)return;const id=p.id,slots=displaySlots(record(id),p);
  for(const img of Array.from(document.querySelectorAll('#albumPhotos img, #largePhoto, #baseSelection img'))){
   const title=img.dataset.photoTitle||((img.id==='largePhoto')?img.dataset.title:null);if(!title)continue;
-  try{const u=await stableOfflineURL(id,title);if(!u||current?.id!==id||!img.isConnected)continue;if((img.dataset.photoTitle||img.dataset.title)!==title)continue;if(img.src!==u)img.src=u}catch(e){}
+  try{const u=await offlineURL(id,title);if(!u||current?.id!==id||!img.isConnected)continue;if((img.dataset.photoTitle||img.dataset.title)!==title)continue;if(img.src!==u)img.src=u}catch(e){}
  }
- try{const story=record(id).storyPhotoTitle||slots.find(Boolean),url=story&&await stableOfflineURL(id,story);if(url&&current?.id===id)$('storyBackdrop').style.backgroundImage=`url("${url}")`}catch(e){}
+ try{const story=record(id).storyPhotoTitle||slots.find(Boolean),url=story&&await offlineURL(id,story);if(url&&current?.id===id)$('storyBackdrop').style.backgroundImage=`url("${url}")`}catch(e){}
  let n=0;for(const title of slots)if(title){try{if(await vaultGet(id,title))n++}catch(e){}}
  if(current?.id===id)$('albumOffline').textContent=`📦 기기 보관 ${n}/5 · 저장사진은 인터넷 없이 표시`;
 }
@@ -346,37 +306,9 @@ async function downloadCompleteBackup(){
  finally{btn.disabled=false;btn.textContent='💾 전체 백업 · 사진 자동 보관'}
 }
 
-function persistPicks(id){if(!id)return false;const r=record(id),pick={fixedSlots:r.fixedSlots.slice(),fallbackSlots:r.fallbackSlots.slice(),storyPhotoTitle:r.storyPhotoTitle||'',manualComplete:r.manualComplete,updated:Date.now()};savedPicks[id]=pick;let browserSaved=false;try{localStorage.setItem(PICKS_KEY,JSON.stringify(savedPicks));browserSaved=true}catch(e){console.warn('대표사진 로컬 저장 용량 초과: IndexedDB로 보관합니다.',e)}savePickToVault(id,pick).catch(e=>{console.error('대표사진 보관 오류',e);offlineStatus('⚠️ 대표사진 설정 보관 실패 — 백업 필요: '+e.message)});return browserSaved}
-// V3.5.4: Keep the full memory in IndexedDB, not in the small localStorage quota.
-// Never delete the previous legacy localStorage value on migration.
-let memorySaveQueue=Promise.resolve(),memorySaveError='';
-function memoryStoreWrite(snapshot){return openPhotoDb().then(db=>new Promise((resolve,reject)=>{
- const tx=db.transaction(MEMORY_STORE,'readwrite');tx.objectStore(MEMORY_STORE).put({id:'main',updated:Date.now(),state:snapshot});
- tx.oncomplete=()=>resolve(true);tx.onerror=()=>reject(tx.error||Error('검색기억 저장 실패'));tx.onabort=()=>reject(tx.error||Error('검색기억 저장 중단'));
-}));}
-function persist(){
- // Clone immediately: a later edit must not mutate the queued snapshot.
- let snapshot;try{snapshot=JSON.parse(JSON.stringify(state))}catch(e){memorySaveError=e.message;return false}
- memorySaveQueue=memorySaveQueue.catch(()=>{}).then(()=>memoryStoreWrite(snapshot)).then(()=>{memorySaveError='';},e=>{
- memorySaveError=e.message;console.error('검색기억 저장 실패',e);
- if($('manageStatus'))$('manageStatus').textContent='⚠️ 검색기억 저장 실패: '+e.message+' · 기존 자료를 삭제하지 않았습니다.';
- });return true;
-}
-async function recoverMemory(){
- try{const db=await openPhotoDb();const item=await new Promise((resolve,reject)=>{
- const tx=db.transaction(MEMORY_STORE,'readonly');const q=tx.objectStore(MEMORY_STORE).get('main');q.onsuccess=()=>resolve(q.result);q.onerror=()=>reject(q.error);
- });
- if(item?.state?.places){
-  const oldCount=Object.keys(state.places||{}).length,newCount=Object.keys(item.state.places).length;
-  // Preserve all legacy entries that are absent from the new snapshot.
-  state={...item.state,places:{...(state.places||{}),...item.state.places}};
-  return `기기 검색기억 ${newCount}곳 복구 · 기존 기억 ${oldCount}곳 확인`;
- }
- return '기존 검색기억을 확인했습니다.';
- }catch(e){console.warn('검색기억 복구 확인 실패',e);return '⚠️ 검색기억 저장소 확인 실패: '+e.message}
-}
-
-function record(id){const r=state.places[id]??(state.places[id]={candidates:[],album:[],cursor:0,queryStep:0,note:'',updated:0});ensurePhotoSlots(r);if(!r._pickHydrated){const pick=savedPicks[id];if(pick){if(Array.isArray(pick.fixedSlots))r.fixedSlots=pick.fixedSlots.slice(0,PHOTO_LIMIT);if(Array.isArray(pick.fallbackSlots))r.fallbackSlots=pick.fallbackSlots.slice(0,PHOTO_LIMIT);if(Object.hasOwn(pick,'storyPhotoTitle'))r.storyPhotoTitle=pick.storyPhotoTitle||'';if(typeof pick.manualComplete==='boolean')r.manualComplete=pick.manualComplete;ensurePhotoSlots(r)}r._pickHydrated=true;}return r}
+function persistPicks(id){if(!id)return false;const r=record(id),pick={fixedSlots:r.fixedSlots.slice(),fallbackSlots:r.fallbackSlots.slice(),storyPhotoTitle:r.storyPhotoTitle||'',updated:Date.now()};savedPicks[id]=pick;let browserSaved=false;try{localStorage.setItem(PICKS_KEY,JSON.stringify(savedPicks));browserSaved=true}catch(e){$('manageStatus').textContent='대표사진 설정 로컬 저장에 실패했습니다. 사진 저장소 저장을 확인하고 백업해 주세요.'}savePickToVault(id,pick).catch(e=>{console.error('대표사진 보관 오류',e);offlineStatus('⚠️ 대표사진 설정 보관 실패 — 백업 필요: '+e.message)});return browserSaved}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(state));return true}catch(e){$('manageStatus').textContent='검색기억 용량이 커서 전체 저장이 실패했습니다. 대표사진은 별도로 저장하며 백업을 권장합니다.';return false}}
+function record(id){const r=state.places[id]??(state.places[id]={candidates:[],album:[],cursor:0,queryStep:0,note:'',updated:0});ensurePhotoSlots(r);if(!r._pickHydrated){const pick=savedPicks[id];if(pick){if(Array.isArray(pick.fixedSlots))r.fixedSlots=pick.fixedSlots.slice(0,PHOTO_LIMIT);if(Array.isArray(pick.fallbackSlots))r.fallbackSlots=pick.fallbackSlots.slice(0,PHOTO_LIMIT);if(Object.hasOwn(pick,'storyPhotoTitle'))r.storyPhotoTitle=pick.storyPhotoTitle||'';ensurePhotoSlots(r)}r._pickHydrated=true;}return r}
 function ensurePhotoSlots(r){
  if(Array.isArray(r.fixedSlots)&&r.fixedSlots.length>PHOTO_LIMIT){r.archivedSlots=[...new Set([...(r.archivedSlots||[]),...r.fixedSlots.slice(PHOTO_LIMIT).filter(Boolean),...(r.fallbackSlots||[]).slice(PHOTO_LIMIT).filter(Boolean)])];}
 
@@ -392,56 +324,28 @@ function firstUnassignedIndex(r){ensurePhotoSlots(r);return r.fixedSlots.findInd
 function firstMissingFixedIndex(r){ensurePhotoSlots(r);const map=candidateMap(r),broken=new Set(r.broken||[]);return r.fixedSlots.findIndex(v=>v&&(!map.has(v)||broken.has(v)))}
 function displaySlots(r,p){
  ensurePhotoSlots(r);
- // Five permanent slots only: no temporary fallbacks or automatically displayed unsaved candidates.
- const slots=r.fixedSlots.slice(0,PHOTO_LIMIT),seen=new Set();
- for(let i=0;i<slots.length;i++){
-  if(!slots[i]||seen.has(slots[i]))slots[i]=null;
-  else seen.add(slots[i]);
+ const map=candidateMap(r),broken=new Set(r.broken||[]),slots=new Array(PHOTO_LIMIT).fill(null),used=new Set(),fillable=[],missing=[];
+ for(let i=0;i<PHOTO_LIMIT;i++){
+  const fixed=r.fixedSlots[i];
+  if(fixed){if(map.has(fixed)&&!broken.has(fixed)){slots[i]=fixed;used.add(fixed)}else missing.push(i)}
+  else fillable.push(i);
  }
- r.album=slots.filter(Boolean);return slots;
+ for(const i of missing){const fb=r.fallbackSlots[i];if(fb&&map.has(fb)&&!broken.has(fb)&&!used.has(fb)){slots[i]=fb;used.add(fb)}}
+ const pool=(r.candidates||[]).filter(x=>!broken.has(x.title)&&!used.has(x.title)).sort((a,b)=>photoScore(b,p)-photoScore(a,p));
+ for(const i of fillable){const next=pool.find(x=>photoScore(x,p)>=0&&!used.has(x.title));if(!next)continue;slots[i]=next.title;used.add(next.title)}
+ r.album=slots.filter(Boolean).slice(0,PHOTO_LIMIT);
+ return slots;
 }
 function safe(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-let homeMode="countries",placeView="all",previousMode="country";
 function show(section){$('home').classList.toggle('hidden',section!=='home');$('detail').classList.toggle('hidden',section!=='detail')}
 function status(s){$('searchStatus').textContent=s}
-// Completion only becomes automatic when five actual image blobs have been saved.
-// manualComplete is independent: the user can approve a gallery with fewer than five.
-function isGalleryComplete(r){return r.manualComplete===true || (r.manualComplete!==false && r.allFiveStored===true)}
-async function checkGalleryStored(p,refresh=true){
- const r=record(p.id),titles=displaySlots(r,p);
- if(titles.filter(Boolean).length!==PHOTO_LIMIT){r.allFiveStored=false;if(refresh){updateHome();refreshCompleteButton()}return false}
- try{const entries=await Promise.all(titles.map(t=>vaultGet(p.id,t)));
-  r.allFiveStored=entries.every(v=>!!v?.blob);
- }catch(e){r.allFiveStored=false}
- if(refresh){updateHome();refreshCompleteButton()}return r.allFiveStored;
-}
-function refreshCompleteButton(){if(!current)return;const r=record(current.id),done=isGalleryComplete(r),b=$('completeAlbumBtn');if(!b)return;
- b.textContent=done?'✓ 초록색 완성 · 취소하기':'✓ 이 사진첩을 초록색으로 표시';b.classList.toggle('isComplete',done);
- b.setAttribute('aria-pressed',String(done));}
-// Traffic-light colors are derived from existing photo data, never persisted separately.
-function gallerySignal(p){
- const r=record(p.id);
- if(isGalleryComplete(r))return 'signalFull';
- return displaySlots(r,p).some(Boolean)?'signalPartial':'signalEmpty';
-}
 function updateHome(){
- const onCountries=homeMode==='countries',onWorld=homeMode==='world';
- $('countryList').classList.toggle('hidden',!onCountries);
- $('countrySearch').classList.toggle('hidden',!onCountries);
- $('worldSearchBtn').classList.add('hidden');
- $('landmarkPanel').classList.toggle('hidden',onCountries);
- $('countriesBack').textContent=onWorld?'← 나라탐험':'← 나라탐험';
- const selected=countries.find(c=>c.code===selectedCountry)||countries[0];
- $('countryHeading').textContent=onCountries?'🌏 나라탐험 · 세계 여행의 시작':onWorld?'🔎 세계 명소탐험':`${selected?.flag||'🌏'} ${selected?.name||''} 명소탐험`;
- $('countrySummary').textContent=onCountries?'여행하고 싶은 나라를 골라보세요.':onWorld?'나라를 몰라도 전 세계 명소를 이름으로 찾아보세요.':`${selected?.overview||''} · 명소 ${catalog.filter(p=>p.countryCode===selectedCountry).length}곳`;
- $('management').classList.toggle('hidden',homeMode!=='manage');$('countryHeading').closest('.hero').classList.toggle('hidden',homeMode==='manage');$('landmarkPanel').classList.toggle('hidden',onCountries||homeMode==='manage');document.querySelectorAll('.mainNav button').forEach(b=>b.classList.toggle('navActive',(b.id==='homeBtn'&&homeMode==='countries')||(b.id==='worldTab'&&homeMode==='world')||(b.id==='manageTab'&&homeMode==='manage')));if(homeMode==='manage')return;
- if(onCountries){const nav=$('countryList');nav.replaceChildren();const cq=$('countrySearch').value.trim().toLowerCase();for(const c of countries){if(!c.name.toLowerCase().includes(cq))continue;const btn=document.createElement('button');btn.className='countryChoice';const total=catalog.filter(p=>p.countryCode===c.code),complete=total.filter(p=>isGalleryComplete(record(p.id))).length;btn.classList.add(total.length&&complete===total.length?'signalFull':total.some(p=>gallerySignal(p)!=='signalEmpty')?'signalPartial':'signalEmpty');btn.innerHTML=`<strong>${safe(c.flag||'🌏')} ${safe(c.name)}</strong><small><span class="doneCount">${complete}</span>/${total.length}</small>`;btn.onclick=()=>{selectedCountry=c.code;homeMode='country';$('filter').value='';updateHome();window.scrollTo(0,0)};nav.append(btn)}return}
- $('filter').placeholder=onWorld?'전 세계 명소 이름 검색':'이 나라의 명소 검색';
- let q=$('filter').value.trim().toLowerCase(),count=0;const box=$('places');box.replaceChildren();
- for(let p of catalog){if(!onWorld&&p.countryCode!==selectedCountry)continue;if(!(p.name+' '+p.region+' '+(p.aliases||[]).join(' ')).toLowerCase().includes(q))continue;let r=record(p.id),complete=isGalleryComplete(r);if(placeView==='complete'&&!complete||placeView==='incomplete'&&complete)continue;count++;let b=document.createElement('button');b.className='place compactPlace '+gallerySignal(p)+(complete?' galleryComplete':'');const c=countries.find(x=>x.code===p.countryCode);b.innerHTML=`<b>${complete?'✓ ':''}${safe(p.name)}</b><small>${onWorld?safe(c?.name||'')+' · ':''}📷 ${displaySlots(r,p).filter(Boolean).length}/5</small>`;b.onclick=()=>{previousMode=homeMode;openPlace(p.id)};box.append(b)}$('homeStats').textContent=`${count}곳 / 전체 ${catalog.length}곳`;
- document.querySelectorAll('#placeFilters button').forEach(b=>b.classList.toggle('selectedFilter',b.dataset.view===placeView));
+ const selected=countries.find(c=>c.code===selectedCountry)||countries[0];if(!selected)return;
+ $('countryHeading').textContent=`${selected.flag||'🌏'} ${selected.name} 여행`;
+ $('countrySummary').textContent=`${selected.overview||''} · 명소 ${catalog.filter(p=>p.countryCode===selected.code).length}곳`;
+ const nav=$('countryList');nav.replaceChildren();for(const c of countries){const btn=document.createElement('button');btn.className='countryChoice'+(c.code===selectedCountry?' active':'');btn.textContent=`${c.flag||'🌏'} ${c.name}`;btn.onclick=()=>{selectedCountry=c.code;$('filter').value='';updateHome()};nav.append(btn)}
+ let q=$('filter').value.trim().toLowerCase(),count=0;const box=$('places');box.replaceChildren();for(let p of catalog){if(p.countryCode!==selectedCountry||!(p.name+' '+p.region+' '+(p.aliases||[]).join(' ')).toLowerCase().includes(q))continue;count++;let r=record(p.id),b=document.createElement('button');b.className='place';b.innerHTML=`<b>🟢 ${safe(p.name)}</b><small>📍 ${safe(p.region)} · 기본사진 ${displaySlots(r,p).filter(Boolean).length}/5 · 후보 ${r.candidates.length}</small>`;b.onclick=()=>openPlace(p.id);box.append(b)}$('homeStats').textContent=`명소 ${count}곳 · 전체 ${catalog.length}곳`;
 }
-
 function travelGuide(region,name){const r=String(region||'');let mode='기차·버스 또는 자동차';let details='서울의 주요 역이나 버스터미널에서 출발해 목적지 가까운 정류장으로 이동합니다.';if(/서울/.test(r)){mode='지하철·버스·도보';details='서울 시내에서 지하철이나 버스로 가까운 정류장까지 이동한 뒤 걸어갑니다.';}else if(/제주/.test(r)){mode='항공편 + 현지 교통';details='서울 김포공항에서 제주공항으로 비행한 뒤 현지 버스나 자동차로 이동합니다.';}else if(/인천|경기|수원|파주|가평/.test(r)){mode='수도권 전철·광역버스·자동차';details='서울에서 수도권 전철 또는 광역버스로 가까운 곳까지 이동한 뒤 현지 교통편을 이용합니다.';}else if(/부산|경주|대구|울산|경상/.test(r)){mode='고속철도·시외버스 + 현지 교통';details='서울에서 고속철도나 버스를 이용해 해당 지역으로 간 뒤 현지 교통편으로 이동합니다.';}else if(/강원|강릉|속초|평창|춘천/.test(r)){mode='철도·시외버스 + 현지 교통';details='서울에서 해당 지역으로 가는 기차나 버스를 이용하고 마지막 구간은 현지 교통편으로 이동합니다.';}return `📍 서울 → ${r} → ${name}\n🚆 ${mode}\n${details}\n※ 실제 이동시간은 교통수단과 출발 위치에 따라 달라집니다.`;}
 function travelGuideWorld(p){const c=countries.find(x=>x.code===p.countryCode)||{};const name=c.name||p.countryCode;return `✈️ 서울(인천국제공항) → ${name} → ${p.region} → ${p.name}\n서울에서 ${name}의 주요 국제공항으로 이동한 다음, 현지 열차·버스·자동차 등으로 명소에 갑니다. 직항편이 없는 곳은 경유가 필요할 수 있습니다.\n※ 실제 항공편·이동시간·입국조건은 출발 전에 확인하세요.`;}
 function openPlace(id){stopCandidateSlides();$('albumPhotos').replaceChildren();$('baseSelection').replaceChildren();$('candidates').replaceChildren();$('candidates').dataset.count='';$('largePhoto').dataset.title='';$('candidateLarge').dataset.title='';current=catalog.find(p=>p.id===id);if(!current)return;position=0;candidatePosition=0;excludeIndex=-1;reorderFrom=-1;setReorderMode(false);show('detail');$('placeTitle').textContent=current.name;$('placeRegion').textContent=`${current.region} · ${(countries.find(c=>c.code===current.countryCode)||{}).name||'대한민국'}`;$('placeDesc').textContent=current.description||'설명을 준비 중입니다.';$('tripSummary').textContent=current.countryCode==='KR'?travelGuide(current.region,current.name):travelGuideWorld(current);setTab('description');renderAll();paintStory();refreshOfflinePhotoNodes().catch(e=>console.warn(e));window.scrollTo({top:0,behavior:'instant'});}
@@ -457,22 +361,27 @@ function photoScore(a,p){
  const title=(a.title||'').toLowerCase(), aliases=[p.name,...(p.aliases||[])].map(x=>String(x).toLowerCase());
  let score=aliases.some(x=>x&&title.includes(x))?32:-24;
  if(title.includes(String(p.region||'').toLowerCase()))score+=5;
- if(/panorama|landscape|front view|wide view|전경|풍경|정면|aerial|overview|facade|skyline|전체|全景/.test(title))score+=21;
- if(/sunrise|sunset|golden hour|twilight|reflection|night view|blue hour/.test(title))score+=5;
- if(/selfie|portrait|tourist|crowd|people|person|construction|under renovation|scaffold/.test(title))score-=12;
+ if(/panorama|landscape|front view|wide view|전경|풍경|정면|aerial/.test(title))score+=7;
  if(/map|diagram|floor plan|logo|drawing|poster|illustration|stamp|painting|sketch|plan of/.test(title))score-=42;
- if(/interior|detail|close.?up|macro|room |ceiling|entrance detail/.test(title))score-=13;
+ if(/interior|detail|close.?up/.test(title))score-=3;
  if(a.width>1100)score+=5;else if(a.width>650)score+=2;
  return score;
 }
 function rebuildAlbum(r,p){displaySlots(r,p);persist();}
 async function searchPlace(p,quiet=false){const r=record(p.id);let found=0;status('검색 준비 중…');try{
- if(!r.candidates.length&&p.memoryTitles.length){status('기존 검색기억의 사진 제목을 확인하는 중…');let seed=await fileTitles(p.memoryTitles.slice(0,36));found+=addCandidates(r,seed);rebuildAlbum(r,p);renderAll()}
- const terms=[...(p.aliases||[]),p.name+' '+p.region,p.name].filter(Boolean);
+ if(p.memoryTitles?.length){
+  // Seed directly from verified landmark photo titles, even when other candidates exist.
+  // Retry previously unresolved titles on later search rounds without touching saved photos.
+  const existing=new Set((r.candidates||[]).map(x=>x.title.toLowerCase()));
+  const missing=p.memoryTitles.filter(t=>!existing.has(t.toLowerCase()));
+  const batch=missing.slice(0,30);
+  if(batch.length){status('명소대백과에서 확인된 사진을 다시 찾는 중…');try{let seed=await fileTitles(batch);found+=addCandidates(r,seed);rebuildAlbum(r,p);renderAll()}catch(seedError){console.warn('기존 명소 사진 검색 일부 실패',seedError)}}
+ }
+ const terms=[p.wikiTitle,...(p.aliases||[]),p.name+' '+p.region,p.name].filter(Boolean);
  const clean=[...new Set(terms)], round=r.queryStep||0;
  // V2.5: rotate different aliases AND pagination, so repeated searches genuinely reach new files.
  const main=clean[round%clean.length], variant=Math.floor(round/clean.length);
- const modifiers=[' panorama',' exterior',' wide view',' landscape',' architecture',' aerial','',' photography',' view'];
+ const modifiers=['',' landscape',' architecture',' panorama',' aerial',' exterior',' interior',' photography',' view'];
  const suffix=modifiers[variant%modifiers.length];
  const offset=50*(Math.floor(variant/modifiers.length)%12);
  const queries=[
@@ -544,44 +453,26 @@ function renderCandidates(previewOnly=false){if(!current)return;let r=record(cur
  if(!previewOnly)for(let i=0;i<PHOTO_LIMIT;i++){
   const fixed=r.fixedSlots[i],shown=slots[i],a=shown?map.get(shown):null,missingFixed=!!(fixed&&!titleAvailable(r,fixed));
   let b=document.createElement('button');b.type='button';b.className='swapBase'+(excludeIndex===i?' chosen':'')+(missingFixed?' missing':'')+((fixed&&shown===fixed)?' locked':'')+((fixed&&shown&&shown!==fixed)?' fallback':'');
-  if(a){b.innerHTML=`<img data-photo-title="${safe(shown)}" src="${safe(a.url)}" alt="${safe(current.name)} 기본사진 ${i+1}"><span>${i+1}${excludeIndex===i?' · 선택됨':''}<br><span class="slotMeta">${'기본사진 · 정식 저장'}</span></span>`}
-  else{b.innerHTML=`<div class="slotPlaceholder"><div class="emptyMsg">${i+1}번<br>${fixed?'사진 확인 필요':'비어 있음'}</div></div><span>${i+1}${excludeIndex===i?' · 선택됨':''}<br><span class="slotMeta">${fixed?'다른 사진으로 교체할 수 있습니다':'사진을 추가할 수 있습니다'}</span></span>`}
+  if(a){b.innerHTML=`<img data-photo-title="${safe(shown)}" src="${safe(a.url)}" alt="${safe(current.name)} 기본사진 ${i+1}"><span>${i+1}${excludeIndex===i?' · 선택됨':''}<br><span class="slotMeta">${missingFixed?'원래 대표 미검색 · 임시표시':fixed?'사용자 지정 대표사진':'자동/추가 사진'}</span>${fixed&&shown!==fixed?'<span class="slotBadge">임시</span>':''}</span>`}
+  else{b.innerHTML=`<div class="slotPlaceholder"><div class="emptyMsg">${i+1}번<br>${fixed?'대표사진 미검색':'비어 있음'}</div></div><span>${i+1}${excludeIndex===i?' · 선택됨':''}<br><span class="slotMeta">${fixed?'다시 검색되면 원래 대표사진이 복귀합니다':'새 대표사진을 넣을 수 있습니다'}</span></span>`}
   b.onclick=()=>{stopCandidateSlides();excludeIndex=excludeIndex===i?-1:i;document.querySelectorAll('#baseSelection .swapBase').forEach((el,n)=>el.classList.toggle('chosen',n===excludeIndex));renderCandidates(true)};
   const old=$('baseSelection').children[i];if(old&&old.dataset.title===(shown||'')&&old.dataset.fixed===(fixed||'')){old.className=b.className;const label=old.querySelector('span');if(label){const newer=b.querySelector('span');if(newer&&label.innerHTML!==newer.innerHTML)label.innerHTML=newer.innerHTML}old.onclick=b.onclick;}
   else{b.dataset.title=shown||'';b.dataset.fixed=fixed||'';if(old)old.replaceWith(b);else $('baseSelection').append(b)};
  }
  const box=$('candidates');if(!previewOnly&&box.dataset.count!==String(pool.length)){box.replaceChildren();box.dataset.count=String(pool.length);} if(candidatePosition>=pool.length)candidatePosition=Math.max(0,pool.length-1);$('candidatePreview').classList.toggle('hidden',pool.length===0);if(!pool.length)stopCandidateSlides();updateSlideButton();
  if(pool.length){let a=pool[candidatePosition];if($('candidateLarge').dataset.title!==a.title){$('candidateLarge').dataset.title=a.title;$('candidateLarge').src=a.url;}$('candidateCaption').textContent=a.title.replace('File:','');$('candidateIndex').textContent=`${candidatePosition+1} / ${pool.length}`;$('candidateSource').href=a.source||'#';for(let k=1;k<=2&&k<pool.length;k++)warmImage(pool[(candidatePosition+k)%pool.length].url);
-  let target=excludeIndex>=0?excludeIndex:r.fixedSlots.findIndex(x=>!x);
-  if(target>=0){$('candidateAdd').textContent=r.fixedSlots[target]?'✓ 이 사진으로 '+(target+1)+'번 교체·저장':'＋ 이 사진을 '+(target+1)+'번에 저장';$('swapHint').textContent=r.fixedSlots[target]?`${target+1}번 기본사진을 선택한 후보로 교체합니다.`:`${target+1}번 빈자리에 후보를 정식 저장합니다.`;$('candidateAdd').disabled=false;}
-  else{$('candidateAdd').textContent='교체할 기본사진을 선택하세요';$('candidateAdd').disabled=true;$('swapHint').textContent='기본사진 5장이 모두 있습니다. 교체할 사진칸을 위에서 선택하세요.';}
+  let automaticIndex=slots.findIndex((t,i)=>t&&!r.fixedSlots[i]);let target=excludeIndex>=0?excludeIndex:(automaticIndex>=0?automaticIndex:(openIndex>=0?openIndex:(missingIndex>=0?missingIndex:-1)));
+  if(target>=0){if(r.fixedSlots[target]&&!titleAvailable(r,r.fixedSlots[target])){$('candidateAdd').textContent='＋ 이 사진을 빈자리에 임시 추가';$('swapHint').textContent=`${target+1}번 자리는 원래 대표사진이 보이지 않습니다. 이 후보를 임시로 올려둘 수 있습니다.`;}else if(r.fixedSlots[target]){$('candidateAdd').textContent='✦ 이 사진을 대표사진으로 지정';$('swapHint').textContent=`${target+1}번 자리에 있는 대표사진을 이 후보로 바꿀 수 있습니다.`;}else{$('candidateAdd').textContent='＋ 이 사진을 새 대표사진으로 추가';$('swapHint').textContent=`${target+1}번 비어 있는 자리에 이 후보를 대표사진으로 넣을 수 있습니다.`;}$('candidateAdd').disabled=false;} else {$('candidateAdd').textContent='위 사진칸을 먼저 선택하세요';$('candidateAdd').disabled=true;$('swapHint').textContent='대표사진 10장이 모두 고정되어 있습니다. 바꾸고 싶은 위치를 위에서 먼저 선택하세요.';}
  }
  if(!previewOnly)pool.slice(0,200).forEach((a,i)=>{if(box.children[i]?.dataset.title===a.title){box.children[i].classList.toggle('chosen',i===candidatePosition);return;}let b=document.createElement('button');b.dataset.title=a.title;b.type='button';b.className='candidateThumb'+(i===candidatePosition?' chosen':'');b.innerHTML=`<img loading="lazy" src="${safe(a.url)}" alt="${safe(a.title)}"><span>${i+1}</span>`;b.onclick=()=>{stopCandidateSlides();candidatePosition=i;renderCandidates();$('candidatePreview').scrollIntoView({behavior:'smooth',block:'nearest'})};b.querySelector('img').onerror=()=>b.classList.add('bad');if(box.children[i])box.children[i].replaceWith(b);else box.append(b)});
 }
-async function addPreviewCandidate(){
- stopCandidateSlides();if(!current)return;
- const p=current,r=record(p.id),pool=availableCandidates(),a=pool[candidatePosition];if(!a)return;
- const target=excludeIndex>=0?excludeIndex:r.fixedSlots.findIndex(t=>!t);
- if(target<0){status('위에서 교체할 기본사진 자리를 먼저 선택해 주세요.');return}
- const btn=$('candidateAdd');btn.disabled=true;btn.textContent='사진을 기기에 저장하는 중…';
- try{
-  // Store the image first; commit the chosen slot only after the IndexedDB write succeeds.
-  if(!await storeOnePhoto(p.id,a.title,a.url))throw Error('사진 저장이 완료되지 않았습니다.');
-  const previous=r.fixedSlots[target];r.fixedSlots[target]=a.title;r.fallbackSlots[target]=null;
-  r.manualAlbum=true;position=target;excludeIndex=-1;
-  persistPicks(p.id);persist();
-  await checkGalleryStored(p,false);
-  renderAll();refreshOfflinePhotoNodes().catch(console.warn);
-  status(`${target+1}번 기본사진으로 정식 저장했습니다.${previous?' 이전 사진을 교체했습니다.':''}`);
- }catch(e){status('⚠️ 사진 저장 실패: '+e.message+' · 기존 기본사진은 유지됩니다.');renderCandidates()}
- finally{btn.disabled=false}
-}
+function addPreviewCandidate(){stopCandidateSlides();if(!current)return;let r=record(current.id),pool=availableCandidates(),a=pool[candidatePosition];if(!a)return;displaySlots(r,current);let target=excludeIndex>=0?excludeIndex:displaySlots(r,current).findIndex((t,i)=>t&&!r.fixedSlots[i]);if(target<0)target=firstUnassignedIndex(r);if(target<0)target=firstMissingFixedIndex(r);if(target<0){status('먼저 위 기본사진 5칸 중 바꿀 위치를 선택해 주세요.');return} if(r.fixedSlots[target]&&!titleAvailable(r,r.fixedSlots[target])){r.fallbackSlots[target]=a.title;position=target;status('이 후보를 임시 표시 사진으로 저장했습니다. 원래 지정사진이 다시 검색되면 자동으로 복귀합니다.')}else{r.fixedSlots[target]=a.title;r.fallbackSlots[target]=null;position=target;status('이 사진을 사용자 지정 대표사진으로 저장했습니다.')} r.manualAlbum=true;excludeIndex=-1;persistPicks(current.id);persist();renderAll();storePlacePhotos(current,false).catch(e=>console.warn(e));}
 function moveCandidate(n){const items=availableCandidates();if(!items.length)return;candidatePosition=(candidatePosition+n+items.length)%items.length;renderCandidates(true);document.querySelectorAll('#candidates .candidateThumb').forEach((b,i)=>b.classList.toggle('chosen',i===candidatePosition))}
 function updateSlideButton(){const b=$('candidatePlay');if(!b)return;const playing=!!candidateTimer;b.textContent=playing?'⏸ 일시정지':'▶ 슬라이드 재생';b.setAttribute('aria-pressed',String(playing));b.classList.toggle('playing',playing);}
 function stopCandidateSlides(){if(candidateTimer!==null){clearInterval(candidateTimer);candidateTimer=null}updateSlideButton()}
 function startCandidateSlides(){if(!current||tab!=='memory'||availableCandidates().length<2){status('슬라이드 재생에는 후보사진이 2장 이상 필요합니다.');return;}stopCandidateSlides();candidateTimer=setInterval(()=>{if(!current||tab!=='memory'||document.hidden){stopCandidateSlides();return}moveCandidate(1)},3600);updateSlideButton()}
-function renderAll(){paintStory();renderAlbum();renderCandidates();updateHome();refreshCompleteButton()}
-$('worldTab').onclick=()=>{stopCandidateSlides();current=null;homeMode='world';placeView='all';show('home');updateHome()};$('manageTab').onclick=()=>{stopCandidateSlides();current=null;homeMode='manage';show('home');updateHome();$('management').open=true};$('homeBtn').onclick=()=>{stopCandidateSlides();current=null;homeMode='countries';show('home');updateHome()};$('backBtn').onclick=()=>{stopCandidateSlides();current=null;homeMode=previousMode;show('home');updateHome()};$('countriesBack').onclick=()=>{homeMode='countries';$('filter').value='';updateHome()};$('worldSearchBtn').onclick=()=>{homeMode='world';placeView='all';$('filter').value='';updateHome();$('filter').focus()};$('countrySearch').oninput=updateHome;document.querySelectorAll('#placeFilters button').forEach(b=>b.onclick=()=>{placeView=b.dataset.view;updateHome()});$('filter').oninput=updateHome;document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
+function renderAll(){paintStory();renderAlbum();renderCandidates();updateHome()}
+$('homeBtn').onclick=$('backBtn').onclick=()=>{stopCandidateSlides();current=null;show('home');updateHome()};$('filter').oninput=updateHome;document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
 $('searchBtn').onclick=async()=>{if(working||searchBusy||!current)return;searchBusy=true;working=true;const target=current;const btn=$('moreBtn');btn.disabled=true;btn.textContent='🔎 새로운 후보 검색 중…';try{await searchPlace(target,true)}finally{working=false;searchBusy=false;btn.disabled=false;btn.textContent='🔎 다음 후보 더 찾기'}};
 $('moreBtn').onclick=()=>{$('searchBtn').click()};$('candidatePrev').onclick=()=>{stopCandidateSlides();moveCandidate(-1)};$('candidateNext').onclick=()=>{stopCandidateSlides();moveCandidate(1)};$('candidatePlay').onclick=()=>candidateTimer===null?startCandidateSlides():stopCandidateSlides();document.addEventListener('visibilitychange',()=>{if(document.hidden)stopCandidateSlides()});$('candidateLarge').onclick=()=>stopCandidateSlides();
 function setStoryPhoto(title){if(!current||!title)return;const r=record(current.id);if(!titleAvailable(r,title)){status('현재 볼 수 없는 사진입니다. 표시되는 기본사진을 선택해 주세요.');return;}r.storyPhotoTitle=title;persist();paintStory();status('선택하신 기본사진을 명소 이야기의 배경으로 저장했습니다.');}
@@ -593,103 +484,15 @@ $('repairBtn').onclick=()=>{stopCandidateSlides();excludeIndex=-1;renderCandidat
 
 $('largePhoto').onerror=()=>{if(current){let title=$('largePhoto').dataset.title;if(title)photoBroken(title)}};
 
-// Batch photography is intentionally opt-in. Files are downloaded into IndexedDB,
-// not bundled in the app; therefore the program works under ordinary static hosting.
-async function selectAndStoreLandscape(p){
- const r=record(p.id);let slots=displaySlots(r,p);
- if(slots.some(t=>!t))await searchPlace(p,true);
- if(displaySlots(r,p).some(t=>!t))await searchPlace(p,true);
- const existing=new Set(r.fixedSlots.filter(Boolean));
- const pool=(r.candidates||[]).filter(a=>a?.title&&a.url&&!existing.has(a.title)&&!(r.broken||[]).includes(a.title)).sort((a,b)=>photoScore(b,p)-photoScore(a,p));
- let stored=0,failed=0,selections=0;
- // Existing photos are permanent. New photos are assigned only after a successful blob write.
- for(let i=0;i<PHOTO_LIMIT;i++){
-  if(r.fixedSlots[i]){
-   const title=r.fixedSlots[i],item=(r.candidates||[]).find(a=>a.title===title);
-   if(item){try{if(await storeOnePhoto(p.id,title,item.url))stored++;else failed++}catch(e){failed++;console.warn('기존 사진 기기 저장 실패',p.name,title,e)}}
-   continue;
-  }
-  while(pool.length){
-   const a=pool.shift();
-   try{
-    if(!await storeOnePhoto(p.id,a.title,a.url))continue;
-    if(r.fixedSlots[i])break; // never overwrite a user choice
-    r.fixedSlots[i]=a.title;r.fallbackSlots[i]=null;existing.add(a.title);
-    selections++;stored++;persistPicks(p.id);persist();break;
-   }catch(e){failed++;console.warn('자동 사진 기기 저장 실패',p.name,a.title,e)}
-  }
- }
- if(!r.storyPhotoTitle){const title=r.fixedSlots.find(Boolean);if(title){r.storyPhotoTitle=title;persistPicks(p.id);persist()}}
- await checkGalleryStored(p,false);
- return {stored,failed,selected:selections,ready:r.fixedSlots.filter(Boolean).length};
-}
-// Keep the batch cursor separate from the large search-memory state.
-// It survives Safari restarts and is never reset merely by loading a new release.
-// Persist the next position in IndexedDB, independent of Safari localStorage quota.
-const BULK_CURSOR_KEY='WorldTravelMASTER-bulk-next-v1';
-const BULK_CURSOR_RECORD='__travel_bulk_cursor_v2__';
-async function readBulkCursor(){
- try{
-  const db=await openPhotoDb();
-  const row=await new Promise((resolve,reject)=>{const tx=db.transaction(MEMORY_STORE,'readonly');const q=tx.objectStore(MEMORY_STORE).get(BULK_CURSOR_RECORD);q.onsuccess=()=>resolve(q.result);q.onerror=()=>reject(q.error)});
-  if(row && Number.isInteger(row.next) && row.next>=0 && row.next<=catalog.length)return row.next===catalog.length?0:row.next;
- }catch(e){console.warn('진행위치 IndexedDB 읽기 실패',e)}
- try{const n=Number(localStorage.getItem(BULK_CURSOR_KEY));return Number.isInteger(n)&&n>=0&&n<catalog.length?n:0}catch(e){return 0}
-}
-async function saveBulkCursor(n){
- try{
-  const db=await openPhotoDb();
-  await new Promise((resolve,reject)=>{const tx=db.transaction(MEMORY_STORE,'readwrite');tx.objectStore(MEMORY_STORE).put({id:BULK_CURSOR_RECORD,next:n,updated:Date.now()});tx.oncomplete=()=>resolve();tx.onerror=()=>reject(tx.error||Error('진행 위치 저장 실패'));tx.onabort=()=>reject(tx.error||Error('진행 위치 저장 중단'))});
-  try{localStorage.setItem(BULK_CURSOR_KEY,String(n))}catch(_){} // optional mirror
-  return true;
- }catch(e){$('manageStatus').textContent='⚠️ 진행 위치 저장 실패: '+e.message+' · 자동선정을 중단했습니다.';console.error(e);return false}
-}
-$('bulkBtn').onclick=async()=>{
- if(working){bulkStop=true;return}
- working=true;bulkStop=false;
- const b=$('bulkBtn');b.textContent='⏹ 전체 사진 선정 중단';
- $('bulkStatus').classList.remove('hidden');$('bulkProgress').classList.remove('hidden');
- $('manageStatus').textContent='진행 위치를 사진 저장소(IndexedDB)에 보관합니다. 저장 오류 시 자동으로 중단합니다.';
- const start=await readBulkCursor();let next=start,done=0,photos=0,fail=0,full=0;
- $('bulkProgress').firstElementChild.style.width=(start/catalog.length*100)+'%';
- try{for(let i=start;i<catalog.length;i++){
-  if(bulkStop)break;
-  const p=catalog[i];
-  $('bulkStatus').textContent=`🌏 ${i+1}/${catalog.length} · ${p.name} — 사진 선정 · 기기 저장 중 / 이번 실행 성공 ${photos}장 · 실패 ${fail}장`;
-  try{const res=await selectAndStoreLandscape(p);photos+=res.stored;fail+=res.failed;if(record(p.id).allFiveStored)full++}
-  catch(err){fail++;console.warn('사진 선정 오류',p.name,err)}
-  // Advance only after processing this place; never restart at the first country on pause.
-  next=i+1;done++;if(!await saveBulkCursor(next)){bulkStop=true;break;}
-  $('bulkProgress').firstElementChild.style.width=(next/catalog.length*100)+'%';
-  if(current?.id===p.id)renderAll();if(done%5===0)updateHome();
-  await new Promise(ok=>setTimeout(ok,350));
- }}finally{
-  working=false;b.textContent='🌄 전체 376개 명소 · 사진 5장과 배경 자동 선정';
-  const finished=next>=catalog.length;
-  $('bulkStatus').textContent=finished
-   ?`전체 ${catalog.length}곳 1회 순회 완료 · 이번 실행 성공 ${photos}장 · 실패 ${fail}장. 다시 실행하면 첫 명소부터 미완성 사진을 보강합니다.`
-   :`${bulkStop?'일시 중단':'작업 종료'} · ${next}/${catalog.length}곳까지 확인 · 다음 시작 ${next+1}번 명소 · 이번 실행 성공 ${photos}장 · 실패 ${fail}장. 다시 누르면 이어서 진행합니다.`;
-  // A completed pass may be run again to retry missing photos; existing selections stay intact.
-  if(finished)await saveBulkCursor(0);
-  updateHome();
- }
-};
-$('completeAlbumBtn').onclick=()=>{
- if(!current)return;const r=record(current.id);
- if(isGalleryComplete(r)){r.manualComplete=false;}
- else{r.manualComplete=true;}
- persist();updateHome();refreshCompleteButton();
- // Persist to IndexedDB with all other selected-photo settings, including backup/restore.
- persistPicks(current.id);
-};
+$('bulkBtn').onclick=async()=>{if(working){bulkStop=true;return}working=true;bulkStop=false;$('bulkBtn').textContent='⏹ 자동보강 중단';$('bulkStatus').classList.remove('hidden');$('bulkProgress').classList.remove('hidden');let n=0;try{for(let p of catalog.filter(x=>x.countryCode===selectedCountry)){if(bulkStop)break;let r=record(p.id);if(displaySlots(r,p).filter(Boolean).length>=5){n++;continue}$('bulkStatus').textContent=`${n+1}/${catalog.length} · ${p.name} 검색 중 (이미 완성된 명소는 건너뜁니다)`;await searchPlace(p,true);n++;$('bulkProgress').firstElementChild.style.width=(n/catalog.length*100)+'%';updateHome();await new Promise(ok=>setTimeout(ok,850))}}finally{$('bulkStatus').textContent=`자동보강 종료 · ${n}/${catalog.length}곳 확인`;$('bulkBtn').textContent='🔎 사진 자동보강';working=false}};
 $('exportBtn').onclick=downloadCompleteBackup;
 $('savePlaceBtn').onclick=async()=>{if(!current)return;const b=$('savePlaceBtn');b.disabled=true;try{await storePlacePhotos(current,true,true)}finally{b.disabled=false}};
-$('management').querySelector('.row').prepend($('bulkBtn'));$('bulkBtn').classList.remove('hidden');$('bulkBtn').style.display='';$('management').append($('bulkStatus'),$('bulkProgress'));$('bulkStatus').classList.add('hidden');$('bulkProgress').classList.add('hidden');$('importFile').onchange=async(e)=>{let f=e.target.files[0];if(!f)return;try{let d=JSON.parse(await f.text());if(!['WorldTravelMASTER-v2.1','WorldTravelMASTER-v2.2','WorldTravelMASTER-v2.3','WorldTravelMASTER-v2.4','WorldTravelMASTER-v2.5','WorldTravelMASTER-v2.6','WorldTravelMASTER-v2.7','WorldTravelMASTER-v2.8','WorldTravelMASTER-v2.8.2','WorldTravelMASTER-v2.9'].includes(d.format)||!d.state?.places)throw Error('지원하지 않는 백업 형식입니다');
- for(let [id,rec]of Object.entries(d.state.places)){let target=record(id);addCandidates(target,rec.candidates||[]);if(Array.isArray(rec.fixedSlots))target.fixedSlots=rec.fixedSlots.slice(0,PHOTO_LIMIT);if(Array.isArray(rec.fallbackSlots))target.fallbackSlots=rec.fallbackSlots.slice(0,PHOTO_LIMIT);target.album=[...new Set([...(target.album||[]),...(rec.album||[])])].filter(t=>target.candidates.some(a=>a.title===t)).slice(0,PHOTO_LIMIT);target.manualAlbum=!!(target.manualAlbum||rec.manualAlbum);if(typeof rec.manualComplete==='boolean')target.manualComplete=rec.manualComplete;target.storyPhotoTitle=rec.storyPhotoTitle||target.storyPhotoTitle||'';ensurePhotoSlots(target);persistPicks(id)}
- if(d.selectedPhotos){for(const [id,pick] of Object.entries(d.selectedPhotos)){savedPicks[id]=pick;const r=record(id);if(Array.isArray(pick.fixedSlots))r.fixedSlots=pick.fixedSlots.slice(0,PHOTO_LIMIT);if(Array.isArray(pick.fallbackSlots))r.fallbackSlots=pick.fallbackSlots.slice(0,PHOTO_LIMIT);r.storyPhotoTitle=pick.storyPhotoTitle||r.storyPhotoTitle;if(typeof pick.manualComplete==='boolean')r.manualComplete=pick.manualComplete;persistPicks(id)}}
+$('importFile').onchange=async(e)=>{let f=e.target.files[0];if(!f)return;try{let d=JSON.parse(await f.text());if(!['WorldTravelMASTER-v2.1','WorldTravelMASTER-v2.2','WorldTravelMASTER-v2.3','WorldTravelMASTER-v2.4','WorldTravelMASTER-v2.5','WorldTravelMASTER-v2.6','WorldTravelMASTER-v2.7','WorldTravelMASTER-v2.8','WorldTravelMASTER-v2.8.2','WorldTravelMASTER-v2.9'].includes(d.format)||!d.state?.places)throw Error('지원하지 않는 백업 형식입니다');
+ for(let [id,rec]of Object.entries(d.state.places)){let target=record(id);addCandidates(target,rec.candidates||[]);if(Array.isArray(rec.fixedSlots))target.fixedSlots=rec.fixedSlots.slice(0,PHOTO_LIMIT);if(Array.isArray(rec.fallbackSlots))target.fallbackSlots=rec.fallbackSlots.slice(0,PHOTO_LIMIT);target.album=[...new Set([...(target.album||[]),...(rec.album||[])])].filter(t=>target.candidates.some(a=>a.title===t)).slice(0,PHOTO_LIMIT);target.manualAlbum=!!(target.manualAlbum||rec.manualAlbum);target.storyPhotoTitle=rec.storyPhotoTitle||target.storyPhotoTitle||'';ensurePhotoSlots(target);persistPicks(id)}
+ if(d.selectedPhotos){for(const [id,pick] of Object.entries(d.selectedPhotos)){savedPicks[id]=pick;const r=record(id);if(Array.isArray(pick.fixedSlots))r.fixedSlots=pick.fixedSlots.slice(0,PHOTO_LIMIT);if(Array.isArray(pick.fallbackSlots))r.fallbackSlots=pick.fallbackSlots.slice(0,PHOTO_LIMIT);r.storyPhotoTitle=pick.storyPhotoTitle||r.storyPhotoTitle;persistPicks(id)}}
  let restored=0;for(const item of d.storedPhotos||[]){await vaultPut(item.placeId,item.title,base64ToBlob(item.data,item.mime));const key=imageKey(item.placeId,item.title);if(photoCache.has(key)){URL.revokeObjectURL(photoCache.get(key));photoCache.delete(key)}restored++;offlineStatus(`저장사진 복원 중 ${restored}/${d.storedPhotos.length}`)}
- persist();renderAll();refreshOfflinePhotoNodes();for(const p of catalog)await checkGalleryStored(p,false);updateHome();refreshCompleteButton();$('manageStatus').textContent=`복원 완료: 선택정보 및 기기사진 ${restored}장 복원`;offlineStatus(`복원 완료: ${restored}장`);
+ persist();renderAll();refreshOfflinePhotoNodes();$('manageStatus').textContent=`복원 완료: 선택정보 및 기기사진 ${restored}장 복원`;offlineStatus(`복원 완료: ${restored}장`);
  }catch(ex){$('manageStatus').textContent='복원 실패: '+ex.message}e.target.value=''};
-$('checkBtn').onclick=async()=>{try{let res=await fetch('version.json?ts='+Date.now(),{cache:'no-store'});let j=await res.json();$('manageStatus').textContent='서버 버전 '+j.version+' · 현재 화면 V3.2.0 (서버 파일과 화면 버전을 확인하세요.)'}catch(e){$('manageStatus').textContent='버전 정보를 읽을 수 없습니다.'}};
-(async()=>{try{const recovery=await recoverMemory();$('manageStatus').textContent=recovery;await restorePicksFromVault();let res=await fetch('catalog.json',{cache:'no-store'});if(!res.ok)throw Error('catalog HTTP '+res.status);let c=await res.json();catalog=c.places||[];countries=c.countries||[{code:'KR',name:'대한민국',flag:'🇰🇷'}];for(const p of catalog){if(p.seedPhotos?.length){const r=record(p.id);if(!r.candidates.length){addCandidates(r,p.seedPhotos);displaySlots(r,p)}}}updateHome();for(const p of catalog)await checkGalleryStored(p,false);updateHome()}catch(e){$('places').textContent='명소 목록 불러오기 실패: catalog.json을 index.html과 같은 위치에 올려주세요. '+e.message}})();
+$('checkBtn').onclick=async()=>{try{let res=await fetch('version.json?ts='+Date.now(),{cache:'no-store'});let j=await res.json();$('manageStatus').textContent='서버 버전 '+j.version+' · 현재 화면 V2.9.5 (서버 파일과 화면 버전을 확인하세요.)'}catch(e){$('manageStatus').textContent='버전 정보를 읽을 수 없습니다.'}};
+(async()=>{try{await restorePicksFromVault();let res=await fetch('catalog.json',{cache:'no-store'});if(!res.ok)throw Error('catalog HTTP '+res.status);let c=await res.json();catalog=c.places||[];countries=c.countries||[{code:'KR',name:'대한민국',flag:'🇰🇷'}];for(const p of catalog){if(p.seedPhotos?.length){const r=record(p.id);if(!r.candidates.length){addCandidates(r,p.seedPhotos);displaySlots(r,p)}}}updateHome()}catch(e){$('places').textContent='명소 목록 불러오기 실패: catalog.json을 index.html과 같은 위치에 올려주세요. '+e.message}})();
 </script></body></html>
