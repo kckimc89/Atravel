@@ -1,5 +1,5 @@
 {
-  "version": "3.4.0",
+  "version": "3.5.0",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Separate country exploration and global landmark search; compact four-column landmark cards; stabilized offline image URLs"
+  "notes": "Three-state country and landmark gallery backgrounds: dark green complete, light green partial, white empty. Existing photo storage preserved."
 }
