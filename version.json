@@ -1,5 +1,5 @@
 {
-  "version": "3.7.1",
+  "version": "3.7.4",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "41 countries; Safari IndexedDB connection recovery, coalesced memory writes, safe resumable batch."
+  "notes": "One-tap single ZIP photo and settings backup using low-copy Blob parts, plus ZIP restore and legacy split fallback."
 }
