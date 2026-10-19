@@ -1,5 +1,5 @@
 {
-  "version": "3.7.0",
+  "version": "3.7.1",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "41 countries, 896 curated attractions, continent filter and stronger landscape candidate ranking. Existing 376 IDs preserved."
+  "notes": "41 countries; Safari IndexedDB connection recovery, coalesced memory writes, safe resumable batch."
 }
