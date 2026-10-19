@@ -186,7 +186,18 @@ main{max-width:1280px;padding-bottom:20px}.hero{background:linear-gradient(115de
 @media(min-width:700px) and (orientation:portrait){#album #albumPhotos{height:clamp(64px,8.2dvh,88px)}#album #viewer{padding:14px}}
 
 .countryList{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:20px 0 8px}.countryChoice{background:rgba(255,255,255,.92);color:#1d4365;border:1px solid #dce5eb;padding:12px 5px;font-size:clamp(12px,1.6vw,16px);border-radius:14px;box-shadow:0 3px 10px #16345310}.countryChoice.active{background:linear-gradient(115deg,#2056a2,#19a4b8);color:white;border-color:#2075ab;box-shadow:0 5px 15px #184c9b33}@media(max-width:550px){.countryList{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.countryChoice{padding:10px 3px;font-size:12px}}
-</style></head><body><header><div class="wrap"><div><b>🌏 세계 여행대백과</b><small>MASTER V3.0.0 · 15개국 첫 확장 · 사진 여행</small></div><button id="homeBtn" class="secondary">🏠 나라 탐험</button></div></header><main><section id="home"><div class="hero"><h1 id="countryHeading">🌏 세계 여행대백과 · 15개국</h1><p id="countrySummary">나라를 선택해 여행을 시작하세요.</p><div id="countryList" class="countryList" aria-label="여행할 나라 선택"></div><button id="bulkBtn">🔎 사진 자동보강</button></div><div class="box"><div class="row"><input id="filter" type="search" placeholder="가고 싶은 명소를 찾아보세요" aria-label="명소 검색"><span id="homeStats" class="stat"></span></div><div id="bulkStatus" class="status hidden" aria-live="polite"></div><div id="bulkProgress" class="progress hidden"><div></div></div><div class="grid" id="places"></div></div><details class="box" id="management"><summary>⚙️ 관리 · 검색기억 · 백업</summary><p class="muted">기존 명소대백과 원본은 변경하지 않습니다. 이 앱은 별도 저장공간을 사용하며 검색결과의 사진 주소·출처를 저장합니다.</p><div class="row"><button id="exportBtn">💾 전체 백업 · 사진 자동 보관</button><span id="offlineStatus" class="muted" aria-live="polite">기본사진은 이 기기의 저장소에 따로 보관합니다.</span><label class="secondary" style="border-radius:11px;padding:12px;cursor:pointer">백업 복원 <input id="importFile" type="file" accept="application/json,.json" style="display:none"></label><button id="checkBtn" class="secondary">서버 버전 확인</button></div><div id="manageStatus" class="muted"></div></details></section><section id="detail" class="hidden"><div class="detailHead"><button id="backBtn" class="secondary" aria-label="명소 목록으로">←</button><div class="placeIdentity"><h1 id="placeTitle"></h1><p id="placeRegion" class="muted"></p></div><div class="tabs" id="tabs"><button data-tab="description" class="on">명소 이야기</button><button data-tab="album">기본 사진첩</button><button data-tab="memory">사진 여행</button><button id="fillBtn" class="fillInline" type="button">＋ 사진 보강</button><span id="placeState" class="photoProgress" aria-live="polite"></span></div></div><div class="box view" id="description"><div class="storyBackdrop" id="storyBackdrop"><div class="storyBackdropInner"><div class="storyLabel">✦ TRAVEL STORIES</div><h2>명소 이야기</h2><p id="storyBackdropHint">사진으로 만나는 오늘의 여행</p></div></div><div class="storyContent"><p class="lead" id="placeDesc"></p><div class="tripSummary" id="tripSummary"></div><div class="descriptionAction"><button id="toAlbumBtn">🖼️ 기본 사진첩 보기로 이동 →</button></div></div></div><div id="album" class="view hidden"><div class="row" style="justify-content:flex-end"><span id="albumOffline" class="stat">📦 기기 보관 확인 중</span><button class="secondary" id="savePlaceBtn">📥 이 명소 사진 5장 보관</button></div><div id="viewer" class="viewer hidden"><img id="largePhoto" alt="명소 대표 사진"></div><div class="albumTools"><button id="reorderBtn" class="secondary" type="button">↔ 사진 끌어 옮기기</button><span id="reorderHint" class="muted">사진을 골라 크게 감상하세요. 순서를 바꾸려면 옮기기 버튼을 누르세요.</span></div><div id="albumPhotos" class="photos" aria-label="작은 사진을 선택하면 큰 사진이 바뀝니다"></div><div id="emptyGallery" class="galleryEmpty hidden">🖼️ 사진을 준비하고 있습니다. 사진 여행에서 사진을 찾아보세요.</div></div><div id="memory" class="box view hidden"><div class="memoryHead"><h2>사진 여행 · 슬라이드 감상</h2><div class="row"><button id="repairBtn">📸 사진 상태 확인·대체</button><button id="moreBtn" class="secondary">🔎 다음 후보 더 찾기</button></div></div><div id="repairWorkspace"><h3>기본사진 · 5장 <span class="muted">사용자가 지정한 대표사진은 고정됩니다. 비어 있거나 교체할 자리를 먼저 선택하세요</span></h3><div id="baseSelection" class="photos"></div><div class="row baseStoryRow"><button id="baseStoryBtn" class="secondary" type="button">✦ 선택한 기본사진을 명소 이야기 배경으로</button><span id="baseStoryNote" class="muted">위 기본사진을 선택한 다음 배경으로 지정하세요.</span></div><p id="swapHint" class="swapHint">아래 후보를 골라 사진첩에 추가할 수 있습니다.</p><h3>후보사진 <span class="muted">사진을 누르면 크게 볼 수 있습니다</span></h3><div id="candidatePreview" class="candidatePreview hidden"><img id="candidateLarge" alt="선택한 후보사진 크게보기"><div class="candidateControls"><button id="candidatePrev" class="secondary">❮ 이전 후보</button><button id="candidatePlay" class="candidatePlay" type="button" aria-pressed="false">▶ 슬라이드 재생</button><span id="candidateIndex"></span><button id="candidateNext" class="secondary">다음 후보 ❯</button></div><div class="candidateHelp" id="slideHint">후보를 자동으로 감상하다가 일시정지하고 마음에 드는 사진을 기본사진과 교체하세요.</div><button id="candidateAdd">＋ 이 사진을 사진첩에 추가</button><a id="candidateSource" class="sourceLink" target="_blank" rel="noopener noreferrer" href="#">사진 출처 확인 ↗</a><div id="candidateCaption" class="muted"></div></div></div><button id="searchBtn" class="hidden">새 사진 검색</button><div id="searchStatus" class="status" aria-live="polite">처음 검색할 때는 기존 기억의 사진 제목을 먼저 확인하고 부족하면 공개 사진을 검색합니다.</div><div id="candidateStats" class="muted"></div><div id="candidates" class="photos"></div></div></section></main><script>
+/* V3.1 · cinematographic landscape gallery, compact iPad portrait */
+#viewer{position:relative;background:radial-gradient(circle at 50% 20%,#496b8d,#081a2c 73%);border:3px solid #fff7ec;box-shadow:0 18px 50px #111a3b48,0 0 0 1px #d9a95d66}
+#largePhoto{object-fit:contain!important;object-position:center center;background:transparent;filter:contrast(1.035) saturate(1.09)}
+#albumPhotos .photo{box-shadow:0 5px 16px #1a264c35;transition:transform .18s ease,box-shadow .18s ease;border-color:#faf7f0}
+#albumPhotos .photo.active{border-color:#ffc46b;transform:translateY(-2px);box-shadow:0 6px 22px #b7804a80}
+#albumPhotos .photo img{filter:saturate(1.08)}
+#album{background:linear-gradient(165deg,#fffdf7,#edf6fb 65%,#f8eef5);border-radius:19px;padding:10px}
+.storyBackdrop{background-size:cover;background-position:center;box-shadow:inset 0 -30px 90px #061d3a5c}
+.storyBackdropInner{background:linear-gradient(90deg,#071c3a9c,#10294124);text-shadow:0 2px 10px #08182bcc}
+#bulkBtn{background:linear-gradient(110deg,#b47645,#c88a60 37%,#244a7c);box-shadow:0 6px 20px #152f6044}
+@media(max-width:750px){#album{padding:6px}#viewer{box-shadow:0 7px 24px #152b4b40}}
+</style></head><body><header><div class="wrap"><div><b>🌏 세계 여행대백과</b><small>MASTER V3.1.0 · 15개국 · 감동 사진첩</small></div><button id="homeBtn" class="secondary">🏠 나라 탐험</button></div></header><main><section id="home"><div class="hero"><h1 id="countryHeading">🌏 세계 여행대백과 · 15개국</h1><p id="countrySummary">나라를 선택해 여행을 시작하세요.</p><div id="countryList" class="countryList" aria-label="여행할 나라 선택"></div><button id="bulkBtn">🌄 전체 376개 명소 · 사진 5장과 배경 자동 선정</button></div><div class="box"><div class="row"><input id="filter" type="search" placeholder="가고 싶은 명소를 찾아보세요" aria-label="명소 검색"><span id="homeStats" class="stat"></span></div><div id="bulkStatus" class="status hidden" aria-live="polite"></div><div id="bulkProgress" class="progress hidden"><div></div></div><div class="grid" id="places"></div></div><details class="box" id="management"><summary>⚙️ 관리 · 검색기억 · 백업</summary><p class="muted">기존 명소대백과 원본은 변경하지 않습니다. 이 앱은 별도 저장공간을 사용하며 검색결과의 사진 주소·출처를 저장합니다.</p><div class="row"><button id="exportBtn">💾 전체 백업 · 사진 자동 보관</button><span id="offlineStatus" class="muted" aria-live="polite">기본사진은 이 기기의 저장소에 따로 보관합니다.</span><label class="secondary" style="border-radius:11px;padding:12px;cursor:pointer">백업 복원 <input id="importFile" type="file" accept="application/json,.json" style="display:none"></label><button id="checkBtn" class="secondary">서버 버전 확인</button></div><div id="manageStatus" class="muted"></div></details></section><section id="detail" class="hidden"><div class="detailHead"><button id="backBtn" class="secondary" aria-label="명소 목록으로">←</button><div class="placeIdentity"><h1 id="placeTitle"></h1><p id="placeRegion" class="muted"></p></div><div class="tabs" id="tabs"><button data-tab="description" class="on">명소 이야기</button><button data-tab="album">기본 사진첩</button><button data-tab="memory">사진 여행</button><button id="fillBtn" class="fillInline" type="button">＋ 사진 보강</button><span id="placeState" class="photoProgress" aria-live="polite"></span></div></div><div class="box view" id="description"><div class="storyBackdrop" id="storyBackdrop"><div class="storyBackdropInner"><div class="storyLabel">✦ TRAVEL STORIES</div><h2>명소 이야기</h2><p id="storyBackdropHint">사진으로 만나는 오늘의 여행</p></div></div><div class="storyContent"><p class="lead" id="placeDesc"></p><div class="tripSummary" id="tripSummary"></div><div class="descriptionAction"><button id="toAlbumBtn">🖼️ 기본 사진첩 보기로 이동 →</button></div></div></div><div id="album" class="view hidden"><div class="row" style="justify-content:flex-end"><span id="albumOffline" class="stat">📦 기기 보관 확인 중</span><button class="secondary" id="savePlaceBtn">📥 이 명소 사진 5장 보관</button></div><div id="viewer" class="viewer hidden"><img id="largePhoto" alt="명소 대표 사진"></div><div class="albumTools"><button id="reorderBtn" class="secondary" type="button">↔ 사진 끌어 옮기기</button><span id="reorderHint" class="muted">사진을 골라 크게 감상하세요. 순서를 바꾸려면 옮기기 버튼을 누르세요.</span></div><div id="albumPhotos" class="photos" aria-label="작은 사진을 선택하면 큰 사진이 바뀝니다"></div><div id="emptyGallery" class="galleryEmpty hidden">🖼️ 사진을 준비하고 있습니다. 사진 여행에서 사진을 찾아보세요.</div></div><div id="memory" class="box view hidden"><div class="memoryHead"><h2>사진 여행 · 슬라이드 감상</h2><div class="row"><button id="repairBtn">📸 사진 상태 확인·대체</button><button id="moreBtn" class="secondary">🔎 다음 후보 더 찾기</button></div></div><div id="repairWorkspace"><h3>기본사진 · 5장 <span class="muted">사용자가 지정한 대표사진은 고정됩니다. 비어 있거나 교체할 자리를 먼저 선택하세요</span></h3><div id="baseSelection" class="photos"></div><div class="row baseStoryRow"><button id="baseStoryBtn" class="secondary" type="button">✦ 선택한 기본사진을 명소 이야기 배경으로</button><span id="baseStoryNote" class="muted">위 기본사진을 선택한 다음 배경으로 지정하세요.</span></div><p id="swapHint" class="swapHint">아래 후보를 골라 사진첩에 추가할 수 있습니다.</p><h3>후보사진 <span class="muted">사진을 누르면 크게 볼 수 있습니다</span></h3><div id="candidatePreview" class="candidatePreview hidden"><img id="candidateLarge" alt="선택한 후보사진 크게보기"><div class="candidateControls"><button id="candidatePrev" class="secondary">❮ 이전 후보</button><button id="candidatePlay" class="candidatePlay" type="button" aria-pressed="false">▶ 슬라이드 재생</button><span id="candidateIndex"></span><button id="candidateNext" class="secondary">다음 후보 ❯</button></div><div class="candidateHelp" id="slideHint">후보를 자동으로 감상하다가 일시정지하고 마음에 드는 사진을 기본사진과 교체하세요.</div><button id="candidateAdd">＋ 이 사진을 사진첩에 추가</button><a id="candidateSource" class="sourceLink" target="_blank" rel="noopener noreferrer" href="#">사진 출처 확인 ↗</a><div id="candidateCaption" class="muted"></div></div></div><button id="searchBtn" class="hidden">새 사진 검색</button><div id="searchStatus" class="status" aria-live="polite">처음 검색할 때는 기존 기억의 사진 제목을 먼저 확인하고 부족하면 공개 사진을 검색합니다.</div><div id="candidateStats" class="muted"></div><div id="candidates" class="photos"></div></div></section></main><script>
 'use strict';
 const $=id=>document.getElementById(id), API='https://commons.wikimedia.org/w/api.php', KEY='travelMaster2_1_memory', PICKS_KEY='travelMaster2_8_2_picks';
 let countries=[],selectedCountry='KR',catalog=[],current=null,tab='description',position=0,working=false,bulkStop=false,candidatePosition=0,excludeIndex=-1,searchBusy=false,candidateTimer=null; 
@@ -361,9 +372,11 @@ function photoScore(a,p){
  const title=(a.title||'').toLowerCase(), aliases=[p.name,...(p.aliases||[])].map(x=>String(x).toLowerCase());
  let score=aliases.some(x=>x&&title.includes(x))?32:-24;
  if(title.includes(String(p.region||'').toLowerCase()))score+=5;
- if(/panorama|landscape|front view|wide view|전경|풍경|정면|aerial/.test(title))score+=7;
+ if(/panorama|landscape|front view|wide view|전경|풍경|정면|aerial|overview|facade|skyline|전체|全景/.test(title))score+=21;
+ if(/sunrise|sunset|golden hour|twilight|reflection|night view|blue hour/.test(title))score+=5;
+ if(/selfie|portrait|tourist|crowd|people|person|construction|under renovation|scaffold/.test(title))score-=12;
  if(/map|diagram|floor plan|logo|drawing|poster|illustration|stamp|painting|sketch|plan of/.test(title))score-=42;
- if(/interior|detail|close.?up/.test(title))score-=3;
+ if(/interior|detail|close.?up|macro|room |ceiling|entrance detail/.test(title))score-=13;
  if(a.width>1100)score+=5;else if(a.width>650)score+=2;
  return score;
 }
@@ -374,7 +387,7 @@ async function searchPlace(p,quiet=false){const r=record(p.id);let found=0;statu
  const clean=[...new Set(terms)], round=r.queryStep||0;
  // V2.5: rotate different aliases AND pagination, so repeated searches genuinely reach new files.
  const main=clean[round%clean.length], variant=Math.floor(round/clean.length);
- const modifiers=['',' landscape',' architecture',' panorama',' aerial',' exterior',' interior',' photography',' view'];
+ const modifiers=[' panorama',' exterior',' wide view',' landscape',' architecture',' aerial','',' photography',' view'];
  const suffix=modifiers[variant%modifiers.length];
  const offset=50*(Math.floor(variant/modifiers.length)%12);
  const queries=[
@@ -477,7 +490,47 @@ $('repairBtn').onclick=()=>{stopCandidateSlides();excludeIndex=-1;renderCandidat
 
 $('largePhoto').onerror=()=>{if(current){let title=$('largePhoto').dataset.title;if(title)photoBroken(title)}};
 
-$('bulkBtn').onclick=async()=>{if(working){bulkStop=true;return}working=true;bulkStop=false;$('bulkBtn').textContent='⏹ 자동보강 중단';$('bulkStatus').classList.remove('hidden');$('bulkProgress').classList.remove('hidden');let n=0;try{for(let p of catalog.filter(x=>x.countryCode===selectedCountry)){if(bulkStop)break;let r=record(p.id);if(displaySlots(r,p).filter(Boolean).length>=5){n++;continue}$('bulkStatus').textContent=`${n+1}/${catalog.length} · ${p.name} 검색 중 (이미 완성된 명소는 건너뜁니다)`;await searchPlace(p,true);n++;$('bulkProgress').firstElementChild.style.width=(n/catalog.length*100)+'%';updateHome();await new Promise(ok=>setTimeout(ok,850))}}finally{$('bulkStatus').textContent=`자동보강 종료 · ${n}/${catalog.length}곳 확인`;$('bulkBtn').textContent='🔎 사진 자동보강';working=false}};
+// Batch photography is intentionally opt-in. Files are downloaded into IndexedDB,
+// not bundled in the app; therefore the program works under ordinary static hosting.
+async function selectAndStoreLandscape(p){
+ const r=record(p.id);let slots=displaySlots(r,p),count=slots.filter(Boolean).length;
+ if(count<5){await searchPlace(p,true);slots=displaySlots(r,p)}
+ if(slots.filter(Boolean).length<5){await searchPlace(p,true);slots=displaySlots(r,p)}
+ // Respect every existing user choice. Only auto-assign vacant positions.
+ let selections=0;for(let i=0;i<PHOTO_LIMIT;i++){
+  let title=slots[i];if(title&&!r.fixedSlots[i]&&titleAvailable(r,title)){
+   r.fixedSlots[i]=title;r.fallbackSlots[i]=null;selections++;
+  }
+ }
+ // A user's own background always wins; otherwise choose a broad scenic composition.
+ if(!r.storyPhotoTitle){
+  const cands=slots.filter(Boolean).map(title=>r.candidates.find(c=>c.title===title)).filter(Boolean);
+  const best=cands.sort((a,b)=>photoScore(b,p)-photoScore(a,p))[0];
+  if(best){r.storyPhotoTitle=best.title;selections++}
+ }
+ if(selections){persistPicks(p.id);persist()}
+ const stored=await storePlacePhotos(p,false,false);
+ return {stored:stored.ok,failed:stored.failed,selected:selections,ready:slots.filter(Boolean).length};
+}
+$('bulkBtn').onclick=async()=>{
+ if(working){bulkStop=true;return}
+ working=true;bulkStop=false;
+ const b=$('bulkBtn');b.textContent='⏹ 전체 사진 선정 중단';
+ $('bulkStatus').classList.remove('hidden');$('bulkProgress').classList.remove('hidden');
+ let done=0,photos=0,fail=0,full=0;
+ try{for(const p of catalog){if(bulkStop)break;
+  $('bulkStatus').textContent=`🌏 ${done+1}/${catalog.length} · ${p.name} — 전경사진 선정 · 기기 저장 중 / 성공 ${photos}장 · 실패 ${fail}장`;
+  try{const res=await selectAndStoreLandscape(p);photos+=res.stored;fail+=res.failed;if(res.ready===5)full++}
+  catch(err){fail++;console.warn('사진 선정 오류',p.name,err)}
+  done++;$('bulkProgress').firstElementChild.style.width=(done/catalog.length*100)+'%';
+  if(current?.id===p.id)renderAll();if(done%5===0)updateHome();
+  await new Promise(ok=>setTimeout(ok,350));
+ }}finally{
+  working=false;b.textContent='🌄 전체 376개 명소 · 사진 5장과 배경 자동 선정';
+  $('bulkStatus').textContent=`${bulkStop?'일시 중단':'선정 작업 종료'} · ${done}/${catalog.length}곳 확인 · 사진첩 5장 ${full}곳 · 저장 성공 ${photos}장 · 저장 실패 ${fail}장. 미완성 명소는 다시 누르면 이어서 보강합니다. 검색 불확실한 후보는 직접 확인하세요.`;
+  updateHome();
+ }
+};
 $('exportBtn').onclick=downloadCompleteBackup;
 $('savePlaceBtn').onclick=async()=>{if(!current)return;const b=$('savePlaceBtn');b.disabled=true;try{await storePlacePhotos(current,true,true)}finally{b.disabled=false}};
 $('importFile').onchange=async(e)=>{let f=e.target.files[0];if(!f)return;try{let d=JSON.parse(await f.text());if(!['WorldTravelMASTER-v2.1','WorldTravelMASTER-v2.2','WorldTravelMASTER-v2.3','WorldTravelMASTER-v2.4','WorldTravelMASTER-v2.5','WorldTravelMASTER-v2.6','WorldTravelMASTER-v2.7','WorldTravelMASTER-v2.8','WorldTravelMASTER-v2.8.2','WorldTravelMASTER-v2.9'].includes(d.format)||!d.state?.places)throw Error('지원하지 않는 백업 형식입니다');
@@ -486,6 +539,6 @@ $('importFile').onchange=async(e)=>{let f=e.target.files[0];if(!f)return;try{let
  let restored=0;for(const item of d.storedPhotos||[]){await vaultPut(item.placeId,item.title,base64ToBlob(item.data,item.mime));const key=imageKey(item.placeId,item.title);if(photoCache.has(key)){URL.revokeObjectURL(photoCache.get(key));photoCache.delete(key)}restored++;offlineStatus(`저장사진 복원 중 ${restored}/${d.storedPhotos.length}`)}
  persist();renderAll();refreshOfflinePhotoNodes();$('manageStatus').textContent=`복원 완료: 선택정보 및 기기사진 ${restored}장 복원`;offlineStatus(`복원 완료: ${restored}장`);
  }catch(ex){$('manageStatus').textContent='복원 실패: '+ex.message}e.target.value=''};
-$('checkBtn').onclick=async()=>{try{let res=await fetch('version.json?ts='+Date.now(),{cache:'no-store'});let j=await res.json();$('manageStatus').textContent='서버 버전 '+j.version+' · 현재 화면 V2.9.5 (서버 파일과 화면 버전을 확인하세요.)'}catch(e){$('manageStatus').textContent='버전 정보를 읽을 수 없습니다.'}};
+$('checkBtn').onclick=async()=>{try{let res=await fetch('version.json?ts='+Date.now(),{cache:'no-store'});let j=await res.json();$('manageStatus').textContent='서버 버전 '+j.version+' · 현재 화면 V3.1.0 (서버 파일과 화면 버전을 확인하세요.)'}catch(e){$('manageStatus').textContent='버전 정보를 읽을 수 없습니다.'}};
 (async()=>{try{await restorePicksFromVault();let res=await fetch('catalog.json',{cache:'no-store'});if(!res.ok)throw Error('catalog HTTP '+res.status);let c=await res.json();catalog=c.places||[];countries=c.countries||[{code:'KR',name:'대한민국',flag:'🇰🇷'}];for(const p of catalog){if(p.seedPhotos?.length){const r=record(p.id);if(!r.candidates.length){addCandidates(r,p.seedPhotos);displaySlots(r,p)}}}updateHome()}catch(e){$('places').textContent='명소 목록 불러오기 실패: catalog.json을 index.html과 같은 위치에 올려주세요. '+e.message}})();
 </script></body></html>
