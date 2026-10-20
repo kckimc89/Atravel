@@ -1,5 +1,5 @@
 {
-  "version": "3.7.6",
+  "version": "3.7.7",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "One-tap single ZIP photo and settings backup using low-copy Blob parts, plus ZIP restore and legacy split fallback."
+  "notes": "Version consistency repair: synchronized visible and running versions; preserves V3.7.6 features and storage identifiers."
 }
