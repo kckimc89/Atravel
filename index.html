@@ -1,4 +1,4 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#164b60"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="여행대백과"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest"><title>세계 여행대백과 MASTER V3.9.5</title><style>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#164b60"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="여행대백과"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest"><title>세계 여행대백과 MASTER V3.9.8</title><style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,sans-serif;color:#193d50;background:#f3f7f8}*{box-sizing:border-box}body{margin:0}header{position:sticky;top:0;background:#164b60;color:white;padding:13px 14px;z-index:5}header .wrap{max-width:1080px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:8px}header small{display:block;color:#c8e6e9}main{max-width:1080px;margin:auto;padding:15px 12px 85px}h1{font-size:26px;margin:6px 0}h2{font-size:21px;margin:8px 0 12px}.box{background:white;border:1px solid #d8e7eb;border-radius:16px;margin:12px 0;padding:16px}.hero{background:linear-gradient(120deg,#164b60,#168b86);color:white;border-radius:17px;padding:25px}.hero p{color:#e3f2ef}.muted{font-size:13px;color:#697f8a;line-height:1.6}button,input,textarea{font:inherit}button{border:0;border-radius:11px;background:#146c80;color:white;padding:11px 13px;min-height:43px;font-weight:700;cursor:pointer}button:disabled{opacity:.55}.secondary{background:#e9f2f4;color:#235364}.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:8px}.place{background:#e5f4e9;border:1px solid #badbc5;color:#185a3c;text-align:left}.place b{display:block;font-size:17px}.place small{display:block;color:#527964;margin-top:5px}.tabs{display:flex;gap:7px;overflow:auto;margin:12px 0}.tabs button{white-space:nowrap;background:#e7f0f3;color:#2c5b69}.tabs button.on{background:#176d82;color:white}.hidden{display:none!important}.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(125px,1fr));gap:9px}.photo{background:#eef3f5;border-radius:11px;overflow:hidden;border:1px solid #dae5e8;position:relative}.photo img{width:100%;height:112px;object-fit:cover;display:block;background:#e7edf0}.photo small{display:block;padding:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11px}.photo button{width:100%;border-radius:0;padding:6px;min-height:32px;font-size:12px}.photo.bad{opacity:.6}.viewer{background:#edf3f5;border-radius:12px;padding:9px;text-align:center}.viewer img{width:100%;max-height:430px;object-fit:contain;min-height:130px}.viewer .caption{font-size:12px;overflow-wrap:anywhere}.status{background:#edf7f4;border-left:4px solid #389e87;padding:10px;border-radius:6px;font-size:13px;line-height:1.6;margin:9px 0}.warning{background:#fff4e2;border-left-color:#d89937}.lead{line-height:1.8;white-space:pre-line}.stat{display:inline-block;padding:5px 10px;background:#eaf1f3;border-radius:20px;font-size:13px}.progress{height:10px;background:#dce8eb;border-radius:10px;overflow:hidden}.progress>div{background:#269b86;height:100%;width:0%;transition:width .2s}textarea{width:100%;min-height:85px;padding:10px;border:1px solid #bdced5;border-radius:8px}input[type=search]{padding:12px;width:min(380px,100%);border:1px solid #c3d2da;border-radius:10px}a{color:#006c98}button:focus-visible,a:focus-visible{outline:3px solid #f49b31;outline-offset:2px} @media(max-width:420px){header b{font-size:15px}.photos{grid-template-columns:repeat(2,1fr)}}
 
 /* V2.2 reading and gallery layout */
@@ -224,7 +224,7 @@ header .wrap{gap:12px}.mainNav{display:flex;gap:7px;flex-wrap:wrap}.mainNav butt
 #countryList .countryChoice.signalEmpty strong,#countryList .countryChoice.signalEmpty small,#countryList .countryChoice.signalEmpty .doneCount,#places .place.signalEmpty b,#places .place.signalEmpty small{color:#293d51!important}
 #countryList .countryChoice:focus-visible,#places .place:focus-visible{outline:3px solid #e4a347;outline-offset:2px}
 .batchPanel{margin-top:22px;border-top:1px solid #dce7f1;padding-top:18px}.batchCountries{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:12px 0}.batchCountry{border:2px solid #cddbe7;background:#fff;color:#254158;text-align:left;padding:12px;border-radius:13px;min-height:65px}.batchCountry.chosen{background:#d8f2e5;border-color:#258659}.batchCountry small{display:block;margin-top:4px}.batchReport{max-height:540px;overflow:auto;margin-top:14px;padding:12px;border:1px solid #d7e4ed;border-radius:12px;background:#f8fbff}.batchReport .failureRow{display:flex;align-items:center;gap:8px;justify-content:space-between;border-bottom:1px solid #e1e9ee;padding:9px 2px;flex-wrap:wrap}.batchReport button{padding:7px 12px}.batchReport h3{margin:14px 0 7px}@media(max-width:600px){.batchCountries{grid-template-columns:repeat(2,minmax(0,1fr))}}
- .reportModal{position:fixed;inset:0;z-index:9999;background:rgba(14,29,47,.65);display:flex;align-items:center;justify-content:center;padding:20px}.reportModal.hidden{display:none!important}.reportDialog{width:min(920px,100%);max-height:88dvh;display:flex;flex-direction:column;background:#fff;border-radius:20px;box-shadow:0 12px 55px #0005;overflow:hidden}.reportHeader{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:17px 20px;border-bottom:1px solid #d7e4ed}.reportHeader h2{margin:0;font-size:1.3rem}.reportHeader button{flex-shrink:0}.reportDialog .batchReport{overflow-y:auto;max-height:none;flex:1;margin:0;border:0;border-radius:0;padding:16px 20px}.serverVersionStatus{font-weight:700;color:#165b45;white-space:normal;max-width:450px}.serverVersionStatus.error{color:#a22}@media(max-width:600px){.reportModal{padding:8px}.reportDialog{max-height:92dvh}.reportHeader{padding:12px}.reportHeader h2{font-size:1.05rem}.reportDialog .batchReport{padding:12px}} </style><style id="savedTravelStyle">.savedTravel{margin:0 0 20px;padding:14px;border-radius:17px;background:linear-gradient(125deg,#eaf3fc,#e9faf5);border:1px solid #c9dfeb}.savedTravel h3{margin:3px 0 12px}.savedTravelStage{background:#17324d;border-radius:14px;min-height:210px;display:flex;justify-content:center;align-items:center;padding:9px}.savedTravelStage img{width:100%;height:clamp(250px,46dvh,620px);object-fit:contain;border-radius:10px}.savedTravelStage img.hidden{display:none}.savedTravelStage p{color:white!important}.savedTravelControls{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:9px;margin:12px 0}.savedTravelControls button{min-height:42px}.savedTravelThumbs{display:flex;justify-content:center;flex-wrap:wrap;gap:9px}.savedTravelThumbs button{padding:4px;background:#fff;border:2px solid transparent;border-radius:10px}.savedTravelThumbs button.on{border-color:#128c77}.savedTravelThumbs img{width:105px;height:70px;object-fit:cover;border-radius:6px}@media(max-width:600px){.savedTravelThumbs img{width:64px;height:49px}.savedTravelControls button{font-size:13px;padding:8px}}<style id="expansion370">.continentBar{margin:12px 0 14px;gap:8px;flex-wrap:wrap}.continentBar button{min-height:39px;font-size:14px;border-radius:999px;background:#eaf1f6;color:#274762;border:1px solid #d6e5eb}.continentBar button.on{background:#174f82;color:#fff;border-color:#174f82}.countryList{gap:10px}.countryChoice{min-height:74px!important}.countryChoice strong{font-size:1.02rem}.countryChoice small{font-size:.85rem}@media(max-width:620px){.continentBar button{font-size:12px;padding:9px}.countryChoice{min-height:66px!important}}</style></style><style id="restore380Style">.zipRestorePicker{margin:12px 0;padding:16px;border:2px solid #bbd7df;background:#eef8fc;border-radius:14px}.zipRestorePicker h3{margin:0 0 8px}.zipRestorePicker input[type=file]{display:block!important;position:static!important;opacity:1!important;width:100%;max-width:100%;min-height:48px;box-sizing:border-box;font-size:16px;padding:11px;background:#fff;border:1px solid #abc7d0;border-radius:10px;color:#193649}.zipRestorePicker input::file-selector-button{border:1px solid #8ab8bd;border-radius:8px;background:#e2f4f4;padding:9px;margin-right:10px;color:#124252}.zipRestorePicker button:disabled{opacity:.55;cursor:not-allowed}.zipRestorePicker .status{overflow-wrap:anywhere}</style></head><body><header><div class="wrap"><div><b>🌏 세계 여행대백과</b><small>MASTER V3.9.5 · 41개국 · 감동 사진첩</small></div><nav class="mainNav"><button id="homeBtn" class="secondary">🌏 나라탐험</button><button id="worldTab" class="secondary" type="button">🔎 명소탐험</button><button id="manageTab" class="secondary" type="button">⚙️ 백업·관리</button></nav></div></header><main><section id="home"><div class="hero"><h1 id="countryHeading">🌏 세계 여행대백과 · 41개국</h1><p id="countrySummary">나라를 선택해 여행을 시작하세요.</p><div class="row continentBar" id="continentBar" role="group" aria-label="대륙별 나라 선택"><button type="button" data-continent="전체" class="on">🌏 전체 41개국</button><button type="button" data-continent="아시아">아시아</button><button type="button" data-continent="유럽">유럽</button><button type="button" data-continent="아프리카">아프리카</button><button type="button" data-continent="북아메리카">북아메리카</button><button type="button" data-continent="오세아니아">오세아니아</button></div><div id="startupPhotoStatus385" role="status" aria-live="polite" style="padding:13px;margin:10px 0;border:1px solid #c8dbe9;border-radius:12px;background:#edf6fc;color:#18445e;font-weight:700">⏳ 기존 사진과 검색기억을 확인하고 있습니다. 자료를 삭제하거나 다시 선정하지 마세요.</div><div id="countryList" class="countryList" aria-label="여행할 나라 선택"></div><div class="row"><input id="countrySearch" type="search" placeholder="🔎 나라 검색" aria-label="나라 이름 검색"><button id="worldSearchBtn" class="secondary hidden" type="button">🔎 세계 명소탐험</button></div><button id="bulkBtn">🌄 전체 896개 명소 · 사진 5장과 배경 자동 선정</button></div><div class="box" id="landmarkPanel"><div class="row"><button id="countriesBack" class="secondary" type="button">← 나라탐험</button><input id="filter" type="search" placeholder="가고 싶은 명소를 찾아보세요" aria-label="명소 검색"><span id="homeStats" class="stat"></span></div><div class="row" id="placeFilters"><button type="button" data-view="all">전체 명소</button><button type="button" data-view="complete">🟢 완성</button><button type="button" data-view="incomplete">미완성</button></div><div id="bulkStatus" class="status hidden" aria-live="polite"></div><div id="bulkProgress" class="progress hidden"><div></div></div><div class="grid" id="places"></div></div><details class="box" id="management"><summary>⚙️ 관리 · 검색기억 · 백업</summary><p class="muted">기존 명소대백과 원본은 변경하지 않습니다. 이 앱은 별도 저장공간을 사용하며 검색결과의 사진 주소·출처를 저장합니다.</p><div class="row"><button id="exportBtn">💾 지정 기본사진 · 정확 백업 ZIP 1개</button><span id="offlineStatus" class="muted" aria-live="polite">기본사진은 이 기기의 저장소에 따로 보관합니다.</span><label class="secondary" style="border-radius:11px;padding:12px;cursor:pointer">백업 복원 <input id="importFile" type="file" accept="application/json,.json" style="display:none"></label><button id="checkBtn" class="secondary">서버 버전 확인</button><span id="serverVersionStatus" class="serverVersionStatus" role="status" aria-live="polite"></span><button id="updateNowBtn" class="hidden" type="button" style="background:#087f65;color:white">⬆️ 최신 버전으로 열기</button></div><div class="box" style="background:#fff8eb;border:1px solid #eacb8a;margin:12px 0;padding:15px;border-radius:14px"><strong>🖼️ 기본사진 선정 기준</strong><p style="margin:8px 0 0;line-height:1.6">① 명소를 한눈에 알아보는 전체 모습 ② 대표 건축물·중심 풍경 ③ 다른 각도 또는 계절·야경 ④ 명소만의 특징 ⑤ 내부·세부 모습. 같은 종류 사진만 5장 선정하지 않습니다. 사용자 지정사진은 자동으로 교체하지 않으며, 「사진 여행」에서 직접 교체한 뒤 정확 백업하세요.</p></div><section id="unifiedRestore384" class="box" style="margin-top:14px;background:#f1f9f7;border:2px solid #96c9ba;border-radius:17px"><h3>💾 백업 · 복원</h3><p class="muted">백업은 위의 「지정 기본사진 · 정확 백업」 한 번. 복원은 원본 전체 ZIP 파일 하나를 선택한 후 「전체 복원 시작」을 누릅니다. ZIP 전체를 메모리에 읽지 않고 지정사진을 한 장씩 검증해 저장합니다. V3.9.5 백업은 기존 사진과 달라도 백업의 지정사진을 복원합니다. 다만 iPadOS 파일 선택기에서 큰 파일 선택 자체가 중단될 수 있습니다.</p><div id="restoreDrop391" class="hidden" tabindex="0" role="region" aria-label="복원용 ZIP 파일을 여기로 끌어 놓으세요" style="border:2px dashed #2c879c;border-radius:14px;background:#fff;padding:20px;margin:12px 0;text-align:center;min-height:70px"><strong>📦 파일 앱에서 ZIP 묶음을 끌어 놓으세요</strong><p style="margin:7px 0">파일 앱에서 ZIP 묶음을 이곳으로 끌어 놓거나, 복사한 ZIP을 붙여넣어 보세요. 기기에 따라 파일 데이터 붙여넣기는 지원되지 않을 수 있습니다.</p><small>드래그가 안 되는 기기에서는 아래 파일 선택을 여러 번 이용할 수 있습니다. 선택한 파일은 누적되며 복원 실행은 한 번만 누릅니다.</small></div><div class="row hidden"><button type="button" id="restorePaste392" class="secondary">📋 복사한 ZIP 붙여넣기</button><button type="button" id="restoreClear391" class="secondary">↺ 선택 목록 비우기</button><span id="restoreCount391" class="muted" aria-live="polite">선택된 ZIP 없음</span></div><div id="restoreMissing392" role="status" class="muted" aria-live="polite" style="margin:8px 0">복원은 모든 묶음이 등록된 뒤 한 번만 시작합니다. 파일 앱이 ZIP의 복사를 지원하지 않으면 파일 선택으로 누적 등록할 수 있습니다.</div><div class="row"><label class="secondary" style="background:#fff;padding:12px;border-radius:11px;display:inline-block;cursor:pointer;font-weight:700">📂 원본 전체 ZIP 한 개 선택 · 복원<input id="unifiedRestoreFiles384" type="file" accept=".zip,application/zip" multiple style="display:block;max-width:min(100%,580px);margin-top:9px"></label><button id="unifiedStart386" type="button" disabled>✅ 전체 복원 시작</button><button id="unifiedCancel384" type="button" class="secondary" disabled>⏹ 안전 중단</button></div><div id="unifiedMessage384" class="status" role="status" aria-live="polite">원본 전체 백업 ZIP 1개를 선택해 주세요. 사진 2,691장은 한 장씩 복원합니다. 먼저 파일 선택 성공 여부부터 확인하세요.</div><div id="unifiedBar384" style="height:9px;border-radius:12px;background:#cfe2df;overflow:hidden"><div style="height:100%;width:0;background:#13876c;transition:width .2s"></div></div><p class="muted" style="margin-bottom:0">⚠️ 원본 606MB ZIP은 선택창을 여는 과정에서 iPadOS가 앱을 종료할 수 있습니다. 선택만 성공하면 ZIP 전체를 불러오지 않고 사진을 순차적으로 복원합니다. 기존 ZIP과 Safari 원본은 절대 삭제하지 마세요.</p><details id="advancedRestore384" style="margin-top:12px"><summary>고급 도구 · 안전 이전용 백업 만들기 및 기존 복원 방법</summary><div id="advancedSlot384"></div></details></section><section class="box" id="chunkBackupPanel" style="margin-top:14px;background:#f5fafc;border:1px solid #d9e9ef"><h3>🧰 대용량용 예비 백업 · 기존 분할 백업</h3><p class="muted">위 「전체 백업」은 사진과 설정을 하나의 ZIP 파일로 만듭니다. 대용량 단일 ZIP이 기기 메모리 문제로 진행되지 않을 때 아래 예비 분할 백업을 이용하세요. 사진을 다시 검색하거나 내려받지 않습니다.</p><div class="row"><button id="legacyBackupBtn" type="button" class="secondary">예비 분할 백업 준비</button><button id="backupInspectBtn" type="button" class="secondary">📊 실제 사진 용량 확인</button><button id="zipRestorePauseBtn" type="button" class="secondary hidden">⏹ 안전 중단</button></div><div class="zipRestorePicker" id="safeTransfer383"><h3>🧳 대용량 안전 이전 · 한 번에 복원</h3><p class="muted">홈 화면 앱이 600MB ZIP을 선택할 때 멈추는 문제를 피하기 위한 새 경로입니다. <b>Safari에서 「안전 이전용 백업 만들기」를 한 번 누르면</b> 하나의 이전용 ZIP이 저장됩니다. 파일 앱에서 그 ZIP의 압축을 풀고, 홈 화면 앱에서는 안쪽의 <b>작은 ZIP 묶음들을 모두 한 번에 선택</b>한 후 「전체 복원 시작」을 한 번 누르세요.</p><div class="zipRestorePicker" id="existingBackupConverter388" style="background:#fff;border:2px solid #b2d9cc">
+ .reportModal{position:fixed;inset:0;z-index:9999;background:rgba(14,29,47,.65);display:flex;align-items:center;justify-content:center;padding:20px}.reportModal.hidden{display:none!important}.reportDialog{width:min(920px,100%);max-height:88dvh;display:flex;flex-direction:column;background:#fff;border-radius:20px;box-shadow:0 12px 55px #0005;overflow:hidden}.reportHeader{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:17px 20px;border-bottom:1px solid #d7e4ed}.reportHeader h2{margin:0;font-size:1.3rem}.reportHeader button{flex-shrink:0}.reportDialog .batchReport{overflow-y:auto;max-height:none;flex:1;margin:0;border:0;border-radius:0;padding:16px 20px}.serverVersionStatus{font-weight:700;color:#165b45;white-space:normal;max-width:450px}.serverVersionStatus.error{color:#a22}@media(max-width:600px){.reportModal{padding:8px}.reportDialog{max-height:92dvh}.reportHeader{padding:12px}.reportHeader h2{font-size:1.05rem}.reportDialog .batchReport{padding:12px}} </style><style id="savedTravelStyle">.savedTravel{margin:0 0 20px;padding:14px;border-radius:17px;background:linear-gradient(125deg,#eaf3fc,#e9faf5);border:1px solid #c9dfeb}.savedTravel h3{margin:3px 0 12px}.savedTravelStage{background:#17324d;border-radius:14px;min-height:210px;display:flex;justify-content:center;align-items:center;padding:9px}.savedTravelStage img{width:100%;height:clamp(250px,46dvh,620px);object-fit:contain;border-radius:10px}.savedTravelStage img.hidden{display:none}.savedTravelStage p{color:white!important}.savedTravelControls{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:9px;margin:12px 0}.savedTravelControls button{min-height:42px}.savedTravelThumbs{display:flex;justify-content:center;flex-wrap:wrap;gap:9px}.savedTravelThumbs button{padding:4px;background:#fff;border:2px solid transparent;border-radius:10px}.savedTravelThumbs button.on{border-color:#128c77}.savedTravelThumbs img{width:105px;height:70px;object-fit:cover;border-radius:6px}@media(max-width:600px){.savedTravelThumbs img{width:64px;height:49px}.savedTravelControls button{font-size:13px;padding:8px}}<style id="expansion370">.continentBar{margin:12px 0 14px;gap:8px;flex-wrap:wrap}.continentBar button{min-height:39px;font-size:14px;border-radius:999px;background:#eaf1f6;color:#274762;border:1px solid #d6e5eb}.continentBar button.on{background:#174f82;color:#fff;border-color:#174f82}.countryList{gap:10px}.countryChoice{min-height:74px!important}.countryChoice strong{font-size:1.02rem}.countryChoice small{font-size:.85rem}@media(max-width:620px){.continentBar button{font-size:12px;padding:9px}.countryChoice{min-height:66px!important}}</style></style><style id="restore380Style">.zipRestorePicker{margin:12px 0;padding:16px;border:2px solid #bbd7df;background:#eef8fc;border-radius:14px}.zipRestorePicker h3{margin:0 0 8px}.zipRestorePicker input[type=file]{display:block!important;position:static!important;opacity:1!important;width:100%;max-width:100%;min-height:48px;box-sizing:border-box;font-size:16px;padding:11px;background:#fff;border:1px solid #abc7d0;border-radius:10px;color:#193649}.zipRestorePicker input::file-selector-button{border:1px solid #8ab8bd;border-radius:8px;background:#e2f4f4;padding:9px;margin-right:10px;color:#124252}.zipRestorePicker button:disabled{opacity:.55;cursor:not-allowed}.zipRestorePicker .status{overflow-wrap:anywhere}</style></head><body><header><div class="wrap"><div><b>🌏 세계 여행대백과</b><small>MASTER V3.9.8 · 41개국 · 기본사진 전체 재보강판</small></div><nav class="mainNav"><button id="homeBtn" class="secondary">🌏 나라탐험</button><button id="worldTab" class="secondary" type="button">🔎 명소탐험</button><button id="manageTab" class="secondary" type="button">⚙️ 백업·관리</button></nav></div></header><main><section id="home"><div class="hero"><h1 id="countryHeading">🌏 세계 여행대백과 · 41개국</h1><p id="countrySummary">나라를 선택해 여행을 시작하세요.</p><div class="row continentBar" id="continentBar" role="group" aria-label="대륙별 나라 선택"><button type="button" data-continent="전체" class="on">🌏 전체 41개국</button><button type="button" data-continent="아시아">아시아</button><button type="button" data-continent="유럽">유럽</button><button type="button" data-continent="아프리카">아프리카</button><button type="button" data-continent="북아메리카">북아메리카</button><button type="button" data-continent="오세아니아">오세아니아</button></div><div id="startupPhotoStatus385" role="status" aria-live="polite" style="padding:13px;margin:10px 0;border:1px solid #c8dbe9;border-radius:12px;background:#edf6fc;color:#18445e;font-weight:700">⏳ 기존 사진과 검색기억을 확인하고 있습니다. 자료를 삭제하거나 다시 선정하지 마세요.</div><div id="countryList" class="countryList" aria-label="여행할 나라 선택"></div><div class="row"><input id="countrySearch" type="search" placeholder="🔎 나라 검색" aria-label="나라 이름 검색"><button id="worldSearchBtn" class="secondary hidden" type="button">🔎 세계 명소탐험</button></div><button id="bulkBtn">🌄 전체 896개 명소 · 사진 5장과 배경 자동 선정</button></div><div class="box" id="landmarkPanel"><div class="row"><button id="countriesBack" class="secondary" type="button">← 나라탐험</button><input id="filter" type="search" placeholder="가고 싶은 명소를 찾아보세요" aria-label="명소 검색"><span id="homeStats" class="stat"></span></div><div class="row" id="placeFilters"><button type="button" data-view="all">전체 명소</button><button type="button" data-view="complete">🟢 완성</button><button type="button" data-view="incomplete">미완성</button></div><div id="bulkStatus" class="status hidden" aria-live="polite"></div><div id="bulkProgress" class="progress hidden"><div></div></div><div class="grid" id="places"></div></div><details class="box" id="management"><summary>⚙️ 관리 · 검색기억 · 백업</summary><p class="muted">기존 명소대백과 원본은 변경하지 않습니다. 기본사진첩은 실제 이미지 5장만 보관합니다. 사진여행은 별도의 인터넷 검색입니다.</p><div class="row"><button id="exportBtn">💾 지정 기본사진 · 정확 백업 ZIP 1개</button><span id="offlineStatus" class="muted" aria-live="polite">기본사진은 이 기기의 저장소에 따로 보관합니다.</span><button id="backupPreflight396" type="button" class="secondary">🔎 백업 전 사진 검사</button><label class="secondary" style="border-radius:11px;padding:12px;cursor:pointer">백업 복원 <input id="importFile" type="file" accept="application/json,.json" style="display:none"></label><button id="checkBtn" class="secondary">서버 버전 확인</button><span id="serverVersionStatus" class="serverVersionStatus" role="status" aria-live="polite"></span><button id="updateNowBtn" class="hidden" type="button" style="background:#087f65;color:white">⬆️ 최신 버전으로 열기</button></div><div id="backupVisible396" role="status" aria-live="polite" style="white-space:pre-wrap;overflow-wrap:anywhere;margin:12px 0;padding:16px;border:2px solid #accfc7;background:#f1faf7;border-radius:14px;font-size:15px;font-weight:700;line-height:1.65">📋 기본사진첩의 실제 저장사진만 백업합니다. 사진여행의 개별 사진 주소와 후보 목록은 백업하지 않습니다. 사진은 변경하지 않습니다.</div><div class="box" style="background:#fff8eb;border:1px solid #eacb8a;margin:12px 0;padding:15px;border-radius:14px"><strong>🖼️ 기본사진 선정 기준</strong><p style="margin:8px 0 0;line-height:1.6">① 명소를 한눈에 알아보는 전체 모습 ② 대표 건축물·중심 풍경 ③ 다른 각도 또는 계절·야경 ④ 명소만의 특징 ⑤ 내부·세부 모습. 같은 종류 사진만 5장 선정하지 않습니다. 사용자 지정사진은 자동으로 교체하지 않으며, 「사진 여행」에서 직접 교체한 뒤 정확 백업하세요.</p></div><section id="unifiedRestore384" class="box" style="margin-top:14px;background:#f1f9f7;border:2px solid #96c9ba;border-radius:17px"><h3>💾 백업 · 복원</h3><p class="muted">백업은 위의 「지정 기본사진 · 정확 백업」 한 번. 복원은 원본 전체 ZIP 파일 하나를 선택한 후 「전체 복원 시작」을 누릅니다. ZIP 전체를 메모리에 읽지 않고 지정사진을 한 장씩 검증해 저장합니다. V3.9.7은 기본사진 5장과 검색 조건만 분리해 백업합니다. 다만 iPadOS 파일 선택기에서 큰 파일 선택 자체가 중단될 수 있습니다.</p><div id="restoreDrop391" class="hidden" tabindex="0" role="region" aria-label="복원용 ZIP 파일을 여기로 끌어 놓으세요" style="border:2px dashed #2c879c;border-radius:14px;background:#fff;padding:20px;margin:12px 0;text-align:center;min-height:70px"><strong>📦 파일 앱에서 ZIP 묶음을 끌어 놓으세요</strong><p style="margin:7px 0">파일 앱에서 ZIP 묶음을 이곳으로 끌어 놓거나, 복사한 ZIP을 붙여넣어 보세요. 기기에 따라 파일 데이터 붙여넣기는 지원되지 않을 수 있습니다.</p><small>드래그가 안 되는 기기에서는 아래 파일 선택을 여러 번 이용할 수 있습니다. 선택한 파일은 누적되며 복원 실행은 한 번만 누릅니다.</small></div><div class="row hidden"><button type="button" id="restorePaste392" class="secondary">📋 복사한 ZIP 붙여넣기</button><button type="button" id="restoreClear391" class="secondary">↺ 선택 목록 비우기</button><span id="restoreCount391" class="muted" aria-live="polite">선택된 ZIP 없음</span></div><div id="restoreMissing392" role="status" class="muted" aria-live="polite" style="margin:8px 0">복원은 모든 묶음이 등록된 뒤 한 번만 시작합니다. 파일 앱이 ZIP의 복사를 지원하지 않으면 파일 선택으로 누적 등록할 수 있습니다.</div><div class="row"><label class="secondary" style="background:#fff;padding:12px;border-radius:11px;display:inline-block;cursor:pointer;font-weight:700">📂 원본 전체 ZIP 한 개 선택 · 복원<input id="unifiedRestoreFiles384" type="file" accept=".zip,application/zip" multiple style="display:block;max-width:min(100%,580px);margin-top:9px"></label><button id="unifiedStart386" type="button" disabled>✅ 전체 복원 시작</button><button id="unifiedCancel384" type="button" class="secondary" disabled>⏹ 안전 중단</button></div><div id="unifiedMessage384" class="status" role="status" aria-live="polite">원본 전체 백업 ZIP 1개를 선택해 주세요. 백업에 보관된 기본사진만 한 장씩 복원합니다. 파일 하나를 선택하세요.</div><div id="unifiedBar384" style="height:9px;border-radius:12px;background:#cfe2df;overflow:hidden"><div style="height:100%;width:0;background:#13876c;transition:width .2s"></div></div><p class="muted" style="margin-bottom:0">⚠️ 원본 606MB ZIP은 선택창을 여는 과정에서 iPadOS가 앱을 종료할 수 있습니다. 선택만 성공하면 ZIP 전체를 불러오지 않고 사진을 순차적으로 복원합니다. 기존 ZIP과 Safari 원본은 절대 삭제하지 마세요.</p><details id="advancedRestore384" style="margin-top:12px"><summary>고급 도구 · 안전 이전용 백업 만들기 및 기존 복원 방법</summary><div id="advancedSlot384"></div></details></section><section class="box" id="chunkBackupPanel" style="margin-top:14px;background:#f5fafc;border:1px solid #d9e9ef"><h3>🧰 대용량용 예비 백업 · 기존 분할 백업</h3><p class="muted">위 「전체 백업」은 사진과 설정을 하나의 ZIP 파일로 만듭니다. 대용량 단일 ZIP이 기기 메모리 문제로 진행되지 않을 때 아래 예비 분할 백업을 이용하세요. 사진을 다시 검색하거나 내려받지 않습니다.</p><div class="row"><button id="legacyBackupBtn" type="button" class="secondary">예비 분할 백업 준비</button><button id="backupInspectBtn" type="button" class="secondary">📊 실제 사진 용량 확인</button><button id="zipRestorePauseBtn" type="button" class="secondary hidden">⏹ 안전 중단</button></div><div class="zipRestorePicker" id="safeTransfer383"><h3>🧳 대용량 안전 이전 · 한 번에 복원</h3><p class="muted">홈 화면 앱이 600MB ZIP을 선택할 때 멈추는 문제를 피하기 위한 새 경로입니다. <b>Safari에서 「안전 이전용 백업 만들기」를 한 번 누르면</b> 하나의 이전용 ZIP이 저장됩니다. 파일 앱에서 그 ZIP의 압축을 풀고, 홈 화면 앱에서는 안쪽의 <b>작은 ZIP 묶음들을 모두 한 번에 선택</b>한 후 「전체 복원 시작」을 한 번 누르세요.</p><div class="zipRestorePicker" id="existingBackupConverter388" style="background:#fff;border:2px solid #b2d9cc">
 <h3>✅ 기존 통합 백업에서 안전 이전본 만들기 (권장)</h3>
 <p class="muted">이미 파일 앱에 저장한 <b>606MB 통합 백업 ZIP</b>을 Safari에서 한 번 선택해 주세요. 앱의 사진 저장소를 다시 읽지 않고, 이 ZIP의 사진을 약 14MB씩 작은 ZIP에 나눈 뒤 <b>다운로드 파일 1개</b>로 묶습니다. 원본 ZIP은 변경하지 않습니다.</p>
 <input id="existingSource388" type="file" accept=".zip,application/zip" aria-label="기존 전체 백업 ZIP 선택">
@@ -237,7 +237,7 @@ header .wrap{gap:12px}.mainNav{display:flex;gap:7px;flex-wrap:wrap}.mainNav butt
  <div id="zipPickedInfo" class="status" role="status" aria-live="polite">아직 파일을 선택하지 않았습니다.</div>
  <div class="row"><button id="zipRestoreStartBtn" type="button" disabled>② 선택한 ZIP 복원 시작</button><button id="zipRestoreClearBtn" class="secondary" type="button">파일 선택 취소</button></div>
  <p class="muted">홈 화면 앱에서 iPadOS 파일 선택창 자체가 검게 멈추면 기기 파일 선택 기능의 문제일 수 있습니다. 앱을 삭제하거나 저장 데이터를 지우지 마세요.</p>
- </div><div class="row"></div><div class="row"><button type="button" id="photoChunkBtn" class="secondary" disabled>📥 백업 준비 후 사진 묶음 저장</button><label class="secondary" style="border-radius:11px;padding:12px;cursor:pointer">📂 사진 묶음 복원 <input id="photoChunkFiles" type="file" accept="application/json,.json" multiple style="display:none"></label></div><div id="backupProgressText" class="status" aria-live="polite">먼저 「실제 사진 용량 확인」으로 저장 사진의 실제 크기를 확인하세요. 단일 ZIP은 Safari의 기기별 메모리 상황에 따라 실패할 수 있습니다.</div></section><section id="countryBatch" class="batchPanel"><h2>🌏 나라별 사진 자동선정</h2><p class="muted">필요한 나라만 선택합니다. 사진 5장이 완성된 명소는 건너뛰고, 기존 사진은 교체하지 않습니다.</p><div class="row"><button type="button" id="batchAll" class="secondary">전체 선택</button><button type="button" id="batchIncomplete" class="secondary">미완성 나라 선택</button><button type="button" id="batchNone" class="secondary">선택 해제</button></div><div id="batchCountries" class="batchCountries"></div><div class="row"><button type="button" id="batchStart">🌄 선택한 나라 자동선정</button><button type="button" id="batchResults" class="secondary">📊 결과보기</button><button type="button" id="batchFailures" class="secondary">🔴 검색 실패 명소</button></div><div id="batchMessage" class="status" aria-live="polite">나라를 선택하면 사진 자동선정을 시작할 수 있습니다.</div><div id="batchBar" class="progress"><div></div></div></section><div id="manageStatus" class="muted"></div></details></section><section id="detail" class="hidden"><div class="detailHead"><button id="backBtn" class="secondary" aria-label="명소 목록으로">←</button><div class="placeIdentity"><h1 id="placeTitle"></h1><p id="placeRegion" class="muted"></p></div><div class="tabs" id="tabs"><button data-tab="description" class="on">명소 이야기</button><button data-tab="album">기본 사진첩</button><button data-tab="memory">사진 여행</button><button id="fillBtn" class="fillInline" type="button">＋ 사진 보강</button><span id="placeState" class="photoProgress" aria-live="polite"></span></div></div><div class="box view" id="description"><div class="storyBackdrop" id="storyBackdrop"><div class="storyBackdropInner"><div class="storyLabel">✦ TRAVEL STORIES</div><h2>명소 이야기</h2><p id="storyBackdropHint">사진으로 만나는 오늘의 여행</p></div></div><div class="storyContent"><p class="lead" id="placeDesc"></p><div class="tripSummary" id="tripSummary"></div><div class="descriptionAction"><button id="toAlbumBtn">🖼️ 기본 사진첩 보기로 이동 →</button></div></div></div><div id="album" class="view hidden"><div class="row" style="justify-content:flex-end"><span id="albumOffline" class="stat">📦 기기 보관 확인 중</span><button class="secondary" id="savePlaceBtn">📥 이 명소 사진 5장 보관</button><button id="completeAlbumBtn" type="button">✓ 사진첩 완성 표시</button></div><div id="viewer" class="viewer hidden"><img id="largePhoto" alt="명소 대표 사진"></div><div class="albumTools"><button id="reorderBtn" class="secondary" type="button">↔ 사진 끌어 옮기기</button><span id="reorderHint" class="muted">사진을 골라 크게 감상하세요. 순서를 바꾸려면 옮기기 버튼을 누르세요.</span></div><div id="albumPhotos" class="photos" aria-label="작은 사진을 선택하면 큰 사진이 바뀝니다"></div><div id="emptyGallery" class="galleryEmpty hidden">🖼️ 사진을 준비하고 있습니다. 사진 여행에서 사진을 찾아보세요.</div></div><div id="memory" class="box view hidden"><div class="memoryHead"><h2>사진 여행 · 슬라이드 감상</h2><div class="row"><button id="repairBtn">📸 사진 상태 확인·대체</button><button id="moreBtn" class="secondary">🔎 다음 후보 더 찾기</button></div></div><section id="savedTravel" class="savedTravel"><h3>🖼️ 저장된 사진으로 여행하기 <span class="muted">새 후보를 찾지 못해도 저장된 사진은 감상할 수 있습니다.</span></h3><div class="savedTravelStage"><img id="savedTravelImage" alt="저장된 기본사진 감상"><p id="savedTravelEmpty" class="muted hidden">아직 저장된 사진이 없습니다. 사진을 검색해 기본사진으로 저장해 주세요.</p></div><div class="savedTravelControls"><button type="button" id="savedTravelPrev" class="secondary">❮ 이전 사진</button><button type="button" id="savedTravelPlay">▶ 저장사진 재생</button><strong id="savedTravelCount">0 / 0</strong><button type="button" id="savedTravelNext" class="secondary">다음 사진 ❯</button></div><div id="savedTravelThumbs" class="savedTravelThumbs"></div></section><div id="repairWorkspace"><h3>기본사진 · 5장 <span class="muted">자동·직접 선정 사진은 모두 정식 저장됩니다. 빈자리를 채우거나 교체할 자리를 선택하세요</span></h3><div id="baseSelection" class="photos"></div><div class="row baseStoryRow"><button id="baseStoryBtn" class="secondary" type="button">✦ 선택한 기본사진을 명소 이야기 배경으로</button><span id="baseStoryNote" class="muted">위 기본사진을 선택한 다음 배경으로 지정하세요.</span></div><p id="swapHint" class="swapHint">아래 후보를 골라 사진첩에 추가할 수 있습니다.</p><h3>후보사진 <span class="muted">사진을 누르면 크게 볼 수 있습니다</span></h3><div id="candidatePreview" class="candidatePreview hidden"><img id="candidateLarge" alt="선택한 후보사진 크게보기"><div class="candidateControls"><button id="candidatePrev" class="secondary">❮ 이전 후보</button><button id="candidatePlay" class="candidatePlay" type="button" aria-pressed="false">▶ 슬라이드 재생</button><span id="candidateIndex"></span><button id="candidateNext" class="secondary">다음 후보 ❯</button></div><div class="candidateHelp" id="slideHint">마음에 드는 후보를 선택하면 기본사진으로 바로 저장합니다.</div><button id="candidateAdd">＋ 이 사진을 사진첩에 추가</button><a id="candidateSource" class="sourceLink" target="_blank" rel="noopener noreferrer" href="#">사진 출처 확인 ↗</a><div id="candidateCaption" class="muted"></div></div></div><button id="searchBtn" class="hidden">새 사진 검색</button><div id="searchStatus" class="status" aria-live="polite">처음 검색할 때는 기존 기억의 사진 제목을 먼저 확인하고 부족하면 공개 사진을 검색합니다.</div><div id="candidateStats" class="muted"></div><div id="candidates" class="photos"></div></div></section></main><div id="reportModal" class="reportModal hidden" role="dialog" aria-modal="true" aria-labelledby="reportTitle"><div class="reportDialog"><div class="reportHeader"><h2 id="reportTitle">📊 나라별 검색·사진 결과</h2><button type="button" id="reportClose" class="secondary" aria-label="결과보기 닫기">✕ 닫기</button></div><div id="batchReport" class="batchReport"></div></div></div><script>
+ </div><div class="row"></div><div class="row"><button type="button" id="photoChunkBtn" class="secondary" disabled>📥 백업 준비 후 사진 묶음 저장</button><label class="secondary" style="border-radius:11px;padding:12px;cursor:pointer">📂 사진 묶음 복원 <input id="photoChunkFiles" type="file" accept="application/json,.json" multiple style="display:none"></label></div><div id="backupProgressText" class="status" aria-live="polite">먼저 「실제 사진 용량 확인」으로 저장 사진의 실제 크기를 확인하세요. 단일 ZIP은 Safari의 기기별 메모리 상황에 따라 실패할 수 있습니다.</div></section><section id="countryBatch" class="batchPanel"><h2>🌏 나라별 사진 자동선정</h2><p class="muted">필요한 나라만 선택합니다. 이번 버전은 <b>기본사진 5장과 배경사진을 먼저 비우고</b> 다시 자동 선정·보강할 수 있습니다. 결과보기와 검색 실패 보기는 그대로 유지됩니다.</p><div class="row"><button type="button" id="batchAll" class="secondary">전체 선택</button><button type="button" id="batchIncomplete" class="secondary">미완성 나라 선택</button><button type="button" id="batchNone" class="secondary">선택 해제</button></div><div class="status warning" id="batchResetHelp">🧹 <b>기본사진 백지상태로 다시 시작</b>를 켜면, 선택한 나라의 명소 기본사진 5장·배경사진·완성표시를 먼저 비운 뒤 자동 재보강합니다. 명소 설명과 검색 별칭은 유지되며 후보사진은 새로 검색합니다.</div><div class="row"><label class="secondary" style="display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:11px"><input id="batchResetFirst" type="checkbox" checked> 기본사진 백지상태로 다시 시작</label></div><div id="batchCountries" class="batchCountries"></div><div class="row"><button type="button" id="batchStart">🌄 선택한 나라 전체 재보강 시작</button><button type="button" id="batchResults" class="secondary">📊 결과보기</button><button type="button" id="batchFailures" class="secondary">🔴 검색 실패 명소</button></div><div id="batchMessage" class="status" aria-live="polite">나라를 선택하면 기본사진 전체 재보강을 시작할 수 있습니다.</div><div id="batchBar" class="progress"><div></div></div></section><div id="manageStatus" class="muted"></div></details></section><section id="detail" class="hidden"><div class="detailHead"><button id="backBtn" class="secondary" aria-label="명소 목록으로">←</button><div class="placeIdentity"><h1 id="placeTitle"></h1><p id="placeRegion" class="muted"></p></div><div class="tabs" id="tabs"><button data-tab="description" class="on">명소 이야기</button><button data-tab="album">기본 사진첩</button><button data-tab="memory">사진 여행</button><button id="fillBtn" class="fillInline" type="button">＋ 사진 보강</button><span id="placeState" class="photoProgress" aria-live="polite"></span></div></div><div class="box view" id="description"><div class="storyBackdrop" id="storyBackdrop"><div class="storyBackdropInner"><div class="storyLabel">✦ TRAVEL STORIES</div><h2>명소 이야기</h2><p id="storyBackdropHint">사진으로 만나는 오늘의 여행</p></div></div><div class="storyContent"><p class="lead" id="placeDesc"></p><div class="tripSummary" id="tripSummary"></div><div class="descriptionAction"><button id="toAlbumBtn">🖼️ 기본 사진첩 보기로 이동 →</button></div></div></div><div id="album" class="view hidden"><div class="row" style="justify-content:flex-end"><span id="albumOffline" class="stat">📦 기기 보관 확인 중</span><button class="secondary" id="savePlaceBtn">📥 이 명소 사진 5장 보관</button><button id="completeAlbumBtn" type="button">✓ 사진첩 완성 표시</button></div><div id="viewer" class="viewer hidden"><img id="largePhoto" alt="명소 대표 사진"></div><div class="albumTools"><button id="reorderBtn" class="secondary" type="button">↔ 사진 끌어 옮기기</button><span id="reorderHint" class="muted">사진을 골라 크게 감상하세요. 순서를 바꾸려면 옮기기 버튼을 누르세요.</span></div><div id="albumPhotos" class="photos" aria-label="작은 사진을 선택하면 큰 사진이 바뀝니다"></div><div id="emptyGallery" class="galleryEmpty hidden">🖼️ 사진을 준비하고 있습니다. 사진 여행에서 사진을 찾아보세요.</div></div><div id="memory" class="box view hidden"><div class="memoryHead"><h2>사진 여행 · 슬라이드 감상</h2><div class="row"><button id="repairBtn">📸 사진 상태 확인·대체</button><button id="moreBtn" class="secondary">🔎 다음 후보 더 찾기</button></div></div><section id="savedTravel" class="savedTravel"><h3>🖼️ 저장된 사진으로 여행하기 <span class="muted">새 후보를 찾지 못해도 저장된 사진은 감상할 수 있습니다.</span></h3><div class="savedTravelStage"><img id="savedTravelImage" alt="저장된 기본사진 감상"><p id="savedTravelEmpty" class="muted hidden">아직 저장된 사진이 없습니다. 사진을 검색해 기본사진으로 저장해 주세요.</p></div><div class="savedTravelControls"><button type="button" id="savedTravelPrev" class="secondary">❮ 이전 사진</button><button type="button" id="savedTravelPlay">▶ 저장사진 재생</button><strong id="savedTravelCount">0 / 0</strong><button type="button" id="savedTravelNext" class="secondary">다음 사진 ❯</button></div><div id="savedTravelThumbs" class="savedTravelThumbs"></div></section><div id="repairWorkspace"><h3>기본사진 · 5장 <span class="muted">자동·직접 선정 사진은 모두 정식 저장됩니다. 빈자리를 채우거나 교체할 자리를 선택하세요</span></h3><div id="baseSelection" class="photos"></div><div class="row baseStoryRow"><button id="baseStoryBtn" class="secondary" type="button">✦ 선택한 기본사진을 명소 이야기 배경으로</button><span id="baseStoryNote" class="muted">위 기본사진을 선택한 다음 배경으로 지정하세요.</span></div><p id="swapHint" class="swapHint">아래 후보를 골라 사진첩에 추가할 수 있습니다.</p><h3>후보사진 <span class="muted">사진을 누르면 크게 볼 수 있습니다</span></h3><div id="candidatePreview" class="candidatePreview hidden"><img id="candidateLarge" alt="선택한 후보사진 크게보기"><div class="candidateControls"><button id="candidatePrev" class="secondary">❮ 이전 후보</button><button id="candidatePlay" class="candidatePlay" type="button" aria-pressed="false">▶ 슬라이드 재생</button><span id="candidateIndex"></span><button id="candidateNext" class="secondary">다음 후보 ❯</button></div><div class="candidateHelp" id="slideHint">마음에 드는 후보를 선택하면 기본사진으로 바로 저장합니다.</div><button id="candidateAdd">＋ 이 사진을 사진첩에 추가</button><a id="candidateSource" class="sourceLink" target="_blank" rel="noopener noreferrer" href="#">사진 출처 확인 ↗</a><div id="candidateCaption" class="muted"></div></div></div><button id="searchBtn" class="hidden">새 사진 검색</button><div id="searchStatus" class="status" aria-live="polite">처음 검색할 때는 기존 기억의 사진 제목을 먼저 확인하고 부족하면 공개 사진을 검색합니다.</div><div id="candidateStats" class="muted"></div><div id="candidates" class="photos"></div></div></section></main><div id="reportModal" class="reportModal hidden" role="dialog" aria-modal="true" aria-labelledby="reportTitle"><div class="reportDialog"><div class="reportHeader"><h2 id="reportTitle">📊 나라별 검색·사진 결과</h2><button type="button" id="reportClose" class="secondary" aria-label="결과보기 닫기">✕ 닫기</button></div><div id="batchReport" class="batchReport"></div></div></div><script>
 'use strict';
 const $=id=>document.getElementById(id), API='https://commons.wikimedia.org/w/api.php', KEY='travelMaster2_1_memory', PICKS_KEY='travelMaster2_8_2_picks';
 let countries=[],selectedCountry='KR',catalog=[],current=null,tab='description',position=0,working=false,bulkStop=false,candidatePosition=0,excludeIndex=-1,searchBusy=false,candidateTimer=null; 
@@ -344,7 +344,7 @@ async function refreshOfflinePhotoNodes(){
   const title=img.dataset.photoTitle||((img.id==='largePhoto')?img.dataset.title:null);if(!title)continue;
   try{const u=await stableOfflineURL(id,title);if(!u||current?.id!==id||!img.isConnected)continue;if((img.dataset.photoTitle||img.dataset.title)!==title)continue;if(img.src!==u)img.src=u}catch(e){}
  }
- try{const story=record(id).storyPhotoTitle||slots.find(Boolean),url=story&&await stableOfflineURL(id,story);if(url&&current?.id===id)$('storyBackdrop').style.backgroundImage=`url("${url}")`}catch(e){}
+ try{const story=slots[0],url=story&&await stableOfflineURL(id,story);if(url&&current?.id===id)$('storyBackdrop').style.backgroundImage=`url("${url}")`}catch(e){}
  let n=0;for(const title of slots)if(title){try{if(await vaultGet(id,title))n++}catch(e){}}
  if(current?.id===id)$('albumOffline').textContent=`📦 기기 보관 ${n}/5 · 저장사진은 인터넷 없이 표시`;
 }
@@ -491,33 +491,59 @@ function zipHeader(type,name,size,crc,offset){
 function zipEnd(count,size,offset){const b=new Uint8Array(22),v=new DataView(b.buffer);v.setUint32(0,0x06054b50,true);
  v.setUint16(8,count,true);v.setUint16(10,count,true);v.setUint32(12,size,true);v.setUint32(16,offset,true);return b;}
 let nativeBackupHandle=null;
-// V3.9.5: Only the five displayed fixed photo slots belong to the canonical album.
+// V3.9.7: Only the five displayed fixed photo slots belong to the canonical album.
 // No stale candidates, cached search-result images or unused vault photos are exported.
+// V3.9.7: the five committed, offline images are the ONLY album payload.
+// Candidate pictures, photo URLs and search thumbnails are never album data.
 function buildAlbumSnapshot395(){
  const out={};
- for(const [id,r] of Object.entries(state.places)){
-  ensurePhotoSlots(r);
-  const slots=r.fixedSlots.slice(0,PHOTO_LIMIT).map(t=>t||null);
-  out[id]={fixedSlots:slots,storyPhotoTitle:r.storyPhotoTitle||'',manualComplete:!!r.manualComplete,
-   candidates:(r.candidates||[]).filter(c=>slots.includes(c.title))};
+ for(const id of new Set([...Object.keys(state.places),...Object.keys(savedPicks)])){
+  const r=record(id);
+  out[id]={fixedSlots:r.fixedSlots.slice(0,PHOTO_LIMIT).map(x=>x||null),manualComplete:!!r.manualComplete};
  }
  return out;
 }
-async function selectedBackupKeys395(){
- const albums=buildAlbumSnapshot395(),keys=[],seen=new Set(),missing=[];
- for(const [id,a] of Object.entries(albums))for(const title of a.fixedSlots){
-  if(!title)continue;
-  const key=imageKey(id,title);
-  if(seen.has(key))continue;
-  seen.add(key);
-  const row=await vaultGetExactKey(key);
-  if(!row?.blob||row.blob.size<1)missing.push(id+' / '+title);
-  else keys.push(key);
+// Search is separate from the album: save ONLY conditions and progress,
+// never the URL-filled candidate array or individual returned photo URLs.
+function minimalSearchState397(){
+ const places={};
+ for(const [id,r] of Object.entries(state.places)){
+  const x={};for(const k of ['cursor','queryStep','note','updated','manualAlbum','manualComplete','searchTargets','searchAliases','searchConditions','excludeTerms','searchMode']){
+   if(Object.prototype.hasOwnProperty.call(r,k) && r[k]!==undefined)x[k]=r[k];
+  }
+  if(Object.keys(x).length)places[id]=x;
  }
- if(missing.length)throw Error(`지정된 기본사진 중 기기 보관이 누락된 ${missing.length}장: ${missing.slice(0,3).join(' / ')}. 사진을 다시 저장한 뒤 백업하세요. 잘못된 백업은 만들지 않았습니다.`);
+ return {places,rules:state.rules||{}};
+}
+async function selectedBackupKeys395(){
+ const albums=buildAlbumSnapshot395(),keys=[],seen=new Set(),missing=[],empty=[],dupes=[];
+ let total=0;
+ for(const [id,a] of Object.entries(albums)){
+  for(let slot=0;slot<a.fixedSlots.length;slot++){
+   const title=a.fixedSlots[slot];if(!title)continue;total++;
+   const key=imageKey(id,title);
+   if(seen.has(key)){dupes.push(`${id} / ${slot+1}번 / ${title}`);continue;}
+   seen.add(key);
+   let row;
+   try{row=await vaultGetExactKey(key)}catch(e){throw Error(`사진 저장소 읽기 오류 (${id} ${slot+1}번): ${e.message}`)}
+   if(!row?.blob||row.blob.size<1)missing.push(`${id} / ${slot+1}번 / ${title}`);
+   else keys.push(key);
+   if(total%40===0){const el=document.getElementById('backupVisible396');if(el)el.textContent=`🔎 지정 사진 점검 중 ${total}장 · 읽기 성공 ${keys.length}장 · 누락 ${missing.length}장`;await backupPause()}
+  }
+ }
+ const report={total,found:keys.length,missing,dupes,empty:Object.keys(albums).length,checkedAt:new Date().toISOString()};
+ window.backupReport396=report;
+ const panel=document.getElementById('backupVisible396');
+ if(panel){
+  const msg=`📊 지정사진 ${total}장 · 실제 보관 ${keys.length}장 · 누락 ${missing.length}장 · 중복 ${dupes.length}건`;
+  panel.textContent=missing.length?`⚠️ 백업 전 검사: ${msg}\n누락 사진 (처음 12건):\n${missing.slice(0,12).join('\n')}\n\n사진을 삭제하거나 자동 재선정하지 않았습니다. 검사 결과를 사진으로 보여주세요.`:`✅ 백업 전 검사 통과: ${msg}\n기본사진 지정 및 이미지 보관 확인 완료. 백업 버튼을 누를 수 있습니다.`;
+  panel.style.background=missing.length?'#fff1ea':'#eaf9ed';panel.style.borderColor=missing.length?'#d68b73':'#81bea0';
+ }
+ if(missing.length)throw Error(`기본사진 ${missing.length}장의 이미지 파일 누락: ${missing.slice(0,3).join(' | ')}. 원본을 변경하지 않았습니다.`);
  if(!keys.length)throw Error('저장된 지정 기본사진이 없습니다.');
  return keys;
 }
+
 function validateSelectedSnapshot395(d,manifest){
  if(!d.albums||typeof d.albums!=='object')throw Error('기본사진 지정 정보가 없는 백업입니다');
  const mapping=new Set(manifest.photos.map(p=>imageKey(p.placeId,p.title)));
@@ -529,24 +555,31 @@ function validateSelectedSnapshot395(d,manifest){
  if(count!==manifest.photos.length)throw Error(`지정사진 ${count}개와 저장사진 ${manifest.photos.length}개가 불일치합니다`);
 }
 async function applyExactAlbumSnapshot395(d){
- // Merge unrelated app work; for archived places the snapshot is authoritative.
  for(const [id,a]of Object.entries(d.albums)){
-  const r=record(id);
-  const src=d.state.places[id]||{};
-  addCandidates(r,src.candidates||[]);
-  addCandidates(r,a.candidates||[]);
-  r.fixedSlots=a.fixedSlots.slice();r.album=a.fixedSlots.filter(Boolean);
-  r.fallbackSlots=Array.from({length:PHOTO_LIMIT},(_,i)=>src.fallbackSlots?.[i]||null);
-  r.storyPhotoTitle=a.storyPhotoTitle||'';r.manualComplete=!!a.manualComplete;
+  const r=record(id),src=d.state.places?.[id]||{};
+  // Candidate memory belongs to the independent live picture journey.
+  // Older backup compatibility is kept, but v3.9.7 backs up no candidates.
+  if(Array.isArray(src.candidates))addCandidates(r,src.candidates);
+  if(Array.isArray(a.candidates))addCandidates(r,a.candidates);
+  r.fixedSlots=a.fixedSlots.slice(0,PHOTO_LIMIT);
+  r.album=r.fixedSlots.filter(Boolean);
+  r.fallbackSlots=Array(PHOTO_LIMIT).fill(null);
+  r.storyPhotoTitle=r.fixedSlots[0]||'';
+  r.manualComplete=!!a.manualComplete;
   r._pickHydrated=true;
   const pick={fixedSlots:r.fixedSlots.slice(),fallbackSlots:r.fallbackSlots.slice(),storyPhotoTitle:r.storyPhotoTitle,manualComplete:r.manualComplete,updated:Date.now()};
-  savedPicks[id]=pick;await savePickToVault(id,pick);
+  savedPicks[id]=pick;
+  await savePickToVault(id,pick);
  }
+ for(const [id,src]of Object.entries(d.state.places||{})){
+  const r=record(id);
+  for(const k of ['cursor','queryStep','note','updated','searchTargets','searchAliases','searchConditions','excludeTerms','searchMode']){
+   if(Object.prototype.hasOwnProperty.call(src,k))r[k]=src[k];
+  }
+  if(Array.isArray(src.candidates))addCandidates(r,src.candidates);
+ }
+ if(d.state.rules)state.rules=d.state.rules;
  try{localStorage.setItem(PICKS_KEY,JSON.stringify(savedPicks))}catch(e){console.warn('지정정보는 사진 DB에 보관했습니다',e)}
- // Preserve existing search memory for unrelated places.
- for(const [id,src]of Object.entries(d.state.places)){
-  const r=record(id);addCandidates(r,src.candidates||[]);
- }
  persist();renderAll();refreshOfflinePhotoNodes();updateHome();refreshCompleteButton();
 }
 async function downloadSingleZipBackup(){
@@ -555,13 +588,13 @@ async function downloadSingleZipBackup(){
   try{nativeBackupHandle=await window.showSaveFilePicker({suggestedName:`세계여행대백과_${new Date().toISOString().slice(0,10)}_전체백업.zip`,types:[{description:'여행대백과 ZIP',accept:{'application/zip':['.zip']}}]});}
   catch(e){if(e.name==='AbortError')return; /* other browsers can fall back to standard download */}
  }
- const btn=$('exportBtn'),status=$('backupProgressText');btn.disabled=true;btn.textContent='⏳ 통합 백업 준비 중';
+ const btn=$('exportBtn'),status=$('backupProgressText'),visible=$('backupVisible396');if(visible)visible.textContent='⏳ 백업 시작 · 지정 사진의 실제 파일을 확인하는 중…';btn.disabled=true;btn.textContent='⏳ 통합 백업 준비 중';
  try{
   if(working)throw Error('사진 자동선정을 중단한 다음 백업해 주세요.');
   const keys=await selectedBackupKeys395(),stamp=new Date().toISOString().replace(/[:.]/g,'-').slice(0,19);
   // Avoid double-copying the state by JSON.parse(JSON.stringify(...)).
-  const meta={format:'WorldTravelMASTER-v3.9.5-selected',savedAt:new Date().toISOString(),
-    photoCount:keys.length,state,selectedPhotos:savedPicks,albums:buildAlbumSnapshot395()};
+  const meta={format:'WorldTravelMASTER-v3.9.7-album-only',savedAt:new Date().toISOString(),
+    photoCount:keys.length,state:minimalSearchState397(),albums:buildAlbumSnapshot395()};
   const metaBlob=new Blob([JSON.stringify(meta)],{type:'application/json'});
   let sizeEstimate=metaBlob.size;
   if(sizeEstimate>SINGLE_BACKUP_MAX_BYTES)throw Error('설정·검색기억만 900MB를 넘었습니다. 예비 분할 백업을 사용하세요.');
@@ -586,7 +619,7 @@ async function downloadSingleZipBackup(){
    sizeEstimate+=item.blob.size+128;
    if(sizeEstimate>SINGLE_BACKUP_MAX_BYTES)throw Error('단일 ZIP이 900MB를 넘을 것으로 예상됩니다. Safari의 중단 위험을 줄이기 위해 예비 분할 백업을 이용해 주세요.');
    await add(name,item.blob);ok++;
-   if(i%5===0||i===keys.length-1){status.textContent=`ZIP 준비 ${i+1}/${keys.length}장 (${Math.round((i+1)/keys.length*100)}%) · ${(sizeEstimate/1048576).toFixed(1)}MB · 기존 자료 유지`;await backupPause();}
+   if(i%5===0||i===keys.length-1){if(visible&&i%20===0)visible.textContent=`⏳ 백업 ZIP 준비 ${i+1}/${keys.length}장 · 현재까지 실패 없음`;status.textContent=`ZIP 준비 ${i+1}/${keys.length}장 (${Math.round((i+1)/keys.length*100)}%) · ${(sizeEstimate/1048576).toFixed(1)}MB · 기존 자료 유지`;await backupPause();}
   }
   // The index is written last, so it includes every photo mapping.
   const manifestBlob=new Blob([JSON.stringify({format:'WorldTravelMASTER-v3.7.4-index',photos:meta.photoManifest||[]})],{type:'application/json'});
@@ -620,9 +653,9 @@ async function downloadSingleZipBackup(){
    setTimeout(()=>URL.revokeObjectURL(url),180000);
    delivery='다운로드 요청됨 (저장 확인 필요)';
   }
-  status.textContent=`✅ 지정 기본사진 정확 백업 ${delivery} · ${ok}/${keys.length}장 · ${(expectedBytes/1048576).toFixed(1)}MB · 사진 순서/설정 포함. 파일 앱에 ZIP 저장을 확인하세요.`;
+  if(visible){visible.textContent=`✅ 백업 파일 생성 ${delivery} · 사진 ${ok}/${keys.length}장 · ${(expectedBytes/1048576).toFixed(1)}MB. 파일 앱에서 ZIP을 확인하세요.`;visible.style.background='#eaf9ed'}status.textContent=`✅ 지정 기본사진 정확 백업 ${delivery} · ${ok}/${keys.length}장 · ${(expectedBytes/1048576).toFixed(1)}MB · 사진 순서/설정 포함. 파일 앱에 ZIP 저장을 확인하세요.`;
   offlineStatus(`전체 백업 처리 · ${ok}장 · 기존 자료 변경 없음`);
- }catch(e){status.textContent='⚠️ 통합 백업 중단: '+e.message+' · 사진·검색기억은 변경되지 않았습니다.';offlineStatus('백업 실패 · 기존 사진은 유지됩니다');}
+ }catch(e){const details='⚠️ 백업 중단: '+(e?.message||String(e))+' · 기존 사진과 지정 정보는 변경되지 않았습니다.';status.textContent=details;if(visible){visible.textContent=details;visible.style.background='#fff1ea';visible.style.borderColor='#d68b73'}offlineStatus('백업 실패 · 자세한 원인은 아래 주황색 안내를 확인하세요');}
  finally{btn.disabled=false;btn.textContent='💾 지정 기본사진 · 정확 백업 ZIP 1개'}
 }
 async function zipReadCentral(file){
@@ -634,9 +667,9 @@ async function zipReadCentral(file){
  const bytes=new Uint8Array(await file.slice(at,at+length).arrayBuffer()),view=new DataView(bytes.buffer),items=[];let pos=0;
  for(let i=0;i<count;i++){
   if(pos+46>bytes.length||view.getUint32(pos,true)!==0x02014b50)throw Error('ZIP 파일 목록이 손상되었습니다');
-  const method=view.getUint16(pos+10,true),compressed=view.getUint32(pos+20,true),n=view.getUint16(pos+28,true),extra=view.getUint16(pos+30,true),comment=view.getUint16(pos+32,true),localOffset=view.getUint32(pos+42,true);
+  const method=view.getUint16(pos+10,true),crc=view.getUint32(pos+16,true),compressed=view.getUint32(pos+20,true),n=view.getUint16(pos+28,true),extra=view.getUint16(pos+30,true),comment=view.getUint16(pos+32,true),localOffset=view.getUint32(pos+42,true);
   const name=new TextDecoder().decode(bytes.slice(pos+46,pos+46+n));if(method!==0)throw Error('압축 방식이 지원되지 않습니다');
-  items.push({name,size:compressed,localOffset});pos+=46+n+extra+comment;
+  items.push({name,size:compressed,localOffset,crc});pos+=46+n+extra+comment;
  }
  return items;
 }
@@ -701,10 +734,10 @@ async function restoreSingleZipBackup(file){
   if(!settings||!idx)throw Error('여행대백과 통합 백업 파일이 아닙니다');
   const d=JSON.parse(await (await zipReadEntry(file,settings)).text());
   const manifest=JSON.parse(await (await zipReadEntry(file,idx)).text());
-  if(!['WorldTravelMASTER-v3.7.4-onezip','WorldTravelMASTER-v3.9.5-selected'].includes(d.format)||!d.state?.places||!Array.isArray(manifest.photos))throw Error('백업 설정 파일이 올바르지 않습니다');
+  if(!['WorldTravelMASTER-v3.7.4-onezip','WorldTravelMASTER-v3.9.6-selected','WorldTravelMASTER-v3.9.7-album-only'].includes(d.format)||!d.state?.places||!Array.isArray(manifest.photos))throw Error('백업 설정 파일이 올바르지 않습니다');
   const photoMap=new Map(list.map(x=>[x.name,x]));total=manifest.photos.length;
   if(!total)throw Error('ZIP 사진 인덱스가 비어 있습니다');
-  const exact395=d.format==='WorldTravelMASTER-v3.9.5-selected';
+  const exact395=['WorldTravelMASTER-v3.9.6-selected','WorldTravelMASTER-v3.9.7-album-only'].includes(d.format);
   if(exact395)validateSelectedSnapshot395(d,manifest);
   if(exact395&&!confirm(`지정사진 ${total}장을 백업 당시의 사진으로 정확하게 복원합니다. 현재 앱에 같은 명소의 다른 사진이 있으면 백업 사진으로 교체됩니다. 다른 명소의 기존 사진은 삭제하지 않습니다. 진행하시겠습니까?`))throw Error('사용자가 정확 복원을 취소했습니다');
   checkpointId=zipRestoreProgressId(file,manifest,d);
@@ -732,6 +765,7 @@ async function restoreSingleZipBackup(file){
     if(entry.size>15*1024*1024)throw Error(`${i+1}번 사진 용량이 비정상적으로 큽니다`);
     const photoPart=await zipReadEntry(file,entry);
     const bytes=await photoPart.arrayBuffer();
+    if(((zipCRCUpdate(0xffffffff,new Uint8Array(bytes))^0xffffffff)>>>0)!==entry.crc)throw Error(`${i+1}번 사진의 ZIP 검사값이 다릅니다`);
     if(bytes.byteLength!==entry.size)throw Error(`${i+1}번 사진 읽기 길이가 일치하지 않습니다`);
     await zipRestoreTimedDb('put',item.placeId,item.title,{bytes,mime:item.mime||'image/jpeg'});
     restored++;
@@ -749,7 +783,7 @@ async function restoreSingleZipBackup(file){
   photoCache.forEach(url=>{try{URL.revokeObjectURL(url)}catch(_){}});photoCache.clear();stableOfflineUrls.clear();
   if(current){renderAll();refreshOfflinePhotoNodes()}updateHome();batchPaintCountries();
   localStorage.removeItem(ZIP_RESTORE_PROGRESS_KEY);
-  el.textContent=exact395?`✅ 지정 기본사진 정확 복원 완료 · ${total}/${total}장 기록 · 사진·순서·검색기억 복원 · 관련 없는 명소 사진 유지`:`✅ 기존 통합 복원 완료 · 확인 ${total}/${total}장 · 새로 저장 ${restored}장 · 기존 사진 보호 ${duplicates}장 · 설정/검색기억 병합. 기존 자료 삭제 없음.`;
+  el.textContent=exact395?`✅ 지정 기본사진 정확 복원 완료 · ${total}/${total}장 기록 · 사진·순서·검색 조건 복원 · 관련 없는 명소 사진 유지`:`✅ 기존 통합 복원 완료 · 확인 ${total}/${total}장 · 새로 저장 ${restored}장 · 기존 사진 보호 ${duplicates}장 · 설정/검색기억 병합. 기존 자료 삭제 없음.`;
  }catch(e){
   zipRestoreCheckpoint(checkpointId,processed,restored,duplicates);
   el.textContent=`⚠️ 통합 복원 중단 (${processed}/${total||'?'}장): ${e.message}. 이미 복원한 사진과 홈 화면 앱 자료는 유지됩니다. 같은 ZIP으로 다시 시도할 수 있습니다.`;
@@ -985,6 +1019,7 @@ $('safeTransferFiles383').onchange=e=>{
 };
 $('safeTransferImport383').onclick=()=>importTransfer383(transferFiles383);
 $('safeTransferImportStop383').onclick=()=>{transferImportStop383=true};
+$('backupPreflight396').onclick=async()=>{const b=$('backupPreflight396');b.disabled=true;try{await selectedBackupKeys395()}catch(e){const v=$('backupVisible396');if(v&&!v.textContent.includes('누락 사진'))v.textContent='⚠️ 검사 실패: '+e.message}finally{b.disabled=false}};
 $('zipRestorePauseBtn').onclick=()=>{zipRestoreStop=true;$('backupProgressText').textContent+=' · 안전 중단 요청됨…';};
 function persistPicks(id){if(!id)return false;const r=record(id),pick={fixedSlots:r.fixedSlots.slice(),fallbackSlots:r.fallbackSlots.slice(),storyPhotoTitle:r.storyPhotoTitle||'',manualComplete:r.manualComplete,updated:Date.now()};savedPicks[id]=pick;let browserSaved=false;try{localStorage.setItem(PICKS_KEY,JSON.stringify(savedPicks));browserSaved=true}catch(e){console.warn('대표사진 로컬 저장 용량 초과: IndexedDB로 보관합니다.',e)}savePickToVault(id,pick).catch(e=>{console.error('대표사진 보관 오류',e);offlineStatus('⚠️ 대표사진 설정 보관 실패 — 백업 필요: '+e.message)});return browserSaved}
 // V3.5.4: Keep the full memory in IndexedDB, not in the small localStorage quota.
@@ -1092,7 +1127,7 @@ function show(section){$('home').classList.toggle('hidden',section!=='home');$('
 function status(s){$('searchStatus').textContent=s}
 // Completion only becomes automatic when five actual image blobs have been saved.
 // manualComplete is independent: the user can approve a gallery with fewer than five.
-function isGalleryComplete(r){return r.manualComplete===true || (r.manualComplete!==false && r.allFiveStored===true)}
+function isGalleryComplete(r){return r.allFiveStored===true && (r.fixedSlots||[]).filter(Boolean).length===PHOTO_LIMIT}
 async function checkGalleryStored(p,refresh=true){
  const r=record(p.id),titles=displaySlots(r,p);
  if(titles.filter(Boolean).length!==PHOTO_LIMIT){r.allFiveStored=false;if(refresh){updateHome();refreshCompleteButton()}return false}
@@ -1102,7 +1137,7 @@ async function checkGalleryStored(p,refresh=true){
  if(refresh){updateHome();refreshCompleteButton()}return r.allFiveStored;
 }
 function refreshCompleteButton(){if(!current)return;const r=record(current.id),done=isGalleryComplete(r),b=$('completeAlbumBtn');if(!b)return;
- b.textContent=done?'✓ 초록색 완성 · 취소하기':'✓ 이 사진첩을 초록색으로 표시';b.classList.toggle('isComplete',done);
+ b.textContent=done?'🟢 사진 5장 저장 완료':'🟡 사진 5장 저장 확인';b.classList.toggle('isComplete',done);
  b.setAttribute('aria-pressed',String(done));}
 // Traffic-light colors are derived from existing photo data, never persisted separately.
 function gallerySignal(p){
@@ -1131,7 +1166,16 @@ function updateHome(){
 function travelGuide(region,name){const r=String(region||'');let mode='기차·버스 또는 자동차';let details='서울의 주요 역이나 버스터미널에서 출발해 목적지 가까운 정류장으로 이동합니다.';if(/서울/.test(r)){mode='지하철·버스·도보';details='서울 시내에서 지하철이나 버스로 가까운 정류장까지 이동한 뒤 걸어갑니다.';}else if(/제주/.test(r)){mode='항공편 + 현지 교통';details='서울 김포공항에서 제주공항으로 비행한 뒤 현지 버스나 자동차로 이동합니다.';}else if(/인천|경기|수원|파주|가평/.test(r)){mode='수도권 전철·광역버스·자동차';details='서울에서 수도권 전철 또는 광역버스로 가까운 곳까지 이동한 뒤 현지 교통편을 이용합니다.';}else if(/부산|경주|대구|울산|경상/.test(r)){mode='고속철도·시외버스 + 현지 교통';details='서울에서 고속철도나 버스를 이용해 해당 지역으로 간 뒤 현지 교통편으로 이동합니다.';}else if(/강원|강릉|속초|평창|춘천/.test(r)){mode='철도·시외버스 + 현지 교통';details='서울에서 해당 지역으로 가는 기차나 버스를 이용하고 마지막 구간은 현지 교통편으로 이동합니다.';}return `📍 서울 → ${r} → ${name}\n🚆 ${mode}\n${details}\n※ 실제 이동시간은 교통수단과 출발 위치에 따라 달라집니다.`;}
 function travelGuideWorld(p){const c=countries.find(x=>x.code===p.countryCode)||{};const name=c.name||p.countryCode;return `✈️ 서울(인천국제공항) → ${name} → ${p.region} → ${p.name}\n서울에서 ${name}의 주요 국제공항으로 이동한 다음, 현지 열차·버스·자동차 등으로 명소에 갑니다. 직항편이 없는 곳은 경유가 필요할 수 있습니다.\n※ 실제 항공편·이동시간·입국조건은 출발 전에 확인하세요.`;}
 function openPlace(id){stopCandidateSlides();$('albumPhotos').replaceChildren();$('baseSelection').replaceChildren();$('candidates').replaceChildren();$('candidates').dataset.count='';$('largePhoto').dataset.title='';$('candidateLarge').dataset.title='';current=catalog.find(p=>p.id===id);if(!current)return;position=0;candidatePosition=0;excludeIndex=-1;reorderFrom=-1;setReorderMode(false);show('detail');$('placeTitle').textContent=current.name;$('placeRegion').textContent=`${current.region} · ${(countries.find(c=>c.code===current.countryCode)||{}).name||'대한민국'}`;$('placeDesc').textContent=current.description||'설명을 준비 중입니다.';$('tripSummary').textContent=current.countryCode==='KR'?travelGuide(current.region,current.name):travelGuideWorld(current);setTab('description');renderAll();paintStory();refreshOfflinePhotoNodes().catch(e=>console.warn(e));window.scrollTo({top:0,behavior:'instant'});}
-function paintStory(){if(!current)return;const r=record(current.id),name=r.storyPhotoTitle||displaySlots(r,current).find(Boolean);const pic=(r.candidates||[]).find(x=>x.title===name);const stage=$('storyBackdrop');if(!stage)return;if(pic?.url){const safeUrl=String(pic.url).replace(/["\\]/g,'');stage.style.backgroundImage='url("'+safeUrl+'")';$('storyBackdropHint').textContent='사진으로 만나는 '+current.name;}else{stage.style.backgroundImage='linear-gradient(120deg,#102c58,#247c92 62%,#c28a7c)';$('storyBackdropHint').textContent='새로운 여행의 장면을 기다립니다';}setTimeout(()=>refreshOfflinePhotoNodes(),0);}
+function paintStory(){
+ if(!current)return;
+ const title=displaySlots(record(current.id),current)[0],stage=$('storyBackdrop');
+ if(!stage)return;
+ stage.style.backgroundImage='linear-gradient(120deg,#102c58,#247c92 62%,#c28a7c)';
+ $('storyBackdropHint').textContent=title?'기본사진 1번을 불러오는 중…':'새로운 여행의 장면을 기다립니다';
+ if(title)stableOfflineURL(current.id,title).then(url=>{
+  if(url&&current&&displaySlots(record(current.id),current)[0]===title){stage.style.backgroundImage=`url("${url}")`; $('storyBackdropHint').textContent='사진으로 만나는 '+current.name;}
+ }).catch(()=>{});
+}
 function setTab(name){if(name!=='memory'){stopCandidateSlides();stopSavedTravel()}tab=name;for(let e of document.querySelectorAll('.view'))e.classList.toggle('hidden',e.id!==name);for(let e of document.querySelectorAll('#tabs button'))e.classList.toggle('on',e.dataset.tab===name);if(name==='memory'){excludeIndex=-1;savedTravelIndex=0;renderCandidates()};if(name==='album'){renderAlbum();let r=record(current.id);if(!r.album.length&&!working&&!searchBusy){searchBusy=true;searchPlace(current,true).finally(()=>searchBusy=false)}}}
 function fromApi(page){let ii=page?.imageinfo?.[0];if(!ii?.thumburl&&!ii?.url)return null;let title=page.title||'',ex=ii.extmetadata||{};if(!/^File:/i.test(title)||!/\.(jpe?g|png|webp)$/i.test(title))return null;const raw=(x)=>String(x?.value||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim().slice(0,150);return {title,url:ii.thumburl||ii.url,source:ii.descriptionurl||('https://commons.wikimedia.org/wiki/'+encodeURIComponent(title.replace(/ /g,'_'))),artist:raw(ex.Artist)||'',license:raw(ex.LicenseShortName)||'',width:ii.width||0,updated:Date.now()}}
 async function request(params){let u=new URL(API);Object.entries({action:'query',format:'json',origin:'*',...params}).forEach(([k,v])=>u.searchParams.set(k,String(v)));let ac=new AbortController(),timer=setTimeout(()=>ac.abort(),17000);try{let res=await fetch(u,{signal:ac.signal});if(!res.ok)throw Error('Commons HTTP '+res.status);let js=await res.json();if(js.error)throw Error(js.error.info);return js}finally{clearTimeout(timer)}}
@@ -1299,19 +1343,20 @@ async function landmarkStyleDiscovery(p,tried,errors){
 function addCandidates(r,items){if(!Array.isArray(r.candidates))r.candidates=[];let known=new Set(r.candidates.map(x=>x.title.toLowerCase()));let count=0;for(let a of items){if(known.has(a.title.toLowerCase()))continue;known.add(a.title.toLowerCase());r.candidates.push(a);count++}r.updated=Date.now();return count}
 function photoScore(a,p){
  const title=(a.title||'').toLowerCase(), aliases=[p.name,...(p.aliases||[])].map(x=>String(x).toLowerCase());
- let score=aliases.some(x=>x&&title.includes(x))?32:-24;
+ let score=aliases.some(x=>x&&title.includes(x))?34:-26;
  if(title.includes(String(p.region||'').toLowerCase()))score+=5;
  const english=(p.aliases||[]).map(s=>String(s).toLowerCase()).filter(s=>/[a-zà-ÿ]/.test(s));
  const tokens=[...new Set(english.flatMap(s=>s.split(/[^a-zà-ÿ0-9]+/i)).filter(s=>s.length>=5&&!['temple','island','national','garden','museum','palace','beach','mountain','bridge','church','castle','river','falls','park','caves'].includes(s)))];
- if(tokens.some(t=>title.includes(t)))score+=17;
- if(tokens.length>=2 && tokens.filter(t=>title.includes(t)).length>=2)score+=16;
+ if(tokens.some(t=>title.includes(t)))score+=18;
+ if(tokens.length>=2 && tokens.filter(t=>title.includes(t)).length>=2)score+=18;
  if(/water tower|cell tower|water reservoir tower|industrial plant|train station platform|billboard|logo/.test(title) && !/tower|station/.test(english.join(' ')))score-=24;
- if(/panorama|landscape|front view|wide view|전경|풍경|정면|aerial|overview|facade|skyline|전체|全景/.test(title))score+=21;
- if(/sunrise|sunset|golden hour|twilight|reflection|night view|blue hour/.test(title))score+=5;
- if(/selfie|portrait|tourist|crowd|people|person|construction|under renovation|scaffold/.test(title))score-=12;
+ if(/panorama|landscape|front view|wide view|전경|풍경|정면|aerial|overview|facade|skyline|전체|全景|outside|exterior/.test(title))score+=24;
+ if(/sunrise|sunset|golden hour|twilight|reflection|night view|blue hour|nightscape/.test(title))score+=6;
+ if(/selfie|portrait|tourist|crowd|people|person|construction|under renovation|scaffold/.test(title))score-=13;
  if(/map|diagram|floor plan|logo|drawing|poster|illustration|stamp|painting|sketch|plan of/.test(title))score-=42;
- if(/interior|detail|close.?up|macro|room |ceiling|entrance detail/.test(title))score-=13;
- if(a.width>1100)score+=5;else if(a.width>650)score+=2;
+ if(/interior|detail|close.?up|macro|room |ceiling|entrance detail|statue|artifact|inscription|carving|door detail|window detail|roof detail|column|pillar/.test(title))score-=22;
+ if(/museum piece|relic|exhibit|display case|bronze|ceramic|fresco|mosaic|ornament/.test(title))score-=16;
+ if(a.width>1400)score+=7;else if(a.width>1100)score+=5;else if(a.width>650)score+=2;
  return score;
 }
 function rebuildAlbum(r,p){displaySlots(r,p);persist();}
@@ -1410,7 +1455,7 @@ function endAlbumDrag(e){if(dragFrom<0)return;e.preventDefault();const from=drag
  if(to>=0&&from!==to)moveAlbumSlot(from,to);else $('reorderHint').textContent='이동할 위치로 사진을 끌어 놓으세요.';
 }
 function renderAlbum(){if(!current)return;let r=record(current.id),slots=displaySlots(r,current),map=candidateMap(r),visibleIndices=slots.map((t,i)=>t?i:null).filter(v=>v!==null),visibleCount=visibleIndices.length,fixedCount=r.fixedSlots.filter(Boolean).length,missingFixed=r.fixedSlots.filter(t=>t&&!titleAvailable(r,t)).length; $('placeState').textContent=`보이는 사진 ${visibleCount}/5 · 대표지정 ${fixedCount}/5`; $('fillBtn').classList.remove('hidden');if(position>=PHOTO_LIMIT)position=0; if(!slots[position]&&visibleIndices.length)position=visibleIndices[0]; const selectedTitle=slots[position]; $('viewer').classList.toggle('hidden',!selectedTitle); $('emptyGallery').classList.toggle('hidden',visibleCount>0); if(!selectedTitle){$('largePhoto').removeAttribute('src');$('largePhoto').dataset.title=''; $('emptyGallery').textContent=missingFixed?`지정한 대표사진 중 지금 보이지 않는 사진이 있습니다.
-사진 여행에서 임시로 채우거나 다음 검색에서 다시 찾을 수 있습니다.`:'🖼️ 사진을 준비하고 있습니다. 사진 여행에서 사진을 찾아보세요.';} else {let a=map.get(selectedTitle); if(a){ if($('largePhoto').dataset.title!==a.title){$('largePhoto').dataset.title=a.title;$('largePhoto').src=photoCache.get(imageKey(current.id,a.title))||a.url;} $('largePhoto').alt=`${current.name} · 사진 ${position+1}`; }}
+사진 여행에서 임시로 채우거나 다음 검색에서 다시 찾을 수 있습니다.`:'🖼️ 사진을 준비하고 있습니다. 사진 여행에서 사진을 찾아보세요.';} else {let a=map.get(selectedTitle); if($('largePhoto').dataset.title!==selectedTitle){$('largePhoto').dataset.title=selectedTitle;const u=photoCache.get(imageKey(current.id,selectedTitle))||a?.url;if(u)$('largePhoto').src=u;else $('largePhoto').removeAttribute('src')} $('largePhoto').alt=`${current.name} · 사진 ${position+1}`;}
  slots.forEach((title,i)=>{
   let d=$('albumPhotos').children[i]; if(!d){d=document.createElement('button');d.type='button';$('albumPhotos').append(d)}
   const previous=d.dataset.title||'';d.dataset.title=title||'';
@@ -1429,16 +1474,16 @@ function availableCandidates(){if(!current)return [];let r=record(current.id),sl
 // V3.6.3: saved-photo journey is independent from candidate search results.
 let savedTravelIndex=0,savedTravelTimer=null,savedTravelGeneration=0;
 function stopSavedTravel(){if(savedTravelTimer!==null){clearInterval(savedTravelTimer);savedTravelTimer=null}const b=$('savedTravelPlay');if(b)b.textContent='▶ 저장사진 재생'}
-function savedTravelItems(){if(!current)return [];const r=record(current.id),m=candidateMap(r);return displaySlots(r,current).map((t,i)=>({title:t,index:i,item:m.get(t)})).filter(x=>x.title&&x.item)}
+function savedTravelItems(){if(!current)return [];const r=record(current.id),m=candidateMap(r);return displaySlots(r,current).map((t,i)=>({title:t,index:i,item:m.get(t)})).filter(x=>x.title)}
 async function renderSavedTravel(){const p=current;if(!p)return;const id=p.id,gen=++savedTravelGeneration,items=savedTravelItems(),n=items.length;
  if(savedTravelIndex>=n)savedTravelIndex=0;
  $('savedTravelEmpty').classList.toggle('hidden',n>0);$('savedTravelImage').classList.toggle('hidden',n===0);$('savedTravelCount').textContent=n?`${savedTravelIndex+1} / ${n}`:'0 / 0';
  $('savedTravelPrev').disabled=n<2;$('savedTravelNext').disabled=n<2;$('savedTravelPlay').disabled=n<2;
  const thumbs=$('savedTravelThumbs');thumbs.replaceChildren();
- for(let i=0;i<n;i++){const a=items[i],b=document.createElement('button'),img=document.createElement('img');b.type='button';b.className=i===savedTravelIndex?'on':'';img.alt=`저장사진 ${a.index+1}`;img.src=photoCache.get(imageKey(id,a.title))||a.item.url;b.append(img);b.onclick=()=>{savedTravelIndex=i;renderSavedTravel()};thumbs.append(b)}
+ for(let i=0;i<n;i++){const a=items[i],b=document.createElement('button'),img=document.createElement('img');b.type='button';b.className=i===savedTravelIndex?'on':'';img.alt=`저장사진 ${a.index+1}`;img.src=photoCache.get(imageKey(id,a.title))||a.item?.url||'';b.append(img);b.onclick=()=>{savedTravelIndex=i;renderSavedTravel()};thumbs.append(b)}
  if(!n){stopSavedTravel();$('savedTravelImage').removeAttribute('src');return}
  const a=items[savedTravelIndex],large=$('savedTravelImage');large.alt=`${p.name} · 저장된 기본사진 ${a.index+1}`;
- large.src=photoCache.get(imageKey(id,a.title))||a.item.url;
+ large.src=photoCache.get(imageKey(id,a.title))||a.item?.url||'';
  // IndexedDB contains the actual photo bytes; prefer those over expiring web URLs.
  try{const u=await stableOfflineURL(id,a.title);if(u&&current?.id===id&&gen===savedTravelGeneration&&tab==='memory')large.src=u}catch(e){}
  for(let i=0;i<n;i++){const a=items[i];stableOfflineURL(id,a.title).then(u=>{if(!u||current?.id!==id||gen!==savedTravelGeneration)return;const img=thumbs.children[i]?.querySelector('img');if(img)img.src=u}).catch(()=>{})}
@@ -1452,6 +1497,7 @@ function renderCandidates(previewOnly=false){if(!current)return;if(tab==='memory
   const fixed=r.fixedSlots[i],shown=slots[i],a=shown?map.get(shown):null,missingFixed=!!(fixed&&!titleAvailable(r,fixed));
   let b=document.createElement('button');b.type='button';b.className='swapBase'+(excludeIndex===i?' chosen':'')+(missingFixed?' missing':'')+((fixed&&shown===fixed)?' locked':'')+((fixed&&shown&&shown!==fixed)?' fallback':'');
   if(a){b.innerHTML=`<img data-photo-title="${safe(shown)}" src="${safe(a.url)}" alt="${safe(current.name)} 기본사진 ${i+1}"><span>${i+1}${excludeIndex===i?' · 선택됨':''}<br><span class="slotMeta">${'기본사진 · 정식 저장'}</span></span>`}
+  else if(shown){b.innerHTML=`<img data-photo-title="${safe(shown)}" src="" alt="${safe(current.name)} 기본사진 ${i+1}"><span>${i+1}<br><span class="slotMeta">기기에 저장된 사진</span></span>`}
   else{b.innerHTML=`<div class="slotPlaceholder"><div class="emptyMsg">${i+1}번<br>${fixed?'사진 확인 필요':'비어 있음'}</div></div><span>${i+1}${excludeIndex===i?' · 선택됨':''}<br><span class="slotMeta">${fixed?'다른 사진으로 교체할 수 있습니다':'사진을 추가할 수 있습니다'}</span></span>`}
   b.onclick=()=>{stopCandidateSlides();excludeIndex=excludeIndex===i?-1:i;document.querySelectorAll('#baseSelection .swapBase').forEach((el,n)=>el.classList.toggle('chosen',n===excludeIndex));renderCandidates(true)};
   const old=$('baseSelection').children[i];if(old&&old.dataset.title===(shown||'')&&old.dataset.fixed===(fixed||'')){old.className=b.className;const label=old.querySelector('span');if(label){const newer=b.querySelector('span');if(newer&&label.innerHTML!==newer.innerHTML)label.innerHTML=newer.innerHTML}old.onclick=b.onclick;}
@@ -1477,6 +1523,12 @@ async function addPreviewCandidate(){
   const previous=r.fixedSlots[target];r.fixedSlots[target]=a.title;r.fallbackSlots[target]=null;
   r.manualAlbum=true;position=target;excludeIndex=-1;
   persistPicks(p.id);persist();
+  // A replaced photo has no future album purpose. Remove it only after the
+  // new image was stored and the new slot committed; never delete a shared slot.
+  if(previous && previous!==a.title && !r.fixedSlots.includes(previous)){
+   try{await vaultDelete(p.id,previous);const oldKey=imageKey(p.id,previous);const oldUrl=photoCache.get(oldKey);if(oldUrl)URL.revokeObjectURL(oldUrl);photoCache.delete(oldKey);stableOfflineUrls.delete(oldKey)}
+   catch(err){console.warn('교체된 사진 정리 실패 (새 사진은 유지)',err)}
+  }
   await checkGalleryStored(p,false);
   renderAll();refreshOfflinePhotoNodes().catch(console.warn);
   status(`${target+1}번 기본사진으로 정식 저장했습니다.${previous?' 이전 사진을 교체했습니다.':''}`);
@@ -1491,8 +1543,8 @@ function renderAll(){paintStory();renderAlbum();renderCandidates();updateHome();
 $('worldTab').onclick=()=>{stopCandidateSlides();current=null;homeMode='world';placeView='all';show('home');updateHome()};$('manageTab').onclick=()=>{stopCandidateSlides();current=null;homeMode='manage';show('home');updateHome();$('management').open=true};$('homeBtn').onclick=()=>{stopCandidateSlides();current=null;homeMode='countries';show('home');updateHome()};$('backBtn').onclick=()=>{stopCandidateSlides();current=null;homeMode=previousMode;show('home');updateHome()};$('countriesBack').onclick=()=>{homeMode='countries';$('filter').value='';updateHome()};$('worldSearchBtn').onclick=()=>{homeMode='world';placeView='all';$('filter').value='';updateHome();$('filter').focus()};$('countrySearch').oninput=updateHome;document.querySelectorAll('#continentBar button').forEach(btn=>btn.onclick=()=>{selectedContinent=btn.dataset.continent;document.querySelectorAll('#continentBar button').forEach(b=>b.classList.toggle('on',b===btn));updateHome()});document.querySelectorAll('#placeFilters button').forEach(b=>b.onclick=()=>{placeView=b.dataset.view;updateHome()});$('filter').oninput=updateHome;document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
 $('searchBtn').onclick=async()=>{if(working||searchBusy||!current)return;searchBusy=true;working=true;const target=current;const btn=$('moreBtn');btn.disabled=true;btn.textContent='🔎 새로운 후보 검색 중…';try{await searchPlace(target,true)}finally{working=false;searchBusy=false;btn.disabled=false;btn.textContent='🔎 다음 후보 더 찾기'}};
 $('moreBtn').onclick=()=>{$('searchBtn').click()};$('candidatePrev').onclick=()=>{stopCandidateSlides();moveCandidate(-1)};$('candidateNext').onclick=()=>{stopCandidateSlides();moveCandidate(1)};$('candidatePlay').onclick=()=>candidateTimer===null?startCandidateSlides():stopCandidateSlides();document.addEventListener('visibilitychange',()=>{if(document.hidden){stopCandidateSlides();stopSavedTravel()}});$('candidateLarge').onclick=()=>stopCandidateSlides();
-function setStoryPhoto(title){if(!current||!title)return;const r=record(current.id);if(!titleAvailable(r,title)){status('현재 볼 수 없는 사진입니다. 표시되는 기본사진을 선택해 주세요.');return;}r.storyPhotoTitle=title;persist();paintStory();status('선택하신 기본사진을 명소 이야기의 배경으로 저장했습니다.');}
-$('baseStoryBtn').onclick=()=>{if(!current)return;const r=record(current.id);if(excludeIndex<0){$('baseStoryNote').textContent='기본사진 5칸 중 원하는 사진을 먼저 눌러주세요.';return;}const title=displaySlots(r,current)[excludeIndex];if(!title){$('baseStoryNote').textContent='빈칸은 배경사진으로 지정할 수 없습니다.';return;}setStoryPhoto(title);persistPicks(current.id);$('baseStoryNote').textContent=`${excludeIndex+1}번 기본사진을 명소 이야기 배경으로 저장했습니다.`};
+function setStoryPhoto(title){if(!current)return;const r=record(current.id);r.storyPhotoTitle=r.fixedSlots[0]||'';persistPicks(current.id);persist();paintStory();status('명소 이야기에는 기본사진첩의 1번 사진이 사용됩니다.');}
+$('baseStoryBtn').onclick=()=>{setStoryPhoto();$('baseStoryNote').textContent='명소 이야기의 배경은 기본사진 1번으로 고정됩니다.'};
 $('candidateAdd').onclick=addPreviewCandidate;$('toAlbumBtn').onclick=()=>{setTab('album');window.scrollTo({top:0,behavior:'smooth'})};
 $('fillBtn').onclick=()=>{setTab('memory');$('searchBtn').click()};
 
@@ -1506,8 +1558,9 @@ async function selectAndStoreLandscape(p){
  const r=record(p.id);let slots=displaySlots(r,p);
  if(slots.some(t=>!t))await searchPlace(p,true);
  if(displaySlots(r,p).some(t=>!t))await searchPlace(p,true);
+ if(displaySlots(r,p).some(t=>!t) && (r.candidates||[]).length<80)await searchPlace(p,true);
  const existing=new Set(r.fixedSlots.filter(Boolean));
- const pool=(r.candidates||[]).filter(a=>a?.title&&a.url&&!existing.has(a.title)&&!(r.broken||[]).includes(a.title)).sort((a,b)=>photoScore(b,p)-photoScore(a,p));
+ const pool=(r.candidates||[]).filter(a=>a?.title&&a.url&&!existing.has(a.title)&&!(r.broken||[]).includes(a.title)).filter(a=>photoScore(a,p)>=10 && !/\b(detail|close.?up|macro|artifact|artefact|relic|bronze vessel|bronze ware|exhibit|display case|museum object|ceramic vessel|coin|medal|stamp|souvenir)\b/i.test(a.title)).sort((a,b)=>photoScore(b,p)-photoScore(a,p));
  let stored=0,failed=0,selections=0;
  // Existing photos are permanent. New photos are assigned only after a successful blob write.
  for(let i=0;i<PHOTO_LIMIT;i++){
@@ -1561,41 +1614,71 @@ async function batchRead(){try{const db=await openPhotoDb();return await new Pro
 async function batchWrite(value){return dbOperation(db=>new Promise((resolve,reject)=>{const tx=db.transaction(MEMORY_STORE,'readwrite');tx.objectStore(MEMORY_STORE).put({id:COUNTRY_BATCH_RECORD,value,updated:Date.now()});tx.oncomplete=()=>resolve();tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error)}))}
 function batchIncomplete(p){return displaySlots(record(p.id),p).filter(Boolean).length<PHOTO_LIMIT}
 function batchFailure(p){const r=record(p.id),ls=r.lastSearch;if(!ls||!ls.time)return '미검색';if(ls.status==='error')return '검색 오류';if(ls.status==='empty'||(!(r.candidates||[]).length&&ls.status==='found'))return '검색 후보 없음';if(batchIncomplete(p))return '사진 부족';return '완성'}
+function clearPhotoCacheFor(id,title){const key=imageKey(id,title),u=photoCache.get(key);if(u)try{URL.revokeObjectURL(u)}catch(_){ }photoCache.delete(key);stableOfflineUrls.delete(key)}
+async function resetPlaceAlbum(p){
+ const r=record(p.id),titles=[...new Set([...(r.fixedSlots||[]),...(r.fallbackSlots||[]),...(r.album||[])].filter(Boolean))];
+ for(const title of titles){try{await vaultDelete(p.id,title)}catch(e){console.warn('기본사진 삭제 실패',p.name,title,e)}clearPhotoCacheFor(p.id,title)}
+ r.fixedSlots=Array(PHOTO_LIMIT).fill(null);
+ r.fallbackSlots=Array(PHOTO_LIMIT).fill(null);
+ r.album=[];
+ r.storyPhotoTitle='';
+ r.manualAlbum=false;
+ r.manualComplete=false;
+ r.allFiveStored=false;
+ r.candidates=[];
+ r.cursor=0;
+ r.queryStep=0;
+ r.lastSearch={time:Date.now(),status:'empty',message:'재보강을 위해 기본사진첩 초기화'};
+ if(Array.isArray(r.broken))r.broken=[];
+ persistPicks(p.id);persist();
+}
 function batchPaintCountries(){const box=$('batchCountries');box.replaceChildren();for(const c of countries){const ps=catalog.filter(p=>p.countryCode===c.code),done=ps.filter(p=>!batchIncomplete(p)).length;const btn=document.createElement('button');btn.type='button';btn.className='batchCountry'+(batchSelected.has(c.code)?' chosen':'');btn.setAttribute('aria-pressed',String(batchSelected.has(c.code)));btn.innerHTML=`<b>${safe(c.flag||'🌏')} ${safe(c.name)}</b><small>사진 5장 ${done}/${ps.length}곳 완성</small>`;btn.onclick=()=>{if(batchSelected.has(c.code))batchSelected.delete(c.code);else batchSelected.add(c.code);batchSaveSelection();batchPaintCountries()};box.append(btn)}}
-function batchShowReport(failOnly=false){const modal=$('reportModal');modal.classList.remove('hidden');$('reportTitle').textContent=failOnly?'🔴 검색 실패·오류 명소':'📊 나라별 검색·사진 결과';$('reportClose').focus();const box=$('batchReport');box.replaceChildren();const title=document.createElement('h3');title.textContent=failOnly?'🔴 검색 실패·오류 명소':'📊 나라별 검색·사진 결과';box.append(title);const filtered=catalog.filter(p=>batchSelected.has(p.countryCode));if(!filtered.length){box.append(document.createTextNode('먼저 나라를 선택하세요.'));return}for(const c of countries){if(!batchSelected.has(c.code))continue;const ps=filtered.filter(p=>p.countryCode===c.code);if(!ps.length)continue;const errors=ps.filter(p=>['검색 후보 없음','검색 오류'].includes(batchFailure(p)));if(failOnly&&!errors.length)continue;const heading=document.createElement('h3');heading.textContent=`${c.flag||'🌏'} ${c.name} · 전체 ${ps.length}곳 · 완성 ${ps.filter(p=>!batchIncomplete(p)).length}곳 · 검색 실패/오류 ${errors.length}곳`;box.append(heading);const items=failOnly?errors:ps.filter(p=>batchFailure(p)!=='완성');if(!items.length){const ok=document.createElement('p');ok.textContent='표시할 명소가 없습니다.';box.append(ok)}for(const p of items){const r=record(p.id),row=document.createElement('div');row.className='failureRow';const info=document.createElement('span');const reason=batchFailure(p);info.textContent=`${reason==='검색 오류'?'🔴':reason==='검색 후보 없음'?'🔴':reason==='미검색'?'⚪':'🟡'} ${p.name} · ${reason} · 사진 ${displaySlots(r,p).filter(Boolean).length}/5 · 검색 ${r.queryStep||0}회`;row.append(info);const go=document.createElement('button');go.type='button';go.className='secondary';go.textContent='사진여행 열기';go.onclick=()=>{closeBatchReport();previousMode='manage';openPlace(p.id);setTab('memory')};row.append(go);box.append(row)}}if(batchRunStats){const x=document.createElement('p');x.textContent=`최근 실행: 확인 ${batchRunStats.checked}곳 · 새 사진 지정 ${batchRunStats.selected}장 · 저장 성공 ${batchRunStats.saved}장 · 저장 실패 ${batchRunStats.failed}장`;box.prepend(x)}}
+function batchShowReport(failOnly=false){const modal=$('reportModal');modal.classList.remove('hidden');$('reportTitle').textContent=failOnly?'🔴 검색 실패·오류 명소':'📊 나라별 검색·사진 결과';$('reportClose').focus();const box=$('batchReport');box.replaceChildren();const title=document.createElement('h3');title.textContent=failOnly?'🔴 검색 실패·오류 명소':'📊 나라별 검색·사진 결과';box.append(title);const filtered=catalog.filter(p=>batchSelected.has(p.countryCode));if(!filtered.length){box.append(document.createTextNode('먼저 나라를 선택하세요.'));return}for(const c of countries){if(!batchSelected.has(c.code))continue;const ps=filtered.filter(p=>p.countryCode===c.code);if(!ps.length)continue;const errors=ps.filter(p=>['검색 후보 없음','검색 오류'].includes(batchFailure(p)));if(failOnly&&!errors.length)continue;const heading=document.createElement('h3');heading.textContent=`${c.flag||'🌏'} ${c.name} · 전체 ${ps.length}곳 · 완성 ${ps.filter(p=>!batchIncomplete(p)).length}곳 · 검색 실패/오류 ${errors.length}곳`;box.append(heading);const items=failOnly?errors:ps.filter(p=>batchFailure(p)!=='완성');if(!items.length){const ok=document.createElement('p');ok.textContent='표시할 명소가 없습니다.';box.append(ok)}for(const p of items){const r=record(p.id),row=document.createElement('div');row.className='failureRow';const info=document.createElement('span');const reason=batchFailure(p);info.textContent=`${reason==='검색 오류'?'🔴':reason==='검색 후보 없음'?'🔴':reason==='미검색'?'⚪':'🟡'} ${p.name} · ${reason} · 사진 ${displaySlots(r,p).filter(Boolean).length}/5 · 검색 ${r.queryStep||0}회`;row.append(info);const go=document.createElement('button');go.type='button';go.className='secondary';go.textContent='사진여행 열기';go.onclick=()=>{closeBatchReport();previousMode='manage';openPlace(p.id);setTab('memory')};row.append(go);box.append(row)}}if(batchRunStats){const x=document.createElement('p');x.textContent=`최근 실행: 확인 ${batchRunStats.checked}곳 · 초기화 ${batchRunStats.resets||0}곳 · 새 사진 지정 ${batchRunStats.selected}장 · 저장 성공 ${batchRunStats.saved}장 · 저장 실패 ${batchRunStats.failed}장`;box.prepend(x)}}
 $('batchAll').onclick=()=>{batchSelected=new Set(countries.map(c=>c.code));batchSaveSelection();batchPaintCountries()};
 $('batchNone').onclick=()=>{batchSelected.clear();batchSaveSelection();batchPaintCountries()};
 $('batchIncomplete').onclick=()=>{batchSelected=new Set(countries.filter(c=>catalog.some(p=>p.countryCode===c.code&&batchIncomplete(p))).map(c=>c.code));batchSaveSelection();batchPaintCountries()};
-function closeBatchReport(){$('reportModal').classList.add('hidden')} $('reportClose').onclick=closeBatchReport;$('reportModal').addEventListener('click',e=>{if(e.target===$('reportModal'))closeBatchReport()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('reportModal').classList.contains('hidden'))closeBatchReport()});$('batchResults').onclick=()=>batchShowReport(false);$('batchFailures').onclick=()=>batchShowReport(true);
-$('bulkBtn').textContent='🌄 나라별 자동선정 아래에서 선택';$('bulkBtn').onclick=()=>{$('countryBatch').scrollIntoView({behavior:'smooth',block:'start'})};
+function closeBatchReport(){$('reportModal').classList.add('hidden')} $('reportClose').onclick=closeBatchReport;$('reportModal').addEventListener('click',e=>{if(e.target===$('reportModal'))closeBatchReport()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('reportModal').classList.contains('hidden'))closeBatchReport()});$('batchResults').onclick=()=>batchShowReport(false);$('batchFailures').onclick=()=>batchShowReport(true); if($('batchResetFirst'))$('batchResetFirst').addEventListener('change',()=>{$('batchResetHelp').textContent=$('batchResetFirst').checked?'🧹 기본사진 5장·배경사진·완성표시를 먼저 비운 뒤 자동 재보강합니다. 검색되지 않는 명소와 사진 부족 명소는 결과보기에서 그대로 드러납니다.':'기존 기본사진을 유지한 채 부족한 자리만 보강합니다.'});
+$('bulkBtn').textContent='🌄 나라별 전체 재보강 아래에서 선택';$('bulkBtn').onclick=()=>{$('countryBatch').scrollIntoView({behavior:'smooth',block:'start'})};
 $('batchStart').onclick=async()=>{
  if(working){bulkStop=true;$('batchMessage').textContent='⏹ 현재 명소 저장을 마친 뒤 중단합니다.';return}
  const selected=[...batchSelected];if(!selected.length){$('batchMessage').textContent='나라를 하나 이상 선택해 주세요.';return}
  const ids=catalog.filter(p=>selected.includes(p.countryCode)).map(p=>p.id);
- let prior=await batchRead();let cursor=0;
- if(prior&&JSON.stringify(prior.ids)===JSON.stringify(ids)&&prior.next<ids.length)cursor=prior.next;
- else {try{await batchWrite({ids,next:0})}catch(e){$('batchMessage').textContent='⚠️ 작업 위치를 저장할 수 없어 시작하지 않았습니다: '+e.message;return}}
- working=true;bulkStop=false;const btn=$('batchStart');btn.textContent='⏹ 자동선정 중단';batchRunStats={checked:0,selected:0,saved:0,failed:0};
+ const wantedReset=$('batchResetFirst')?.checked===true;
+ let prior=await batchRead(),cursor=0,resetFirst=wantedReset;
+ const same=prior&&JSON.stringify(prior.ids)===JSON.stringify(ids);
+ if(same&&prior.next>0&&prior.next<ids.length){
+  cursor=prior.next;resetFirst=!!prior.resetFirst;
+ }else{
+  if(wantedReset && !confirm(`선택한 ${selected.length}개 나라, ${ids.length}곳의 기본사진을 한 명소씩 비우고 새로 선정합니다.\n\n이전 기본사진은 되돌릴 수 없으므로 기존 백업을 먼저 보관하세요.\n\n시작하시겠습니까?`))return;
+  try{await batchWrite({ids,next:0,resetFirst})}catch(e){$('batchMessage').textContent='⚠️ 작업 위치 저장 실패: '+e.message;return}
+ }
+ working=true;bulkStop=false;const btn=$('batchStart');btn.textContent='⏹ 자동선정 중단';batchRunStats={checked:0,selected:0,saved:0,failed:0,resets:0};
+ let abortedError='';
  try{for(let i=cursor;i<ids.length;i++){
-  if(bulkStop)break;const p=catalog.find(x=>x.id===ids[i]);if(!p)continue;
-  $('batchMessage').textContent=`🌏 ${i+1}/${ids.length} · ${p.name} · 성공 ${batchRunStats.saved}장 / 실패 ${batchRunStats.failed}장`;
-  if(batchIncomplete(p)){try{const res=await selectAndStoreLandscape(p);batchRunStats.saved+=res.stored;batchRunStats.failed+=res.failed;batchRunStats.selected+=res.selected}catch(e){batchRunStats.failed++;console.warn('나라별 선정 오류',p.name,e)}}
+  if(bulkStop)break;
+  const p=catalog.find(x=>x.id===ids[i]);if(!p)continue;
+  $('batchMessage').textContent=`🌏 ${i+1}/${ids.length} · ${p.name} · 저장 ${batchRunStats.saved}장 · 실패 ${batchRunStats.failed}장`;
+  try{
+   if(resetFirst){await resetPlaceAlbum(p);batchRunStats.resets++}
+   if(batchIncomplete(p)){
+    const res=await selectAndStoreLandscape(p);
+    batchRunStats.saved+=res.stored;batchRunStats.failed+=res.failed;batchRunStats.selected+=res.selected;
+   }
+   await checkGalleryStored(p,false);
+  }catch(e){batchRunStats.failed++;console.warn('전체 재보강 오류',p.name,e)}
   batchRunStats.checked++;
-  try{if(!(await flushMemory()))throw Error(memorySaveError||'검색기억 저장 실패');await batchWrite({ids,next:i+1})}catch(e){bulkStop=true;$('batchMessage').textContent='⚠️ 검색기억 또는 진행 위치 저장 실패, 안전을 위해 중단: '+e.message;break}
+  try{if(!(await flushMemory()))throw Error(memorySaveError||'검색기억 저장 실패');await batchWrite({ids,next:i+1,resetFirst})}
+  catch(e){abortedError=e.message;bulkStop=true;break}
   $('batchBar').firstElementChild.style.width=`${Math.round((i+1)/ids.length*100)}%`;
   if(i%5===0)updateHome();await new Promise(resolve=>setTimeout(resolve,250));
- }}finally{working=false;btn.textContent='🌄 선택한 나라 자동선정';const pos=await batchRead(),next=pos?.next||0,complete=next>=ids.length;
-  $('batchMessage').textContent=`${complete?'선택 나라 작업 완료':bulkStop?'일시 중단':'작업 종료'} · ${next}/${ids.length}곳 확인 · 이번 실행 사진 지정 ${batchRunStats.selected}장 · 저장 실패 ${batchRunStats.failed}장. ${complete?'다시 실행하면 미완성 명소를 재확인합니다.':'다시 누르면 다음 명소부터 이어집니다.'}`;
-  if(complete){try{await batchWrite({ids,next:0})}catch(e){console.warn(e)}}batchPaintCountries();batchShowReport(false);updateHome()}
+ }}finally{
+  working=false;btn.textContent='🌄 선택한 나라 전체 재보강 시작';const pos=await batchRead(),next=pos?.next||0,complete=next>=ids.length;
+  $('batchMessage').textContent=`${abortedError?'⚠️ 저장 오류: '+abortedError:complete?'선택 나라 전체 재보강 완료':bulkStop?'일시 중단':'작업 종료'} · ${next}/${ids.length}곳 확인 · 이번 실행 초기화 ${batchRunStats.resets}곳 · 사진 지정 ${batchRunStats.selected}장 · 저장 실패 ${batchRunStats.failed}장. ${complete?'결과보기에서 사진 부족과 검색 오류를 확인하세요.':'다시 누르면 다음 명소부터 이어집니다.'}`;
+  if(complete){try{await batchWrite({ids,next:0,resetFirst:false})}catch(e){console.warn(e)}}
+  batchPaintCountries();batchShowReport(false);updateHome();
+ }
 };
-$('completeAlbumBtn').onclick=()=>{
- if(!current)return;const r=record(current.id);
- if(isGalleryComplete(r)){r.manualComplete=false;}
- else{r.manualComplete=true;}
- persist();updateHome();refreshCompleteButton();
- // Persist to IndexedDB with all other selected-photo settings, including backup/restore.
- persistPicks(current.id);
-};
+$('completeAlbumBtn').onclick=async()=>{if(!current)return;await checkGalleryStored(current,true);if(!isGalleryComplete(record(current.id)))status('🟡 실제 사진 5장을 모두 기기에 저장해야 초록색 완성이 됩니다.');else status('🟢 실제 사진 5장 저장이 확인되었습니다.');refreshCompleteButton();};
 $('legacyBackupBtn').onclick=downloadCompleteBackup;
 $('backupInspectBtn').onclick=inspectBackupStorage;
 $('exportBtn').onclick=downloadSingleZipBackup;
@@ -1633,7 +1716,7 @@ $('management').querySelector('.row').prepend($('bulkBtn'));$('bulkBtn').classLi
 }
 $('importFile').onchange=async(e)=>{const f=e.target.files?.[0];if(!f)return;try{await applyBackupSettings(JSON.parse(await f.text()))}catch(ex){$('manageStatus').textContent='복원 실패: '+ex.message}e.target.value=''};
 // Check the server's published app version. Never reset local storage or switch origins.
-const RUNNING_VERSION='3.9.5';
+const RUNNING_VERSION='3.9.8';
 let checkedUpdateVersion=null;
 function cmpVersions(a,b){
  const aa=String(a).replace(/^V/i,'').split('.').map(Number),bb=String(b).replace(/^V/i,'').split('.').map(Number);
