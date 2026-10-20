@@ -1,5 +1,5 @@
 {
-  "version": "3.8.3",
+  "version": "3.8.5",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "One-action multipart small ZIP export and one multi-selection automatic restore; original data preserved"
+  "notes": "Safe boot: prohibit premature writes, verify photo index once, never display zero while recovering"
 }
