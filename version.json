@@ -1,5 +1,5 @@
 {
-  "version": "3.8.2",
+  "version": "3.8.3",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Native visible iPadOS ZIP picker, explicit two-step restore, progress and stop retained"
+  "notes": "One-action multipart small ZIP export and one multi-selection automatic restore; original data preserved"
 }
