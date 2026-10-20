@@ -1,5 +1,5 @@
 {
-  "version": "3.8.9",
+  "version": "3.9.0",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Verify converted transfer archive contains small ZIP groups; explicit iPad restore selection guidance; preserve storage and search engine"
+  "notes": "Fix mistaken 28MB limit applied to 40MB settings ZIP; verify settings and 14MB photo groups separately, preserving existing photos."
 }
