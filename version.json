@@ -1,5 +1,5 @@
 {
-  "version": "3.7.8",
+  "version": "3.7.9",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "V3.7.8 backup optimization: faster chunked CRC, progress reporting, optional direct-to-file streaming where supported, Safari Blob fallback; existing photo data unchanged."
+  "notes": "V3.7.9 incremental ZIP restoration, transaction timeouts, no overwrite, resumable checkpoint, safe stop"
 }
