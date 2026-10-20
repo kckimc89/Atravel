@@ -1,5 +1,5 @@
 {
-  "version": "3.8.7",
+  "version": "3.8.8",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Safe small-bundle restore: complete preflight before writes, 300 MB standalone guard, V3.8.6 photo startup preserved"
+  "notes": "Restore transfer source: verified existing single ZIP converted without IndexedDB reread; preserve V3.8.5 startup and V3.8.7 preflight"
 }
