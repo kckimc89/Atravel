@@ -1,5 +1,5 @@
 {
-  "version": "3.9.4",
+  "version": "3.9.5",
   "name": "World Travel Encyclopedia MASTER",
   "notes": "Preserve final restore success/error message instead of overwriting it at cleanup; add stage status for single-ZIP restoration."
 }
