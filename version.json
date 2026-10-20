@@ -1,5 +1,5 @@
 {
-  "version": "3.7.7",
+  "version": "3.7.8",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Version consistency repair: synchronized visible and running versions; preserves V3.7.6 features and storage identifiers."
+  "notes": "V3.7.8 backup optimization: faster chunked CRC, progress reporting, optional direct-to-file streaming where supported, Safari Blob fallback; existing photo data unchanged."
 }
