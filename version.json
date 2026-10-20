@@ -1,5 +1,5 @@
 {
-  "version": "3.9.1",
+  "version": "3.9.2",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Add drag and drop and cumulative ZIP picking to unified restore; preserve V3.9.0 storage and backup engine."
+  "notes": "Add clipboard file import attempt, selection audit and retry-preserving restore interface; preserve photo engine."
 }
