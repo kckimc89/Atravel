@@ -1,5 +1,5 @@
 {
-  "version": "3.8.6",
+  "version": "3.8.7",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Safe startup retained; deliberate one-tap restore start and non-destructive selected-photo merge"
+  "notes": "Safe small-bundle restore: complete preflight before writes, 300 MB standalone guard, V3.8.6 photo startup preserved"
 }
