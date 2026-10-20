@@ -1,5 +1,5 @@
 {
-  "version": "3.8.5",
+  "version": "3.8.6",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Safe boot: prohibit premature writes, verify photo index once, never display zero while recovering"
+  "notes": "Safe startup retained; deliberate one-tap restore start and non-destructive selected-photo merge"
 }
