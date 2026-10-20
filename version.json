@@ -1,5 +1,5 @@
 {
-  "version": "3.9.2",
+  "version": "3.9.3",
   "name": "World Travel Encyclopedia MASTER",
-  "notes": "Add clipboard file import attempt, selection audit and retry-preserving restore interface; preserve photo engine."
+  "notes": "Experimental direct single ZIP restore: allow large file selection and use existing per-photo Blob slices, preserve current photos; picker-level crash cannot be fixed in JS."
 }
